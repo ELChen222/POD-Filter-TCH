@@ -1,6 +1,6 @@
-// 2021/04/07 20:50
+// 2021/S11/POD
 // 版本: #20 Perlite(珍珠岩)
-// By: MarsFlyPig
+// Orignaled By: MarsFlyPig, Modified by EL
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
 // 過濾器代碼 https://pathofdiablo.com/wiki/index.php?title=Loot_Filtration_Codes
 
@@ -385,7 +385,7 @@ ItemDisplay[sbw NMAG !RW SOCK=3 DIFF<2 CLVL>19]: %NAME%【邊緣-商店打折】
 
 // 缺錢
 //ItemDisplay[EQ2 (NMAG OR MAG) !RW PRICE>34999]: $35K$ // 顯示35000盔甲賣錢
-//ItemDisplay[WP5 (NMAG OR MAG) PRICE>34999]: $35K$ // 顯示35000飛刀賣錢
+ItemDisplay[WP5 (NMAG OR MAG) PRICE>34999]: $35K$ // 顯示35000飛刀賣錢
 ItemDisplay[(CL6 OR WP12) MAG !RW ID ILVL>50]: $%PRICE%$ // 顯示法師寶珠+死靈魔杖賣錢
 ItemDisplay[(CL6 OR WP12) MAG !RW !ID ILVL>50]: $$$$ // 顯示法師寶珠+死靈魔杖賣錢
 
