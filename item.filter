@@ -117,7 +117,7 @@ ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc) DIFF>0]: // 碎裂
 // 珠寶
 ItemDisplay[jew UNI !ID]: %NL%※[L%ILVL%]%NAME%【獨特】※%NL% //未辨
 ItemDisplay[jew UNI]: [L%ILVL%]%NAME%【獨特】
-ItemDisplay[jew RARE !ID]: %NL%%ORANGE%※%YELLLOW%[L%ILVL%]%NAME%【稀有】%ORANGE%※%NL% //未辨
+ItemDisplay[jew RARE !ID]: %NL%%ORANGE%※%YELLOW%[L%ILVL%]%NAME%【稀有】%ORANGE%※%NL% //未辨
 ItemDisplay[jew RARE]: [L%ILVL%]%NAME%【稀有】
 ItemDisplay[jew !ID]: %NL%%ORANGE%※%BLUE%[L%ILVL%]%NAME%%ORANGE%※%NL% //未辨
 ItemDisplay[jew]: %ORANGE%※%BLUE%[L%ILVL%]%NAME%%ORANGE%※
