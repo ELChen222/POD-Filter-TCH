@@ -393,9 +393,9 @@ ItemDisplay[(CL6 OR WP12) MAG !RW !ID ILVL>50]: $$$$ // 顯示法師寶珠+死�
 // ===>>> 裝備 <<<===
 
 // 普通 進階 菁英
-ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME%【普通】%CONTINUE%
-ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME%【進階】%CONTINUE%
-ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME%【菁英】%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME%[普通]%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME%[進階]%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME%[菁英]%CONTINUE%
 
 ItemDisplay[CL1]: <德>%NAME%%CONTINUE%
 ItemDisplay[CL2]: <野>%NAME%%CONTINUE%
