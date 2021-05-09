@@ -487,7 +487,7 @@ ItemDisplay[UNI !ID umc !ETH]: %NL%【維爾登戈的心結】%NAME%%NOTIFY-ITEM
 ItemDisplay[UNI !ID 6lw]: %NL%【風之力】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//風之力
 
 //投擲
-ItemDisplay[UNI !ID 9ta]: %NL%【戰爭之鳥】%NAME%NOTIFY-ITEM%%SOUND-418%%NL%//戰爭之鳥
+ItemDisplay[UNI !ID 7bk]: %NL%【戰爭之鳥】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//戰爭之鳥
 
 //匕首
 // ItemDisplay[UNI !ID 7kr !ETH]: %NL%【裂肉者】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//裂肉者
