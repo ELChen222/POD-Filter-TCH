@@ -189,7 +189,7 @@ ItemDisplay[EQ7 !ETH !ID RARE)]: %NL%[L%ILVL%]%NAME%【頭環】%NL% //稀有未
 // 盾牌
 ItemDisplay[ush !ETH NMAG !RW SOCK=3 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%WHITE%【聖堂/夢境】{%ORANGE%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
 ItemDisplay[uit !ETH NMAG !RW (SOCK=0 OR SOCK=4) STAT91>0]: %NAME%%DARK_GREEN%(↓需求)%WHITE%【菁英】 //帶有減少需求的統治者大盾
-//ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>144]: %NAME%%DARK_GREEN%(145防↑)%WHITE%【菁英】 //145防以上0s統治者大盾
+ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>144]: %NAME%%DARK_GREEN%(145防↑)%WHITE%【菁英】 //145防以上0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>130]: %NAME%【打4孔】 //0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神/鳳凰】{%ORANGE%鳳凰: 26＋26＋28＋31%NL%精神: 7＋10＋9＋11} //統治者大盾4 - 精神/鳳凰
 
@@ -219,9 +219,9 @@ ItemDisplay[EQ2 !ETH DEF>589 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(590防↑)%GRA
 // 武器-劍
 ItemDisplay[crs NMAG !RW !INF SOCK=3]: %NAME%【新月/執法者】{%ORANGE%執法者: 11＋20＋18%NL%新月: 13＋22＋3%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //水晶劍3 - 新月
 ItemDisplay[crs NMAG !RW !ETH SOCK=4]: %NAME%【精神】{%ORANGE%精神: 7＋10＋9＋11%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //水晶劍4 - 精神
-ItemDisplay[crs NMAG !RW SOCK=5]: %NAME%【戰爭召喚】{%ORANGE%戰爭招喚: 11＋8＋23＋24＋27%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //水晶劍5 - 戰爭召喚
+ItemDisplay[crs NMAG !RW SOCK=5]: %NAME%【戰爭召喚】{%ORANGE%戰爭召喚: 11＋8＋23＋24＋27%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //水晶劍5 - 戰爭召喚
 ItemDisplay[7cr NMAG !RW SOCK=3]: %NAME%【執法者】{%ORANGE%執法者: 11＋20＋18%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //幻化之刃3 - 執法者
-ItemDisplay[7cr NMAG !RW SOCK=4]: %NAME%【熱情】{%ORANGE%熱情: 14＋9＋2＋20%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //幻化之刃4 - 熱情
+ItemDisplay[7cr NMAG !RW SOCK=4]: %NAME%【熱情/鳳凰】{%ORANGE%熱情: 14＋9＋2＋20%NL%鳳凰: 26＋26＋28＋31%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //幻化之刃4 - 熱情/鳳凰
 ItemDisplay[7cr NMAG !RW SOCK=5]: %NAME%【悔恨】{%ORANGE%毀恨: 5＋3＋28＋23＋8%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //幻化之刃5 - 悔恨
 ItemDisplay[7cr NMAG !RW SOCK=6 ED>10]: %NAME%【最後希望】{%ORANGE%最後希望: 31＋23＋31＋29＋31＋30%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //幻化之刃6 - 最後希望
 ItemDisplay[(7gd OR 7gs OR 7cm) NMAG !RW SOCK=3]: %NAME%【執法者】{%ORANGE%執法者: 11＋20＋18%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨神之刃、炎魔之刃、高地之劍3 - 執法者
@@ -233,10 +233,10 @@ ItemDisplay[7gd NMAG !RW SOCK=6]: %NAME%【寂靜】{%ORANGE%寂靜: 14＋2＋15
 // 武器-斧
 ItemDisplay[7wa ETH NMAG ED>10 SOCK=0]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【打6孔】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧(無) - 打6孔
 ItemDisplay[7wa ETH NMAG !SUP SOCK=0]: %NAME%【拼4-6孔】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%%ORANGE%死神: 15＋1＋26＋9＋25%NL%永恆: 11＋30＋24＋12＋29%NL%%ORANGE%誓約: 13＋21＋23＋17%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧(無) - 拼打孔
-ItemDisplay[7wa !ETH NMAG !RW SOCK=4]: %NAME%【熱情】{%ORANGE%熱情: 14＋9＋2＋20%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧4 - 熱情
+ItemDisplay[7wa !ETH NMAG !RW SOCK=4]: %NAME%【熱情/鳳凰】{%ORANGE%熱情: 14＋9＋2＋20%NL%鳳凰: 26＋26＋28＋31%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧4 - 熱情/鳳凰
 ItemDisplay[7wa !ETH NMAG !RW SOCK=5]: %NAME%【野獸/悔恨】{%ORANGE%毀恨: 5＋3＋28＋23＋8%NL%野獸: 30＋3＋22＋23＋17%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧5 - 野獸/悔恨
 ItemDisplay[7wa !ETH NMAG !RW SOCK=6]: %NAME%【最後希望】{%ORANGE%最後希望: 31＋23＋31＋29＋31＋30%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧6 - 最後希望
-ItemDisplay[7wa ETH NMAG !RW SOCK=4]: %NAME%【誓约】{%ORANGE%誓約: 13＋21＋23＋17%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧(無)4 - 誓约
+ItemDisplay[7wa ETH NMAG !RW SOCK=4]: %NAME%【誓约/鳳凰】{%ORANGE%誓約: 13＋21＋23＋17%NL%鳳凰: 26＋26＋28＋31%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧(無)4 - 誓约/鳳凰
 ItemDisplay[7wa ETH NMAG !RW SOCK=5]: %NAME%【永恒/死神】{%ORANGE%死神: 15＋1＋26＋9＋25%NL%永恆: 11＋30＋24＋12＋29%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧(無)5 - 永恒/死神
 ItemDisplay[7wa ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧(無)6 - 死亡呼吸
 ItemDisplay[wax NMAG !RW SOCK=5]: %NAME%【末日】{%ORANGE%末日: 15＋27＋22＋28＋32%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨戰斧5 - 末日
@@ -631,8 +631,9 @@ ItemDisplay[RARE rin ID (STAT360=1 AND STAT36=5)]: %NAME% %ORANGE%5%PDR %RED%C
 ItemDisplay[RARE rin ID (STAT360=1 AND STAT36=6)]: %NAME% %ORANGE%6%PDR %RED%C
 ItemDisplay[RARE amu ID (STAT360=1 AND ALLSK=1)]: %NAME% %ORANGE%+1ALLSK %RED%C
 ItemDisplay[RARE (amu OR rin) ID STAT360=1]: %NAME% %RED%C
-ItemDisplay[RARE (aq2 OR cq2) ID]: %NAME% %CONTINUE%
+ItemDisplay[RARE (aq2 OR cq2) ID]: %NAME%【稀有】%CONTINUE%
 ItemDisplay[RARE !ID (WEAPON OR ARMOR)]: [L%ILVL%]%NAME%【稀有】%CONTINUE% //未辨
+ItemDisplay[RARE !ID (aq2 OR cq2)]: %NAME%【稀有】%CONTINUE% //未辨箭袋
 ItemDisplay[RARE (WEAPON OR ARMOR) ID]: [L%ILVL%]%NAME% %CONTINUE%
 ItemDisplay[RARE EQ4 ID (STAT360=1 AND RES>4)]: %NAME%%ORANGE%ALLRES %RED%C
 ItemDisplay[RARE EQ4 ID (STAT360=1 AND STAT378>0)]: %NAME%%ORANGE%LifeGain %RED%C
