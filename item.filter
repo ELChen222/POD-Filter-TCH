@@ -150,12 +150,12 @@ ItemDisplay[cm2 UNI ID CLSK5>0]: %NAME% {%YELLOW%硬直恢復<狼>(FHR)：(13F)0
 ItemDisplay[cm2 UNI ID CLSK6>0]: %NAME% {%YELLOW%硬直恢復(FHR)：(9F)0／7／15／27／48／86／200(3F)%NL%施法速度(FCR)：(16F)0／8／16／27／42／65／102／174(9F)}
 
 // 符文
-ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10]: [#%NAME%#]%CONTINUE%
-ItemDisplay[r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: [##%NAME%##]%CONTINUE%
+ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10]: 【#%NAME%#】%CONTINUE%
+ItemDisplay[r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: 【##%NAME%##】%CONTINUE%
 ItemDisplay[(r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19) DIFF<2]: %NAME%%NOTIFY-ITEM%
-ItemDisplay[r20 OR r21 OR r22 OR r23 OR r24 OR r25]: %MAP%%NL%[#### %NAME% ####]%NL%%NOTIFY-Orange%
+ItemDisplay[r20 OR r21 OR r22 OR r23 OR r24 OR r25]: %MAP%%NL%【#### %NAME% ####】%NL%%NOTIFY-Orange%
 // ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: %NL%[%PURPLE%######%ORANGE%%NAME%%PURPLE%######%ORANGE%]%NL%%NOTIFY-Orange%
-ItemDisplay[RUNE>25]: %MAP%%NL%[%RED%#%ORANGE%#%YELLOW%#%GREEN%#%BLUE%#%GRAY%#%PURPLE%# %GOLD%%NAME%%PURPLE% %RED%#%ORANGE%#%YELLOW%#%GREEN%#%BLUE%#%GRAY%#%PURPLE%#%ORANGE%]%NL% %NOTIFY-GOLD%
+ItemDisplay[RUNE>25]: %MAP%%NL%【%RED%#%ORANGE%#%YELLOW%#%GREEN%#%BLUE%#%GRAY%#%PURPLE%# %GOLD%%NAME%%PURPLE% %RED%#%ORANGE%#%YELLOW%#%GREEN%#%BLUE%#%GRAY%#%PURPLE%#%ORANGE%】%NL% %NOTIFY-GOLD%
 
 ItemDisplay[r24]: {%GOLD%2021S11 - 0.125HR}
 ItemDisplay[r25]: {%GOLD%2021S11 - 0.25HR}
@@ -189,8 +189,8 @@ ItemDisplay[EQ7 !ETH !ID RARE)]: %NL%[L%ILVL%]%NAME%【頭環】%NL% //稀有未
 // 盾牌
 ItemDisplay[ush !ETH NMAG !RW SOCK=3 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%WHITE%【聖堂/夢境】{%ORANGE%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
 ItemDisplay[uit !ETH NMAG !RW (SOCK=0 OR SOCK=4) STAT91>0]: %NAME%%DARK_GREEN%(↓需求)%WHITE%【菁英】 //帶有減少需求的統治者大盾
-ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>144]: %NAME%%DARK_GREEN%(145防↑)%WHITE%【菁英】 //145防以上0s統治者大盾
-ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>130]: %NAME%【打4孔】 //0s統治者大盾
+//ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>144]: %NAME%%DARK_GREEN%(145防↑)%WHITE%【菁英】 //145防以上0s統治者大盾
+//ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>130]: %NAME%【打4孔】 //0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神/鳳凰】{%ORANGE%鳳凰: 26＋26＋28＋31%NL%精神: 7＋10＋9＋11} //統治者大盾4 - 精神/鳳凰
 
 // 衣服
@@ -526,13 +526,13 @@ ItemDisplay[UNI !ID baa !ETH]: %NL%【亞瑞特的面容】%NAME%%NOTIFY-ITEM%%S
 // ItemDisplay[UNI !ID bac !ETH]: %NL%【狼嚎】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//狼嚎
 
 //法師杖
-// ItemDisplay[UNI !ID oba]: %NL%【眼球】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//眼球
+ItemDisplay[UNI !ID oba]: %NL%【眼球】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//眼球
 ItemDisplay[UNI !ID obc]: %NL%【艾斯屈塔的脾氣】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//艾斯屈塔的脾氣
 ItemDisplay[UNI !ID obf]: %NL%【死亡深度】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//死亡深度
 
 //小德頭
 ItemDisplay[UNI !ID dra !ETH]: %NL%【加爾的長髮】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//加爾的長髮
-// ItemDisplay[UNI !ID drb !ETH]: %NL%【地獄之吻】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//地獄之吻
+ItemDisplay[UNI !ID drb !ETH]: %NL%【地獄之吻】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//地獄之吻
 ItemDisplay[UNI !ID dre !ETH]: %NL%【烏鴉之王】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//烏鴉之王
 
 //聖騎盾
@@ -540,7 +540,7 @@ ItemDisplay[UNI !ID pa9 !ETH]: %NL%【撒卡蘭姆使者】%NAME%%NOTIFY-ITEM%%S
 ItemDisplay[UNI !ID pac !ETH]: %NL%【阿爾瑪尼格拉】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//阿爾瑪尼格拉
 
 //套裝
-//ItemDisplay[SET !ID xtb]: 【艾爾多的成長】%NAME%%NOTIFY-ITEM%%SOUND-418%//艾爾多的成長
+ItemDisplay[SET !ID xtb]: 【艾爾多的成長】%NAME%%NOTIFY-ITEM%%SOUND-418%//艾爾多的成長
 //ItemDisplay[SET !ID uar]: 【不朽之王的靈魂牢籠】%NAME%%NOTIFY-ITEM%%SOUND-418%//不朽之王的靈魂牢籠
 //ItemDisplay[SET !ID xmg]: 【塔格奧之手)%NAME%%NOTIFY-ITEM%%SOUND-418%//塔格奧之手
 ItemDisplay[SET !ID 7qr]: %NL%【娜塔亞的記號】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//娜塔亞的記號
@@ -568,6 +568,7 @@ ItemDisplay[(WEAPON OR ARMOR)  NORM MAG CLVL>29]: // 30等後刪除頭冠外普�
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠以外所有藍裝
 ItemDisplay[NMAG EQ7 ETH]: // 刪除所有無形頭環
 ItemDisplay[(ci0 OR ci1) MAG]: // 刪除藍色頭環+寶冠
+ItemDisplay[EQ7 MAG ETH]: //刪除所有無形藍色頭環
 
 ItemDisplay[(WEAPON OR EQ1 OR EQ2 OR EQ3 OR EQ7 OR CL3 OR CL4 OR CL6 OR CL7) !CL5 !WP6 !amb !am5 !ama !amf DIFF=2 RARE !ID CLVL>79]: // 地獄難度80等後刪除頭冠、標槍、爪子、女族長之弓以外稀有武器、頭、衣服、盾牌
 ItemDisplay[(EQ4 OR EQ5 OR EQ6 OR EQ7 OR CL1 OR CL2) ETH DIFF=2 RARE !ID CLVL>79]: // 地獄難度80等後刪除無形稀有手套、鞋子、腰帶、頭冠
