@@ -189,16 +189,16 @@ ItemDisplay[EQ7 !ETH !ID RARE)]: %NL%[L%ILVL%]%NAME%【頭環】%NL% //稀有未
 // 盾牌
 ItemDisplay[ush !ETH NMAG !RW SOCK=3 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%WHITE%【聖堂/夢境】{%ORANGE%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
 ItemDisplay[uit !ETH NMAG !RW (SOCK=0 OR SOCK=4) STAT91>0]: %NAME%%DARK_GREEN%(↓需求)%WHITE%【菁英】 //帶有減少需求的統治者大盾
-//ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>144]: %NAME%%DARK_GREEN%(145防↑)%WHITE%【菁英】 //145防以上0s統治者大盾
-//ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>130]: %NAME%【打4孔】 //0s統治者大盾
+ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>144]: %NAME%%DARK_GREEN%(145防↑)%WHITE%【菁英】 //145防以上0s統治者大盾
+ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>130]: %NAME%【打4孔】 //0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神/鳳凰】{%ORANGE%鳳凰: 26＋26＋28＋31%NL%精神: 7＋10＋9＋11} //統治者大盾4 - 精神/鳳凰
 
 // 衣服
-// 菁英 15%ED衣服
+// 菁英 13~15%ED衣服
 //ItemDisplay[EQ2 ELT NMAG !RW !SOCK=1 !SOCK=2 ED=11]: %NAME%%DARK_GREEN%(11%ED)%CONTINUE%//11%ED
 //ItemDisplay[EQ2 ELT NMAG !RW !SOCK=1 !SOCK=2 ED=12]: %NAME%%DARK_GREEN%(12%ED)%CONTINUE%//12%ED
-//ItemDisplay[EQ2 ELT NMAG !RW !SOCK=1 !SOCK=2 ED=13]: %NAME%%DARK_GREEN%(13%ED)%CONTINUE%//13%ED
-//ItemDisplay[EQ2 ELT NMAG !RW !SOCK=1 !SOCK=2 ED=14]: %NAME%%DARK_GREEN%(14%ED)%CONTINUE%//14%ED
+ItemDisplay[EQ2 ELT NMAG !RW !SOCK=1 !SOCK=2 ED=13]: %NAME%%DARK_GREEN%(13%ED)%CONTINUE%//13%ED
+ItemDisplay[EQ2 ELT NMAG !RW !SOCK=1 !SOCK=2 ED=14]: %NAME%%DARK_GREEN%(14%ED)%CONTINUE%//14%ED
 ItemDisplay[EQ2 ELT NMAG !RW !SOCK=1 !SOCK=2 ED=15]: %NAME%%DARK_GREEN%(15%ED)%CONTINUE%//15%ED
 
 ItemDisplay[EQ2 ELT ETH DEF>749 NMAG !RW SOCK=0]: %NAME%%DARK_GREEN%(750防↑)%GRAY%【打孔】 //無形高防
@@ -410,7 +410,7 @@ ItemDisplay[bsd NMAG !RW !INF !ETH SOCK=4 ILVL>25 ILVL<41 (CLVL<50 DIFF<2)]: %NA
 ItemDisplay[WP8 NMAG !RW !CL7 SOCK=4 (CLVL<60 OR DIFF<2)]: %NAME%【眼光-長斧】{%ORANGE%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}  //60等前顯示 4s長斧
 ItemDisplay[WP7 NMAG !RW !CL7 SOCK=4 (CLVL<60 OR DIFF<2)]: %NAME%【眼光-長槍】{%ORANGE%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //60等前顯示 4s長槍
 
-//ItemDisplay[(wsp OR 9ws) NMAG !RW !ETH SOCK=4]: %NAME%【神聖雷擊-單手傳送】{%ORANGE%神聖雷擊: 5＋8＋9＋7%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨戰權杖、神屬權杖
+ItemDisplay[(wsp OR 9ws) NMAG !RW !ETH SOCK=4]: %NAME%【神聖雷擊-單手傳送】{%ORANGE%神聖雷擊: 5＋8＋9＋7%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨戰權杖、神屬權杖
 ItemDisplay[sbw NMAG !RW SOCK=3 DIFF<2 CLVL>19]: %NAME%【邊緣-商店打折】{%ORANGE%邊緣: 3＋7＋11%NL%%YELLOW%基礎速度: %WPNSPD%} //短弓
 
 // 缺錢
@@ -532,7 +532,7 @@ ItemDisplay[UNI !ID obf]: %NL%【死亡深度】%NAME%%NOTIFY-ITEM%%SOUND-418%%N
 
 //小德頭
 ItemDisplay[UNI !ID dra !ETH]: %NL%【加爾的長髮】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//加爾的長髮
-ItemDisplay[UNI !ID drb !ETH]: %NL%【地獄之吻】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//地獄之吻
+// ItemDisplay[UNI !ID drb !ETH]: %NL%【地獄之吻】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//地獄之吻
 ItemDisplay[UNI !ID dre !ETH]: %NL%【烏鴉之王】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//烏鴉之王
 
 //聖騎盾
@@ -540,7 +540,7 @@ ItemDisplay[UNI !ID pa9 !ETH]: %NL%【撒卡蘭姆使者】%NAME%%NOTIFY-ITEM%%S
 ItemDisplay[UNI !ID pac !ETH]: %NL%【阿爾瑪尼格拉】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//阿爾瑪尼格拉
 
 //套裝
-ItemDisplay[SET !ID xtb]: 【艾爾多的成長】%NAME%%NOTIFY-ITEM%%SOUND-418%//艾爾多的成長
+//ItemDisplay[SET !ID xtb]: 【艾爾多的成長】%NAME%%NOTIFY-ITEM%%SOUND-418%//艾爾多的成長
 //ItemDisplay[SET !ID uar]: 【不朽之王的靈魂牢籠】%NAME%%NOTIFY-ITEM%%SOUND-418%//不朽之王的靈魂牢籠
 //ItemDisplay[SET !ID xmg]: 【塔格奧之手)%NAME%%NOTIFY-ITEM%%SOUND-418%//塔格奧之手
 ItemDisplay[SET !ID 7qr]: %NL%【娜塔亞的記號】%NAME%%NOTIFY-ITEM%%SOUND-418%%NL%//娜塔亞的記號
@@ -615,6 +615,7 @@ ItemDisplay[UNI (aq2 OR cq2) ID]: %NAME% %CONTINUE% //箭袋
 ItemDisplay[UNI zvb ID (STAT360=1 AND STAT156=41)]: %NAME%%ORANGE%8%PIE %RED%C
 ItemDisplay[UNI zlb OR zhb OR umc ID (STAT360=1 AND STAT156=8)]: %NAME%%ORANGE%8%PIE %RED%C
 ItemDisplay[UNI EQ4 ID (STAT360=1 AND IAS=20)]: %NAME%%ORANGE%10%IAS %RED%C
+ItemDisplay[UNI ARMOR ID (STAT360=1 AND IAS=30)]: %NAME% %ORANGE%10%IAS %RED%C //30ias
 ItemDisplay[UNI EQ4 ID (STAT360=1 AND RES>4)]: %NAME%%ORANGE%ALLRES %RED%C
 ItemDisplay[UNI EQ4 ID (STAT360=1 AND STAT378>0)]: %NAME%%ORANGE%LifeGain %RED%C
 ItemDisplay[UNI (EQ1 OR EQ7) ID !ulm (STAT360=1 AND STAT378>0)]: %NAME%%ORANGE%LifeGain %RED%C
@@ -642,6 +643,7 @@ ItemDisplay[RARE (EQ1 OR EQ7) ID (STAT360=1 AND STAT378>0)]: %NAME%%ORANGE%LifeG
 ItemDisplay[RARE EQ5 ID (STAT360=1 AND STAT380=10)]: %NAME%%ORANGE%10%CR %RED%C
 ItemDisplay[RARE EQ5 ID (STAT360=1 AND RES>4)]: %NAME%%ORANGE%ALLRES %RED%C
 ItemDisplay[RARE EQ6 ID (STAT360=1 AND STAT156=8)]: %NAME%%ORANGE%8%PIE %RED%C
+ItemDisplay[RARE ARMOR ID (STAT360=1 AND IAS=30)]: %NAME% %ORANGE%10%IAS %RED%C //30ias
 ItemDisplay[RARE (WEAPON OR ARMOR OR aq2 OR cq2) ID (STAT360=1 AND SOCK>0)]: %NAME%%ORANGE%[%SOCKETS%S] %RED%C //腐洞
 ItemDisplay[RARE (WEAPON OR ARMOR OR aq2 OR cq2) ID STAT360=1]: %NAME%%PURPLE% %RED%C
 //手工
@@ -657,6 +659,7 @@ ItemDisplay[(!INF AND !NMAG AND !MAG AND !RARE AND !UNI AND !SET) amu ID (ALLSK=
 ItemDisplay[(!INF AND !NMAG AND !MAG AND !RARE AND !UNI AND !SET) amu ID (STAT360=1)]: [L%ILVL%]%NAME% %RED%C
 ItemDisplay[(!INF AND !NMAG AND !MAG AND !RARE AND !UNI AND !SET) (WEAPON OR ARMOR OR aq2 OR cq2) ID]: %NAME% %CONTINUE%
 ItemDisplay[(!INF AND !NMAG AND !MAG AND !RARE AND !UNI AND !SET) (WEAPON OR ARMOR OR aq2 OR cq2) ID (STAT360=1 AND SOCK>0)]: %NAME%%ORANGE%[%SOCKETS%] %RED%C //腐洞
+ItemDisplay[(!INF AND !NMAG AND !MAG AND !RARE AND !UNI AND !SET) ARMOR ID (STAT360=1 AND IAS=30)]: %NAME% %YELLOW%10%IAS %RED%C //30ias
 ItemDisplay[(!INF AND !NMAG AND !MAG AND !RARE AND !UNI AND !SET) (WEAPON OR ARMOR OR aq2 OR cq2) ID STAT360=1]: %NAME%%PURPLE% %RED%C
 ItemDisplay[(!INF AND !NMAG AND !MAG AND !RARE AND !UNI AND !SET) ID]: [L%ILVL%]%NAME% %CONTINUE%
 ItemDisplay[(!INF AND !NMAG AND !MAG AND !RARE AND !UNI AND !SET) ID (STAT360=1 AND SOCK>0)]: %NAME%%PURPLE%[%SOCKETS%S] %RED%C
