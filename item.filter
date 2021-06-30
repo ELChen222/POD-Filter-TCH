@@ -567,8 +567,8 @@ ItemDisplay[(WEAPON OR ARMOR) !EQ7 ELT NMAG !RW CLVL>49]: // 50等後刪除頭�
 ItemDisplay[(WEAPON OR ARMOR)  EXC NMAG !RW CLVL>29]: // 30等後刪除頭冠以外進階白裝
 ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>14]: // 15等後所有普通白裝
 ItemDisplay[(aq2 OR cq2 OR aqv OR cqv) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
-ItemDisplay[(WEAPON OR ARMOR)  NORM MAG CLVL>29]: // 30等後刪除頭冠外普通藍裝
-ItemDisplay[(WEAPON OR ARMOR) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠以外所有藍裝
+ItemDisplay[(WEAPON OR ARMOR) !am5 NORM MAG CLVL>29]: // 30等後刪除亞馬專用標槍外普通藍裝
+ItemDisplay[(WEAPON OR ARMOR) !EQ7 !am5 !ama !amf MAG CLVL>49]: // 50等後刪除頭冠、亞馬專用標槍以外所有藍裝
 ItemDisplay[NMAG EQ7 ETH]: // 刪除所有無形頭環
 ItemDisplay[(ci0 OR ci1) MAG]: // 刪除藍色頭環+寶冠
 ItemDisplay[EQ7 MAG ETH]: //刪除所有無形藍色頭環
