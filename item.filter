@@ -117,7 +117,7 @@ ItemDisplay[(ma2 OR ma6 OR ma7 OR ma12) RARE ID]: %RED%%NAME% %CORAL%T3 %RED%###
 ItemDisplay[(ma9 OR ma4 OR ma8 OR ma13) RARE ID]: %YELLOW%%NAME% %CORAL%T2 %YELLOW%#### %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(2)% //Dim Cellar + Musty Crypt + Desecrated Temple + Decomposing Settlement
 ItemDisplay[(ma10 OR ma5) MAG !ID]: %WHITE%## %BLUE%%NAME% T1 %WHITE%## [%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(19)%%BORDER(4,1)%%MAPICON(2)% //Icy Cavern or Pleasant Pastures + Frigid Plateau
 ItemDisplay[(ma2 OR ma6 OR ma7 OR ma12) MAG !ID]: %RED%###### %BLUE%%NAME% T3 %RED%###### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(41)%%BORDER(4,1)%%MAPICON(2)% //Forgotten Desert + Ruined Citadel + Burnt Forest + Baleful Alcazar
-ItemDisplay[(ma9 OR ma4 OR ma8) MAG !ID]: %YELLOW%#### %BLUE%%NAME% T2 %YELLOW%#### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(2)% //Dim Cellar + Musty Crypt + Desecrated Temple + Decomposing Settlement
+ItemDisplay[(ma9 OR ma4 OR ma8 OR ma13) MAG !ID]: %YELLOW%#### %BLUE%%NAME% T2 %YELLOW%#### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(2)% //Dim Cellar + Musty Crypt + Desecrated Temple + Decomposing Settlement + Decomposing Settlement
 ItemDisplay[(ma10 OR ma5) MAG ID]: %BLUE%%NAME% %CORAL%T1 %WHITE%## %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(19)%%BORDER(4,1)%%MAPICON(2)% //Icy Cavern or Pleasant Pastures + Frigid Plateau
 ItemDisplay[(ma2 OR ma6 OR ma7 OR ma12) MAG ID]: %BLUE%%NAME% %CORAL%T3 %RED%###### %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(41)%%BORDER(4,1)%%MAPICON(2)% //Forgotten Desert + Ruined Citadel + Burnt Forest + Baleful Alcazar
 ItemDisplay[(ma9 OR ma4 OR ma8 OR ma13) MAG ID]: %BLUE%%NAME% %CORAL%T2 %YELLOW%#### %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(2)% //Dim Cellar + Musty Crypt + Desecrated Temple + Decomposing Settlement
@@ -133,6 +133,8 @@ ItemDisplay[ma8]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR
 ItemDisplay[ma9]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[ma10]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[ma11]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[ma12]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[ma13]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 //ItemDisplay[MAP !ID (RARE OR MAG)]: %WHITE%## %TAN%%NAME% T1 %WHITE%## [%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(19)%%BORDER(4,1)%%MAPICON(2)%
 //ItemDisplay[MAP ID (RARE OR MAG)]: %WHITE%%NAME% %CORAL%T1 %WHITE%## %DGREEN% [L%ILVL%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(19)%%BORDER(4,1)%%MAPICON(2)%
 //ItemDisplay[ma0]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
