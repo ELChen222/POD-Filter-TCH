@@ -449,7 +449,7 @@ ItemDisplay[SET CLVL<40 !ETH tow]:  %GREEN%Sigon shield %ORANGE%(+1skill) %RED%(
 //Sigon gloves
 ItemDisplay[SET CLVL<40 !ETH hgl]:  %GREEN%Sigon gloves %ORANGE%(20AR, 10STR) %RED%(2piece 30IAS) %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Vidala
-ItemDisplay[SET !ETH tbt]:  %NAME% %ORANGE% Mood boots %NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[SET !ETH tbt]:  %NAME% %ORANGE% 穿刺鞋 %NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //SHOPING
 //charges items
 ItemDisplay[(MAG OR RARE) !ETH WP11 CHSK53>0]: %NAME% %WHITE%(%PURPLE%T%YELLOW%E%GREEN%L%RED%E %ORANGE%Charges%WHITE%) %WHITE%[%YELLOW%%PRICE% %GOLD%$%WHITE%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
