@@ -152,7 +152,7 @@ ItemDisplay[dhn]: %NL%        %ORANGE%@@%YELLOW% Diablo's Horn %ORANGE%@@       
 ItemDisplay[bey]: %NL%        %ORANGE%@@%YELLOW% Baal's Eye %ORANGE%@@        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(2991)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[mbr]: %NL%        %ORANGE%@@%YELLOW% Mephisto's Brain %ORANGE%@@        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(2990)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[std]: %NAME%
-ItemDisplay[SYNTH]: %SPACE%%NL%%RED%【融合 Synthesized】%GOLD%%NAME% %PURPLE%*%ORANGE%*%GREEN%*%GOLD%*%YELLOW%*%PURPLE%*%NL%%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(10)%
+ItemDisplay[SYNTH]: %SPACE%%NL%%RED%【融合 Synthesized】%GOLD%%NAME% %PURPLE%*%ORANGE%*%GREEN%*%GOLD%*%YELLOW%*%PURPLE%*%NL%%NOTIFYSOUND(19,MEDIUM)%%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(10)%
 //Utility
 //ItemDisplay[tsc]: %GREEN%!%WHITE%TP
 ItemDisplay[tsc CLVL<41]: %GREEN%!%WHITE%TP%BGCOLOR(15)%%BORDER(4,1)%
@@ -260,7 +260,7 @@ ItemDisplay[mss]: %NAME% %BGCOLOR(15)%%BORDER(4,1)%//Mephisto's Soulstone Act II
 ItemDisplay[hfh]: %NAME% %BGCOLOR(15)%%BORDER(4,1)%//Hellforge Hammer Act IV
 ItemDisplay[ice]: %NAME% %BGCOLOR(15)%%BORDER(4,1)%//Malah's Potion Act V
 ItemDisplay[tr2]: %NAME% %RED% ** %BGCOLOR(15)%%BORDER(4,1)%//Scroll of Resistance Act V
-ItemDisplay[SYNTH]: %NAME% %PURPLE%*%ORANGE%*%GREEN%*%GOLD%*%YELLOW%*%PURPLE%* <<BASIC>>
+//ItemDisplay[SYNTH]: %NAME% %PURPLE%*%ORANGE%*%GREEN%*%GOLD%*%YELLOW%*%PURPLE%* <<BASIC>>
 //Gems Chipped
 ItemDisplay[gcv CLVL<30]: chipped %NAME% %ORANGE%[%PURPLE%@%ORANGE%]%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[gcw CLVL<30]: chipped %NAME% %ORANGE%[%WHITE%@%ORANGE%]%BGCOLOR(15)%%BORDER(4,1)%
