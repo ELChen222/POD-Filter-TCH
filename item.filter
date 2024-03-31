@@ -41,10 +41,41 @@
 //CHSK53>0 (charges)
 //%EDAMAGE% and %EDEFENSE%
 //Rename Filterlevel 
-FilterLevel[1]: Normal
-FilterLevel[2]: Cowmap
-FilterLevel[3]: Normal Shows ID
-FilterLevel[4]: Nothing Yet
+//FilterLevel[1]: Normal
+//FilterLevel[2]: Cowmap
+//FilterLevel[3]: Normal Shows ID
+//FilterLevel[4]: Nothing Yet
+//Rename Filterlevel 
+FilterLevel[1]: Normal 
+FilterLevel[2]: Cowmap (strict)
+FilterLevel[3]: Nothing Yet
+Option[DefaultFilterLevel]: Normal
+Option[DefaultNotifyLevel]: LOW
+TextMacro[ALLRES]: %WHITE%%RES%%YELLOW%a%RED%l%BLUE%l%YELLOW%r%RED%e%BLUE%s
+TextMacro[RUNESEND]: %PURPLE%%%YELLOW%%%GOLD%%%RED%%%PURPLE%%%GREEN%%%%%
+TextMacro[RUNESSTART]: %NL%     %GREEN% %%%%%PURPLE%%%RED%%%GOLD%%%YELLOW%%%PURPLE%% %WHITE%
+TextMacro[MAP]: %PURPLE%###%LIGHT_GRAY% [L%ILVL%]
+TextMacro[STARS]: %YELLOW%*%RED%*%BLUE%*%GREEN%*%PURPLE%*%SAGE%*
+TextMacro[STARS1]: %YELLOW%*%RED%*%BLUE%*%GREEN%*%PURPLE%*%SAGE%*
+TextMacro[STARS2]: %YELLOW%*%RED%*%BLUE%*%GREEN%*%PURPLE%*%SAGE%*%LIGHT_GRAY%*%SAGE%*%PURPLE%*%GREEN%*%BLUE%*%RED%*%YELLOW%*
+ItemStyle[HR]: MapIcon = 2, MapIconColor = 0, BorderColor = 32, BorderSize = 2, BackgroundColor = 138, NotificationPriority = HIGH, NotificationColor = ITEM, NotificationSoundPriority = MEDIUM
+ItemStyle[MID]: MapIcon = 3, MapIconColor = 3, BorderColor = 4, BorderSize = 2, BackgroundColor = 15, NotificationPriority = HIGH, NotificationColor = ITEM, NotificationSoundPriority = MEDIUM
+ItemStyle[BASIC]: BorderColor = 4, BorderSize = 2, BackgroundColor = 172
+ItemStyle[BASICLOW]: NotificationPriority = LOW, NotificationColor = ITEM, BorderColor = 4, BorderSize = 2, BackgroundColor = 15
+ItemStyle[BASICMED]: NotificationPriority = MEDIUM, NotificationColor = ITEM, BorderColor = 4, BorderSize = 2, BackgroundColor = 15
+ItemStyle[BASICHIGH]: NotificationPriority = HIGH, NotificationColor = ITEM, BorderColor = 4, BorderSize = 2, BackgroundColor = 15
+ItemStyle[BASICHIGH1]: MapIcon = 3, MapIconColor = 0, NotificationColor = ITEM, NotificationPriority = HIGH, BorderColor = 4, BorderSize = 2, BackgroundColor = 15
+ItemStyle[BASIC1]: BorderColor = 4, BorderSize = 2, BackgroundColor = 138
+ItemStyle[BASICNOT]: NotificationPriority = HIGH, NotificationColor = ITEM, BorderColor = 4, BorderSize = 2, BackgroundColor = 138
+ItemStyle[MAP1W]: MapIcon = 14, BorderColor = 32, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 19, NotificationPriority = HIGH, NotificationSoundPriority = MEDIUM, NotificationSound = "@local\sfx\common\barbarian\bar_needkey"
+ItemStyle[MAP2Y]: MapIcon = 15, BorderColor = 168, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 16, NotificationPriority = HIGH, NotificationSoundPriority = MEDIUM, NotificationSound = "@local\sfx\common\paladin\pal_needkey"
+ItemStyle[MAP3R]: MapIcon = 13, BorderColor = 98, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 41, NotificationPriority = HIGH, NotificationSoundPriority = MEDIUM, NotificationSound = "@local\sfx\common\assassin\ass_needkey"
+ItemStyle[OOC]: MapIcon = 36, BorderColor = 132, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 59, NotificationPriority = HIGH, NotificationSoundPriority = MEDIUM, NotificationSound = "@local\sfx\act3\alkor\alk_act3_intro"
+ItemStyle[UBERD]: MapIcon = 47, BorderColor = 132, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 59, NotificationPriority = HIGH, NotificationSoundPriority = HIGH, NotificationSound = "@local\sfx\act2\monster\durieltaunt1"
+ItemStyle[UBERL]: MapIcon = 47, BorderColor = 132, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 59, NotificationPriority = HIGH, NotificationSoundPriority = HIGH, NotificationSound = "@local\sfx\act1\monster\andarieltaunt1"
+ItemStyle[UBERI]: MapIcon = 47, BorderColor = 132, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 59, NotificationPriority = HIGH, NotificationSoundPriority = HIGH, NotificationSound = "@local\sfx\act4\izual\izualtaunt1"
+ItemStyle[KEYS]: MapIcon = 47, BorderColor = 132, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 59, NotificationPriority = HIGH, NotificationSoundPriority = HIGH, NotificationSound = "@local\sfx\common\barbarian\bar_impossible"
+ItemStyle[GG]: MapIcon = 26, BorderColor = 155, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 35, NotificationPriority = HIGH, NotificationSoundPriority = MEDIUM
 //Basics	%BOLD%
 //Hide Gold Piles Smaller Than (<) X
 //ItemDisplay[GOLD<4000]:
@@ -1381,8 +1412,9 @@ ItemDisplay[RW uit FCR>24]: %TAN%%NAME% %PURPLE%** %WHITE%(%DGREEN%%STAT(105,0)%
 ItemDisplay[RW CL3 FCR>34]: %TAN%%NAME% %PURPLE%** %WHITE%(%DGREEN%%STAT(105,0)% FCR {%DGREEN%%STAT(105,0)% FCR%WHITE%)%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[RW CL3 FCR>24]: %TAN%%NAME% %PURPLE%** %WHITE%(%DGREEN%%STAT(105,0)% FCR {%DGREEN%%STAT(105,0)% FCR%WHITE%)%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[RW ETH]: %ORANGE%ETH %TAN%%NAME% %PURPLE%**%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[RW !(CL1)]: %TAN%%NAME% %PURPLE%**%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[RW CL1 TABSK41=5]: %TAN%德魯伊頭盔%NL%%TAN%變化 Metamorphosis %PURPLE%** %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[RW !(CL1) !(EQ2 SOCK=3 RES=10 STAT96=25)]: %TAN%%NAME% %PURPLE%**%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[RW CL1 TABSK41=5]: %TAN%德魯伊頭盔%NL%%TAN%變化 Metamorphosis %PURPLE%** %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)% //變化
+ItemDisplay[RW EQ2 SOCK=3 RES=10 STAT96=25]: %TAN%護甲%NL%%TAN%催促 Hustle %PURPLE%** %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)% //催促
 //Best Rares (crystalsword, dimensional blade, phase blade, Circlets, Amulets, Rings, Gloves, Boots, Belts, Jewels)
 ItemDisplay[RARE !ETH 7cr !ID]: %NL%       %YELLOW%%NAME% %PURPLE%*%ORANGE%*%GREEN%*%GOLD%*%YELLOW%*%PURPLE%*%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(3)%
 ItemDisplay[RARE !ETH 9cr !ID]: %NL%       %YELLOW%%NAME% %PURPLE%*%ORANGE%*%GREEN%*%GOLD%*%YELLOW%*%PURPLE%*%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(3)%
