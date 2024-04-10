@@ -1643,7 +1643,11 @@ ItemDisplay[(7wa OR 7gi OR 7fb OR 7gd) ETH NMAG SOCK=5]: %ORANGE%ETH %DGREEN%%NA
 ItemDisplay[7gi SUP ETH NMAG SOCK=0]: %ORANGE%ETH %DGREEN%%NAME% %YELLOW%[%SOCKETS%]{%ORANGE%Larzuk 6os%NL%%PURPLE%Roll: %WHITE%Ral %SAGE%+ %LIGHT_GRAY%Amn %SAGE%+ %PURPLE%完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
 //Faith
 ItemDisplay[(amc OR amb) SOCK=4 NMAG TABSK0>2]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%]{%PURPLE%Faith: %WHITE%Ohm %SAGE%+ %LIGHT_GRAY%Jah %SAGE%+ %WHITE%Lem %SAGE%+ %LIGHT_GRAY%Eld}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[!RW !(amc OR amb) NMAG ELT WP9 SOCK=4]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%]{%PURPLE%Faith: %WHITE%Ohm %SAGE%+ %LIGHT_GRAY%Jah %SAGE%+ %WHITE%Lem %SAGE%+ %LIGHT_GRAY%Eld}%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[(amc OR amb) SOCK=0 NMAG TABSK0>2]: %DGREEN%%NAME%   {%PURPLE%Roll: %WHITE%Ral %SAGE%+ %LIGHT_GRAY%Amn %SAGE%+ %PURPLE%完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
+//Mist
+ItemDisplay[(amc OR amb) SOCK=5 NMAG TABSK0>2]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%]{%PURPLE%Mist: %WHITE%Cham %SAGE%+ %LIGHT_GRAY%Shael %SAGE%+ %WHITE%Gul %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %WHITE%Ith}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[!RW !(amc OR amb) NMAG ELT WP9 SOCK=5]: %DGREEN%%NAME% %WHITE%(%ORANGE%%SOCKETS%%WHITE%){%PURPLE%Mist: %WHITE%Cham %SAGE%+ %LIGHT_GRAY%Shael %SAGE%+ %WHITE%Gul %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %WHITE%Ith}%BGCOLOR(15)%%BORDER(4,1)%
 //Last Wish
 //6os Berserker Axe, Phase Blade, Thunder Maul = LW = Last Wish
 ItemDisplay[(7wa OR 7gm) !ETH NMAG SOCK=6]: %DGREEN%%NAME% %YELLOW%[%SOCKETS%]%BGCOLOR(15)%%BORDER(4,1)%
@@ -1756,6 +1760,7 @@ ItemDisplay[INF !RW !leg]:
 //Leveling - New Character Experience - New Player Experience - NPE
 //Non-Magic Bows, Magic Bows, Rare Bows
 ItemDisplay[!RW NMAG ELT WP9 SOCK=4]: %DGREEN%%NAME% %WHITE%(%ORANGE%%SOCKETS%%WHITE%)%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[!RW NMAG ELT WP9 SOCK=5]: %DGREEN%%NAME% %WHITE%(%ORANGE%%SOCKETS%%WHITE%)%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[!RW NMAG NORM WP9 SOCK=4]: %DGREEN%%NAME% %WHITE%(%ORANGE%%SOCKETS%%WHITE%)%BGCOLOR(15)%%BORDER(4,1)%
 //Assassin Leveling
 //Magic claws, Rare claws
