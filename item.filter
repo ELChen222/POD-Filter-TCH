@@ -1368,7 +1368,7 @@ ItemDisplay[MAG ID cm3 RES>9 STAT96>0]: %RED% Grand Charm %ORANGE%[%ILVL%]  %WHI
 ItemDisplay[MAG ID cm3 RES>9]: %RED% Grand Charm %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%GOLD%全抗%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[MAG ID cm2 RES>5]: %RED% Large Charm %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%GOLD%全抗BGCOLOR(15)%%BORDER(4,1)%
 //Grandcharms lv91+
-ItemDisplay[cm3 !ID ILVL>90]: %NL%%RED% %NAME% %ORANGE%[%ILVL%] {%YELLOW%Rolls 45life Skiller%NL%%ORANGE%PGx3 Rolls}%NL%%BORDER(4,1)%%BGCOLOR(172)%%MAPICON(3)% // 91LV Skiller+45life unid
+ItemDisplay[cm3 !ID ILVL>90]: %NL%%RED% %NAME% %ORANGE%[%ILVL%] {%YELLOW%Rolls 45life Skiller%NL%%ORANGE%PGx3 Rolls}%NL%%NOTIFY(ITEM,MEDIUM)%%BORDER(4,1)%%BGCOLOR(172)%%MAPICON(3)% // 91LV Skiller+45life unid
 ItemDisplay[cm3 ILVL>90]: %RED% %NAME% %ORANGE%[%ILVL%] {%YELLOW%Rolls 45life Skiller%NL%%ORANGE%PGx3 Rolls}%BORDER(4,1)%%BGCOLOR(172)%// 91LV Skiller+45life
 
 //JEWELS
