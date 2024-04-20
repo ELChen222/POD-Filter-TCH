@@ -89,7 +89,7 @@ ItemDisplay[mp4 CLVL<70]: %BLUE%!%WHITE%M%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[mp4]: 
 ItemDisplay[mp5 FILTERLVL=2]:
 ItemDisplay[mp5]: %BLUE% !%WHITE%M+ %LIGHT_GRAY% %BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[rvs]: %NL%%PURPLE% r %WHITE%35% %PURPLE%%NL%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[rvs]: %PURPLE% r %WHITE%35% %PURPLE%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[hp1 CLVL<15]: %RED%!%WHITE%Minor Heal%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[hp2 CLVL<18]: %RED%!%WHITE%Light Heal%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[hp3 CLVL<24]: %RED%!%WHITE%Healing%BGCOLOR(15)%%BORDER(4,1)%
@@ -1838,7 +1838,7 @@ ItemDisplay[NMAG ETH (ama OR am5 OR amf) ILVL>25]:
 //BELTS
 //Exceptional and Elite Quality belts ONLY
 //Caster Belts (Vampirefang/Sharkskin) + ITH + AMETHYST + JEWEL
-ItemDisplay[MAG (uvc OR zvb) CLVL<80]: %NAME%%ORANGE%Caster Belt  {%PURPLE%Caster: %WHITE%Ith %SAGE%+ %BLUE%Jewel %SAGE%+ %PURPLE%完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[MAG (uvc OR zvb) CLVL<80]: %NAME%%ORANGE%Caster Belt  {%PURPLE%Caster: %WHITE%Ith %SAGE%+ %BLUE%Jewel %SAGE%+ %PURPLE%完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
 
 //Armor: Helm, Body, Shield, Boot, Belt (ilvl 66+)
 //Elite Helm - Shown
