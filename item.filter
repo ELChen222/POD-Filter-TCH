@@ -961,12 +961,12 @@ ItemDisplay[UNI !ETH ID 9m9]: %NAME% %GREEN%[%SOCKETS%] {%PURPLE%升級: %ORANGE
 //Bloodtree Stump
 ItemDisplay[UNI !ETH !ID 9m9 CLVL<85]: %NAME% %ORANGE%Bloodtree Stump %NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Hexfire
-ItemDisplay[!ETH UNI !ID 9sb]: %RED% Extra Hydra%NL%%GOLD%%NAME% %ORANGE%Yahtzees Hexfire %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
-ItemDisplay[ETH UNI !ID 9sb]: %RED% Extra Hydra%NL%%ORANGE%ETH %GOLD%%NAME% %ORANGE%Yahtzees Hexfire %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
-ItemDisplay[!ETH UNI ID 9sb SOCK=0]: %RED% Extra Hydra%NL%%GOLD%Shimshir%NL%%GOLD%Yahtzees Hexfire   %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
-ItemDisplay[ETH UNI ID 9sb SOCK=0]:  %RED% Extra Hydra%NL%%ORANGE%ETH %GOLD%Shamshir%NL%%GOLD%Yahtzees Hexfire   %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
-ItemDisplay[!ETH UNI ID 9sb]: %RED% Extra Hydra%NL%%GOLD%Shimshir%NL%%GOLD%Yahtzees Hexfire %GREEN%[%SOCKETS%] %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
-ItemDisplay[ETH UNI ID 9sb]:  %RED% Extra Hydra%NL%%ORANGE%ETH %GOLD%Shamshir%NL%%GOLD%Yahtzees Hexfire %GREEN%[%SOCKETS%] %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
+//ItemDisplay[!ETH UNI !ID 9sb]: %RED% Extra Hydra%NL%%GOLD%%NAME% %ORANGE%Yahtzees Hexfire %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+//ItemDisplay[ETH UNI !ID 9sb]: %RED% Extra Hydra%NL%%ORANGE%ETH %GOLD%%NAME% %ORANGE%Yahtzees Hexfire %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
+//ItemDisplay[!ETH UNI ID 9sb SOCK=0]: %RED% Extra Hydra%NL%%GOLD%Shimshir%NL%%GOLD%Yahtzees Hexfire   %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+//ItemDisplay[ETH UNI ID 9sb SOCK=0]:  %RED% Extra Hydra%NL%%ORANGE%ETH %GOLD%Shamshir%NL%%GOLD%Yahtzees Hexfire   %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
+//ItemDisplay[!ETH UNI ID 9sb]: %RED% Extra Hydra%NL%%GOLD%Shimshir%NL%%GOLD%Yahtzees Hexfire %GREEN%[%SOCKETS%] %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+//ItemDisplay[ETH UNI ID 9sb]:  %RED% Extra Hydra%NL%%ORANGE%ETH %GOLD%Shamshir%NL%%GOLD%Yahtzees Hexfire %GREEN%[%SOCKETS%] %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
 //Warshrike
 ItemDisplay[UNI !ETH !ID 7bk]: %NL%       %NAME% %ORANGE%Warshrikes       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[ETH UNI !ID 7bk]: %ORANGE%ETH %GOLD%%NAME% %ORANGE%Warshrikes       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
