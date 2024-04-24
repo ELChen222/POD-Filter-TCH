@@ -1468,8 +1468,8 @@ ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult 
 ItemDisplay[xtp NMAG !ETH ED=15 SOCK=3]: %DGREEN%%NAME% %YELLOW%[%SOCKETS%] %WHITE%(%ORANGE%15%ED%WHITE%){%PURPLE%Enigma: %WHITE%Jah %SAGE%+ %LIGHT_GRAY%Ith %SAGE%+ %WHITE%Ber%NL%%PURPLE%Dragon: %WHITE%Sur %SAGE%+ %LIGHT_GRAY%Lo %SAGE%+ %WHITE%Sol}%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[xtp NMAG !ETH ED=15 SOCK=0]: %DGREEN%%NAME%   %WHITE%( %ORANGE%15%ED %WHITE%){%ORANGE%Larzuk 3os}%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[NMAG !ETH !SUP SOCK=0 (xtp OR ltp)]: %DGREEN% %NAME%  {%ORANGE%Larzuk 3os%NL%%PURPLE%Roll: %WHITE%Tal %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %YELLOW%完美黃寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[NMAG !ETH !SOCK=1 (xtp OR ltp)]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[NMAG (SOCK=1 OR ETH) (xtp OR ltp)]:
+//ItemDisplay[NMAG !ETH !SOCK=1 (xtp OR ltp)]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[NMAG (SOCK=1 OR SOCK=2 OR ETH) (xtp OR ltp)]:
 //Shields 
 //4os Monarch, 15ed Monarch 4os, Monarch -REQ
 ItemDisplay[uit SUP !ETH NMAG STAT91>0 SOCK=4]: %DGREEN% %NAME% %PURPLE%[%SOCKETS%] %WHITE%(%ORANGE% -REQ%WHITE%){%PURPLE%Spirit: %WHITE%Tal %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %WHITE%Ort %SAGE%+ %LIGHT_GRAY%Amn%NL%%PURPLE%Phoenix: %WHITE%Vex %SAGE%+ %LIGHT_GRAY%Vex %SAGE%+ %WHITE%Lo %SAGE%+ %LIGHT_GRAY%Jah}%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
