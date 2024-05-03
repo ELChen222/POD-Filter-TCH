@@ -103,18 +103,18 @@ ItemDisplay[mp1 CLVL>14]:
 ItemDisplay[mp2 CLVL>19]:
 ItemDisplay[mp3 CLVL>25]:
 //Essences (Respec Token) 
-ItemDisplay[tes]: %GOLD%Suffering %BLUE%[A1]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ceh]: %GOLD%Hatred %YELLOW%[A3]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[bet]: %GOLD%Terror %RED%[A4]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[fed]: %GOLD%Destruction %GREEN%[A5]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[toa]: %GOLD%重置徽章 Token of Absolution %PURPLE%###%NOTIFY(ITEM)%%BGCOLOR(19)%%BORDER(4,1)%
+ItemDisplay[tes]: %NAME% %BLUE%[A1]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[ceh]: %NAME% %YELLOW%[A3]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[bet]: %NAME% %RED%[A4]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[fed]: %NAME% %GREEN%[A5]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[toa]: %NAME% %PURPLE%###%NOTIFY(ITEM)%%BGCOLOR(19)%%BORDER(4,1)%
 
 // 特殊物品
 ItemDisplay[pk1]: %WHITE%※※%ORANGE%%NAME% (女伯爵)%WHITE%※※%NOTIFY-ORANGE%{%WHITE%紅門掉落器官為%GOLD%《煉獄火炬 中護身符》%WHITE%跟%GOLD%《毀滅 小護身符》%WHITE%門票%NL%恐懼之鑰+憎恨之鑰+毀滅之鑰=隨機一種紅門，共三種} //恐懼之鑰
 ItemDisplay[pk2]: %WHITE%※※%ORANGE%%NAME% (召喚者)%WHITE%※※%NOTIFY-ORANGE%{%WHITE%紅門掉落器官為%GOLD%《煉獄火炬 中護身符》%WHITE%跟%GOLD%《毀滅 小護身符》%WHITE%門票%NL%恐懼之鑰+憎恨之鑰+毀滅之鑰=隨機一種紅門，共三種} //憎恨之鑰
 ItemDisplay[pk3]: %WHITE%※※%ORANGE%%NAME% (尼拉塞克)%WHITE%※※%NOTIFY-ORANGE%{%WHITE%紅門掉落器官為%GOLD%《煉獄火炬 中護身符》%WHITE%跟%GOLD%《毀滅 小護身符》%WHITE%門票%NL%恐懼之鑰+憎恨之鑰+毀滅之鑰=隨機一種紅門，共三種} //毀滅之鑰
 ItemDisplay[dhn OR bey OR mbr]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※{%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判，掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＝超級崔斯特瑞姆，掉落%GOLD%《煉獄火炬 中護身符》} //暗黑破壞神之角 巴爾之眼 墨菲斯托之腦
-ItemDisplay[toa]: %NAME% {使用後消耗並重置屬性與技能} //赦免徽章
+//ItemDisplay[toa]: %NAME% {使用後消耗並重置屬性與技能} //赦免徽章
 ItemDisplay[tes]: %NAME% (A1.A2){赦免徽章使用後可重置屬性與技能%NL%扭曲＋充盈＋燃燒＋潰爛毀滅精華＝赦免徽章(Token of Absolution)} //扭曲的苦痛精華
 ItemDisplay[ceh]: %NAME% (A3){赦免徽章使用後可重置屬性與技能%NL%扭曲＋充盈＋燃燒＋潰爛毀滅精華＝赦免徽章(Token of Absolution)} //充盈的憎恨精華
 ItemDisplay[bet]: %NAME% (A4){赦免徽章使用後可重置屬性與技能%NL%扭曲＋充盈＋燃燒＋潰爛毀滅精華＝赦免徽章(Token of Absolution)} //燃燒的恐懼精華
@@ -141,27 +141,27 @@ ItemDisplay[cx6]: %PURPLE%##%ORANGE%%NAME%%PURPLE%##%NOTIFY(ITEM)%%BGCOLOR(138)%
 ItemDisplay[cx7]: %PURPLE%##%ORANGE%%NAME%%PURPLE%##%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[cx8]: %PURPLE%Orb %ORANGE%of %PURPLE%Enchantment%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[(ma10 OR ma5) RARE !ID]: %WHITE%## %TAN%%NAME% T1 %WHITE%## [%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(19)%%BORDER(4,1)%%MAPICON(22)% //Icy Cavern or Pleasant Pastures + Frigid Plateau
-ItemDisplay[(ma2 OR ma6 OR ma7 OR ma12) RARE !ID]: %RED%###### %TAN%%NAME% T3 %RED%###### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(41)%%BORDER(4,1)%%MAPICON(22)% //Forgotten Desert + Ruined Citadel + Burnt Forest + Baleful Alcazar
+ItemDisplay[(ma2 OR ma6 OR ma7 OR ma12) RARE !ID]: %RED%###### %TAN%%NAME% T3 %RED%###### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(41)%%BORDER(4,1)%%MAPICON(23)% //Forgotten Desert + Ruined Citadel + Burnt Forest + Baleful Alcazar
 
-ItemDisplay[(ma9 OR ma4 OR ma8) RARE !ID]: %YELLOW%#### %TAN%%NAME% T2 %YELLOW%#### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(22)% //Dim Cellar + Musty Crypt + Desecrated Temple
-ItemDisplay[ma13 RARE !ID]: %YELLOW%#### %TAN%腐化之地 遺物 T2 %YELLOW%#### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(22)% //Decomposing Settlement
+ItemDisplay[(ma9 OR ma4 OR ma8) RARE !ID]: %YELLOW%#### %TAN%%NAME% T2 %YELLOW%#### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(43)% //Dim Cellar + Musty Crypt + Desecrated Temple
+ItemDisplay[ma13 RARE !ID]: %YELLOW%#### %TAN%腐化之地 遺物 T2 %YELLOW%#### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(43)% //Decomposing Settlement
 
 ItemDisplay[(ma10 OR ma5) RARE ID]: %WHITE%%NAME% %CORAL%T1 %WHITE%## %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(19)%%BORDER(4,1)%%MAPICON(22)% //Icy Cavern + Frigid Plateau
-ItemDisplay[(ma2 OR ma6 OR ma7 OR ma12) RARE ID]: %RED%%NAME% %CORAL%T3 %RED%###### %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(41)%%BORDER(4,1)%%MAPICON(22)% //Forgotten Desert + Ruined Citadel + Burnt Forest + Baleful Alcazar
+ItemDisplay[(ma2 OR ma6 OR ma7 OR ma12) RARE ID]: %RED%%NAME% %CORAL%T3 %RED%###### %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(41)%%BORDER(4,1)%%MAPICON(23)% //Forgotten Desert + Ruined Citadel + Burnt Forest + Baleful Alcazar
 
-ItemDisplay[(ma9 OR ma4 OR ma8) RARE ID]: %YELLOW%%NAME% %CORAL%T2 %YELLOW%#### %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(22)% //Dim Cellar + Musty Crypt + Desecrated Temple
-ItemDisplay[ma13 RARE ID]: %YELLOW% 腐化之地 遺物 %CORAL%T2 %YELLOW%#### %DGREEN% [L%ILVL%] %NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(22)% //Decomposing Settlement
+ItemDisplay[(ma9 OR ma4 OR ma8) RARE ID]: %YELLOW%%NAME% %CORAL%T2 %YELLOW%#### %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(43)% //Dim Cellar + Musty Crypt + Desecrated Temple
+ItemDisplay[ma13 RARE ID]: %YELLOW% 腐化之地 遺物 %CORAL%T2 %YELLOW%#### %DGREEN% [L%ILVL%] %NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(43)% //Decomposing Settlement
 
 ItemDisplay[(ma10 OR ma5) MAG !ID]: %WHITE%## %BLUE%%NAME% T1 %WHITE%## [%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(19)%%BORDER(4,1)%%MAPICON(22)% //Icy Cavern or Pleasant Pastures + Frigid Plateau
-ItemDisplay[(ma2 OR ma6 OR ma7 OR ma12) MAG !ID]: %RED%###### %BLUE%%NAME% T3 %RED%###### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(41)%%BORDER(4,1)%%MAPICON(22)% //Forgotten Desert + Ruined Citadel + Burnt Forest + Baleful Alcazar
-ItemDisplay[(ma9 OR ma4 OR ma8) MAG !ID]: %YELLOW%#### %BLUE%%NAME% T2 %YELLOW%#### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(22)% //Dim Cellar + Musty Crypt + Desecrated Temple + Decomposing Settlement
-ItemDisplay[ma13 MAG !ID]: %YELLOW%#### %BLUE%腐化之地 遺物 T2 %YELLOW%#### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(22)% //Decomposing Settlement
+ItemDisplay[(ma2 OR ma6 OR ma7 OR ma12) MAG !ID]: %RED%###### %BLUE%%NAME% T3 %RED%###### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(41)%%BORDER(4,1)%%MAPICON(23)% //Forgotten Desert + Ruined Citadel + Burnt Forest + Baleful Alcazar
+ItemDisplay[(ma9 OR ma4 OR ma8) MAG !ID]: %YELLOW%#### %BLUE%%NAME% T2 %YELLOW%#### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(43)% //Dim Cellar + Musty Crypt + Desecrated Temple + Decomposing Settlement
+ItemDisplay[ma13 MAG !ID]: %YELLOW%#### %BLUE%腐化之地 遺物 T2 %YELLOW%#### %WHITE%[%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(43)% //Decomposing Settlement
 
 ItemDisplay[(ma10 OR ma5) MAG ID]: %BLUE%%NAME% %CORAL%T1 %WHITE%## %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(19)%%BORDER(4,1)%%MAPICON(22)% //Icy Cavern or Pleasant Pastures + Frigid Plateau
-ItemDisplay[(ma2 OR ma6 OR ma7 OR ma12) MAG ID]: %BLUE%%NAME% %CORAL%T3 %RED%###### %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(41)%%BORDER(4,1)%%MAPICON(22)% //Forgotten Desert + Ruined Citadel + Burnt Forest + Baleful Alcazar
+ItemDisplay[(ma2 OR ma6 OR ma7 OR ma12) MAG ID]: %BLUE%%NAME% %CORAL%T3 %RED%###### %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(41)%%BORDER(4,1)%%MAPICON(23)% //Forgotten Desert + Ruined Citadel + Burnt Forest + Baleful Alcazar
 
-ItemDisplay[(ma9 OR ma4 OR ma8) MAG ID]: %BLUE%%NAME% %CORAL%T2 %YELLOW%#### %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(22)% //Dim Cellar + Musty Crypt + Desecrated Temple
-ItemDisplay[ma13 MAG ID]: %BLUE%腐化之地 遺物 %CORAL%T2 %YELLOW%#### %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(22)% //Decomposing Settlement
+ItemDisplay[(ma9 OR ma4 OR ma8) MAG ID]: %BLUE%%NAME% %CORAL%T2 %YELLOW%#### %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(43)% //Dim Cellar + Musty Crypt + Desecrated Temple
+ItemDisplay[ma13 MAG ID]: %BLUE%腐化之地 遺物 %CORAL%T2 %YELLOW%#### %DGREEN% [L%ILVL%]%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(18)%%BORDER(4,1)%%MAPICON(43)% //Decomposing Settlement
 
 ItemDisplay[maz]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[ma1]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
@@ -276,7 +276,7 @@ ItemDisplay[r20 OR r21 OR r22 OR r23]: %NL%%RED% %%%%% %GOLD%%NAME% %RED%%%%%%%N
 //ItemDisplay[r31]: %NL%     %GOLD%%%%%RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%GRAY%%%PURPLE%% %GOLD% JAH Rune [31] %RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%GRAY%%%PURPLE%%%GOLD%%%% %NOTIFYSOUND(19,MEDIUM)%     %NL%%NOTIFY(PURPLE)%%BORDER(13,3)%%BGCOLOR(172)%%MAPICON(10)%
 //ItemDisplay[r32]: %NL%     %GOLD%%%%%RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%GRAY%%%PURPLE%% %GOLD% CHAM Rune [32] %RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%GRAY%%%PURPLE%%%GOLD%%%% %NOTIFYSOUND(19,MEDIUM)%     %NL%%NOTIFY(PURPLE)%%BORDER(13,3)%%BGCOLOR(172)%%MAPICON(10)%
 //ItemDisplay[r33]: %NL%     %GOLD%%%%%RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%GRAY%%%PURPLE%% %GOLD% ZOD Rune [33] %RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%GRAY%%%PURPLE%%%GOLD%%%% %NOTIFYSOUND(19,MEDIUM)%     %NL%%NOTIFY(PURPLE)%%BORDER(13,3)%%BGCOLOR(172)%%MAPICON(10)%
-ItemDisplay[r24 OR r25]: %NL%     %GOLD%%%%RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%PURPLE%% %GOLD%%NAME% %RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%PURPLE%%%GOLD%%% %NOTIFYSOUND(19,MEDIUM)%     %NL%%NOTIFY(PURPLE)%%BORDER(13,2)%%BGCOLOR(172)%%MAPICON(10)%
+ItemDisplay[r24 OR r25]: %NL%     %GOLD%%%%RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%PURPLE%% %GOLD%%NAME% %RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%PURPLE%%%GOLD%%% %NOTIFYSOUND(19,MEDIUM)%     %NL%%NOTIFY(PURPLE)%%BORDER(13,2)%%BGCOLOR(172)%%MAPICON(36)%
 ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: %NL%     %GOLD%%%%%RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%GRAY%%%PURPLE%% %GOLD%%NAME% %RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%GRAY%%%PURPLE%%%GOLD%%%% %NOTIFYSOUND(19,MEDIUM)%     %NL%%NOTIFY(PURPLE)%%BORDER(13,3)%%BGCOLOR(172)%%MAPICON(10)%
 //misc quest
 ItemDisplay[bks]: %NAME% %RED% ** %BGCOLOR(15)%%BORDER(4,1)%//Scroll of Inifuss Act I
@@ -1410,9 +1410,9 @@ ItemDisplay[MAG cm2 ILVL<80 DIFFICULTY<2]: %NAME% %ORANGE%[L%ILVL%]%BGCOLOR(15)%
 ItemDisplay[MAG cm2 ILVL<80]:
 ItemDisplay[MAG cm2 ILVL>79]:
 //TORCH ANNI GHEEDS
-ItemDisplay[UNI cm1]: %NL%       %NAME% %BOLD% ANNI        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[UNI cm2]: %NL%       %NAME% %BOLD% TORCH        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[UNI cm3]: %NL%       %NAME% %BOLD% GHEEDS        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+//ItemDisplay[UNI cm1]: %NL%       %NAME% %BOLD% ANNI        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+//ItemDisplay[UNI cm2]: %NL%       %NAME% %BOLD% TORCH        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+//ItemDisplay[UNI cm3]: %NL%       %NAME% %BOLD% GHEEDS        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 //Runewords 符文組
 ItemDisplay[RW SOCK=3 STAT39>47 STAT114>0]: %TAN%Ancestor's Pride %PURPLE%**%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[RW uit FCR>34]: %TAN%%NAME% %PURPLE%** %WHITE%(%ORANGE%%STAT(105,0)% FCR%WHITE%){%ORANGE%35 FCR%WHITE%}%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
