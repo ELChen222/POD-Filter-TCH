@@ -136,7 +136,7 @@ ItemDisplay[cm2 UNI ID CLSK6>0]: %NAME% {%YELLOW%硬直恢復(FHR)：(9F)0／7�
 
 //PoD Items
 //ItemDisplay[cx5]: %NL%%ORANGE%ôô %PURPLE%Orb of Corruption %ORANGE%ôô%NL%%NOTIFY(ITEM)%%NOTIFYSOUND(3542,MEDIUM)%%BGCOLOR(59)%%BORDER(4,1)%%MAPICON(2)%
-ItemDisplay[cx5]: %NL%%ORANGE%@@@@@@@ %PURPLE%%NAME% Orb of Corruption %ORANGE%@@@@@@@%NL%%NOTIFY(ITEM)%%NOTIFYSOUND(19,MEDIUM)%%BGCOLOR(59)%%BORDER(4,1)%%MAPICON(8)%
+ItemDisplay[cx5]: %NL%%RED%✠✠✠%ORANGE%✠✠%YELLOW%✠✠%GREEN%✠✠%BLUE%✠✠%GRAY%✠✠ %NAME% Orb of Corruption %GRAY%✠✠%BLUE%✠✠%GREEN%✠✠%YELLOW%✠✠%ORANGE%✠✠%RED%✠✠✠%NL%%NOTIFY(ITEM)%%NOTIFYSOUND(19,MEDIUM)%%BGCOLOR(59)%%BORDER(4,1)%%MAPICON(8)%
 ItemDisplay[cx6]: %PURPLE%##%ORANGE%%NAME%%PURPLE%##%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[cx7]: %PURPLE%##%ORANGE%%NAME%%PURPLE%##%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[cx8]: %PURPLE%Orb %ORANGE%of %PURPLE%Enchantment%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
@@ -1426,7 +1426,7 @@ ItemDisplay[MAG cm2 ILVL<80 DIFFICULTY<2]: %NAME% %ORANGE%[L%ILVL%]%BGCOLOR(15)%
 ItemDisplay[MAG cm2 ILVL<80]:
 ItemDisplay[MAG cm2 ILVL>79]:
 //TORCH ANNI GHEEDS
-ItemDisplay[UNI cm1]: %NL%       %NAME% %BOLD% ANNI        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+//ItemDisplay[UNI cm1]: %NL%       %NAME% %BOLD% ANNI        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[UNI cm2]: %NL%       %NAME% %BOLD% TORCH        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[UNI cm3]: %NL%       %NAME% %BOLD% GHEEDS        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 //Runewords 符文組
