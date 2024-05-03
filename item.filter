@@ -125,14 +125,17 @@ ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
 //ItemDisplay[cx5]: %WHITE%※%PURPLE%%NAME% (ooc)%WHITE%※%NOTIFY(ITEM)%{傳送之書、鑑定之書有腐化說明%NL%與裝備放入赫拉迪克方塊合成可腐化裝備} //腐化寶珠
 ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //暗黑破壞神的靈魂石
 ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※%NOTIFY(ITEM)%{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //混沌之鑰
-ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
-ItemDisplay[cm2 UNI ID CLSK0>0]: %NAME% {%YELLOW%硬直恢復(FHR)：(11F)0／6／13／20／32／52／86／174／600(3F)%NL%施法速度(FCR)：(19F)0／7／14／22／32／48／68／99／152(13F)}
-ItemDisplay[cm2 UNI ID CLSK1>0]: %NAME% {%YELLOW%硬直恢復(FHR)：(15F)0／5／9／14／20／30／42／60／86／142／280(5F)%NL%施法速度<閃電>(FCR)：(19F)0／7／15／23／35／52／78／117／194(11F)%NL%施法速度(FCR)：(13F)0／9／20／37／63／105／200(7F)}
-ItemDisplay[cm2 UNI ID CLSK2>0]: %NAME% {%YELLOW%硬直恢復(FHR)：(13F)0／5／10／16／26／39／56／86／152／377(4F)%NL%施法速度(FCR)：(15F)0／9／18／30／48／75／125(9F)}
-ItemDisplay[cm2 UNI ID CLSK3>0]: %NAME% {%YELLOW%硬直恢復(FHR)：(9F)0／7／15／27／48／86／200(3F)%NL%施法速度(FCR)：(15F)0／9／18／30／48／75／125(9F)}
-ItemDisplay[cm2 UNI ID CLSK4>0]: %NAME% {%YELLOW%硬直恢復(FHR)：(9F)0／7／15／27／48／86／200(3F)%NL%施法速度(FCR)：(13F)0／9／20／37／63／105／200(7F)}
-ItemDisplay[cm2 UNI ID CLSK5>0]: %NAME% {%YELLOW%硬直恢復<狼>(FHR)：(13F)0／5／10／16／24／37／54／86／152／360(4F)%NL%施法速度<狼>(FCR)：(16F)0／6／14／26／40／60／95／157(9F)%NL%硬直恢復<熊>(FHR)：(7F)0／9／20／42／86／280(2F)%NL%施法速度<熊>(FCR)：(17F)0／7／15／26／40／63／99／163／330(9F)%NL%硬直恢復(FHR)：(13F)0／5／10／16／26／39／56／86／152／377(4F)%NL%施法速度(FCR)：(18F)0／4／10／19／30／45／68／99／163(10F)}
-ItemDisplay[cm2 UNI ID CLSK6>0]: %NAME% {%YELLOW%硬直恢復(FHR)：(9F)0／7／15／27／48／86／200(3F)%NL%施法速度(FCR)：(16F)0／8／16／27／42／65／102／174(9F)}
+//ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
+
+ItemDisplay[UNI cm1]: %SAGE%[屬性%STAT(0,0)% / 抗性%RES% / 經驗%STAT(85,0)%]%NL%%GOLD%%NAME% %RED%ANNI%CONTINUE%%NOTIFYSOUND(7,MEDIUM)%%MAPICON(6)%%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[UNI cm2]: %SAGE%[屬性%STAT(0,0)% / 抗性%RES%]%NL%%GOLD%%NAME%%CONTINUE%%NOTIFYSOUND(7,MEDIUM)%%MAPICON(7)%%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[cm2 UNI ID CLSK0>0]: %NAME% %RED%AMA TORCH{%YELLOW%硬直恢復(FHR)：(11F)0／6／13／20／32／52／86／174／600(3F)%NL%施法速度(FCR)：(19F)0／7／14／22／32／48／68／99／152(13F)}
+ItemDisplay[cm2 UNI ID CLSK1>0]: %NAME% %RED%SOR TORCH{%YELLOW%硬直恢復(FHR)：(15F)0／5／9／14／20／30／42／60／86／142／280(5F)%NL%施法速度<閃電>(FCR)：(19F)0／7／15／23／35／52／78／117／194(11F)%NL%施法速度(FCR)：(13F)0／9／20／37／63／105／200(7F)}
+ItemDisplay[cm2 UNI ID CLSK2>0]: %NAME% %RED%NEC TORCH{%YELLOW%硬直恢復(FHR)：(13F)0／5／10／16／26／39／56／86／152／377(4F)%NL%施法速度(FCR)：(15F)0／9／18／30／48／75／125(9F)}
+ItemDisplay[cm2 UNI ID CLSK3>0]: %NAME% %RED%PAL TORCH{%YELLOW%硬直恢復(FHR)：(9F)0／7／15／27／48／86／200(3F)%NL%施法速度(FCR)：(15F)0／9／18／30／48／75／125(9F)}
+ItemDisplay[cm2 UNI ID CLSK4>0]: %NAME% %RED%BAR TORCH{%YELLOW%硬直恢復(FHR)：(9F)0／7／15／27／48／86／200(3F)%NL%施法速度(FCR)：(13F)0／9／20／37／63／105／200(7F)}
+ItemDisplay[cm2 UNI ID CLSK5>0]: %NAME% %RED%DRU TORCH{%YELLOW%硬直恢復<狼>(FHR)：(13F)0／5／10／16／24／37／54／86／152／360(4F)%NL%施法速度<狼>(FCR)：(16F)0／6／14／26／40／60／95／157(9F)%NL%硬直恢復<熊>(FHR)：(7F)0／9／20／42／86／280(2F)%NL%施法速度<熊>(FCR)：(17F)0／7／15／26／40／63／99／163／330(9F)%NL%硬直恢復(FHR)：(13F)0／5／10／16／26／39／56／86／152／377(4F)%NL%施法速度(FCR)：(18F)0／4／10／19／30／45／68／99／163(10F)}
+ItemDisplay[cm2 UNI ID CLSK6>0]: %NAME% %RED%ASN TORCH{%YELLOW%硬直恢復(FHR)：(9F)0／7／15／27／48／86／200(3F)%NL%施法速度(FCR)：(16F)0／8／16／27／42／65／102／174(9F)}
 
 //PoD Items
 //ItemDisplay[cx5]: %NL%%ORANGE%ôô %PURPLE%Orb of Corruption %ORANGE%ôô%NL%%NOTIFY(ITEM)%%NOTIFYSOUND(3542,MEDIUM)%%BGCOLOR(59)%%BORDER(4,1)%%MAPICON(2)%
