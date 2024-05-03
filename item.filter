@@ -1410,9 +1410,9 @@ ItemDisplay[MAG cm2 ILVL<80 DIFFICULTY<2]: %NAME% %ORANGE%[L%ILVL%]%BGCOLOR(15)%
 ItemDisplay[MAG cm2 ILVL<80]:
 ItemDisplay[MAG cm2 ILVL>79]:
 //TORCH ANNI GHEEDS
-//ItemDisplay[UNI cm1]: %NL%       %NAME% %BOLD% ANNI        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
-//ItemDisplay[UNI cm2]: %NL%       %NAME% %BOLD% TORCH        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
-//ItemDisplay[UNI cm3]: %NL%       %NAME% %BOLD% GHEEDS        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[UNI cm1]: %NL%       %NAME% %BOLD% ANNI        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[UNI cm2]: %NL%       %NAME% %BOLD% TORCH        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[UNI cm3]: %NL%       %NAME% %BOLD% GHEEDS        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 //Runewords 符文組
 ItemDisplay[RW SOCK=3 STAT39>47 STAT114>0]: %TAN%Ancestor's Pride %PURPLE%**%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[RW uit FCR>34]: %TAN%%NAME% %PURPLE%** %WHITE%(%ORANGE%%STAT(105,0)% FCR%WHITE%){%ORANGE%35 FCR%WHITE%}%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
