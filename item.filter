@@ -789,11 +789,11 @@ ItemDisplay[!ETH UNI !ID uhg]: %NL%       %NAME% %ORANGE%Steelrend       %NL%%NO
 //Bloodfist
 ItemDisplay[!ETH UNI !ID vgl]: %NL%       %NAME% %ORANGE%Bloodfist       %NL%%NOTIFY(ITEM,MEDIUM)%%NOTIFYSOUND(4636,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Chancies
-ItemDisplay[!ETH UNI !ID mgl]: %NAME% %ORANGE%Chancies %NOTIFY(ITEM)%%NOTIFYSOUND(4086,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+//ItemDisplay[!ETH UNI !ID mgl]: %NAME% %ORANGE%Chancies %NOTIFY(ITEM)%%NOTIFYSOUND(4086,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Magefist
 ItemDisplay[!ETH UNI !ID tgl]: %NL%       %NAME% %ORANGE%Magefist       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Frosties
-ItemDisplay[!ETH UNI !ID hgl]: %NAME% %ORANGE%Frostburns %NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+//ItemDisplay[!ETH UNI !ID hgl]: %NAME% %ORANGE%Frostburns %NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Laying of Hands
 ItemDisplay[SET !ID ulg]: %NL%       %NAME% %ORANGE%LoH Laying of Hands       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[SET ID ulg STAT68>29]: %NAME% {%ORANGE%30 IAS%WHITE%}
@@ -824,7 +824,7 @@ ItemDisplay[!ETH UNI !ID xtb]: %NL%       %NAME% %ORANGE%War Travs        %NL%%N
 ItemDisplay[!ETH UNI ID xtb]: %WHITE%(%PURPLE%%STAT(80,0)% MF%WHITE%)%NL%%GOLD%%NAME%%NL% %NOTIFY(ITEM)%%NOTIFYSOUND(4614,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[ETH UNI !ID xtb]: %ORANGE%ETH %GOLD%%NAME% %PURPLE%¤%BGCOLOR(15)%%BORDER(4,1)%
 //ETH Sandstorm Trek
-ItemDisplay[UNI !ETH !ID uvb]: %NAME% %ORANGE%Sand Treks %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[UNI !ETH !ID uvb]: %NAME% %ORANGE%Sand Treks %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%
 ItemDisplay[UNI ETH !ID uvb]: %ORANGE%ETH %GOLD%%NAME% %ORANGE%Sand Treks %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 //Marrowwalk
 ItemDisplay[UNI !ETH !ID umb]: %NAME% %ORANGE%Marrowwalks %NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
@@ -839,7 +839,7 @@ ItemDisplay[UNI !ETH !ID xhb]: %NL%       %NAME%  %ORANGE%Gore Riders       %NL%
 //Shadow Dancer
 ItemDisplay[UNI !ETH !ID uhb]: %NAME% %ORANGE%Shadow Dancers %NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Tearhaunch
-ItemDisplay[UNI !ETH !ID hbt]: %NAME% %ORANGE%Tearhaunchs %BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[UNI !ETH !ID hbt]: %NAME% %ORANGE%Tearhaunchs %BGCOLOR(35)%%BORDER(1,1)%
 //Aldur's
 ItemDisplay[!ETH SET !ID xtb]: %NL%       %NAME% %ORANGE%Aldurs Boots       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH SET !ID uul]: %NAME% %ORANGE% Aldurs Armor %NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
