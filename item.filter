@@ -96,6 +96,8 @@ ItemDisplay[(qui OR lea OR hla OR stu OR brs OR xui OR ltp OR xea OR xla OR xtu 
 ItemDisplay[(rng OR chn OR spl OR fld OR gth OR aar OR xng OR xhn OR xpl OR xld OR xth OR xar OR ung OR uhn OR upl OR uld OR uth OR uar OR lrg OR gts OR xrg OR xts OR urg OR uts)]: %NAME%[中]%CONTINUE%
 ItemDisplay[(scl OR plt OR ful OR xcl OR xlt OR xul OR ucl OR ult OR uul OR tow OR xow OR uow)]: %NAME%[重]%CONTINUE%
 
+ItemDisplay[!RW !NMAG !INF !RW !SET !UNI SOCK>0]: %NAME%%GREEN%[%SOCKETS%]%CONTINUE%
+
 //攻速、範圍提示
 //-30
 ItemDisplay[(9sm OR 7cr OR 9tw OR 7tw)]: %NAME%{%TEAL%[基速: -30, 範圍: %RANGE%]}%CONTINUE%
@@ -116,9 +118,12 @@ ItemDisplay[(rxb)]: %NAME%{%TEAL%[基速: -40]}%CONTINUE%
 //-20
 ItemDisplay[(bkf OR 9bk OR 7bk)]: %NAME%{%TEAL%[基速: -20]}%CONTINUE%
 //-10
-ItemDisplay[(hbw OR cbw OR 8hb OR 8cb OR 6hb OR 6cb OR lxb OR 8lx OR 6lx OR amb OR jav OR tsp OR 9ja OR 9ts OR 7ja OR 7ts OR bal OR 9b8 OR 7b8 OR am5 OR ama OR amf)]: %NAME%{%TEAL%[礎度: -10]}%CONTINUE%
+ItemDisplay[(hbw OR cbw OR 8hb OR 8cb OR 6hb OR 6cb OR lxb OR 8lx OR 6lx OR amb OR jav OR tsp OR 9ja OR 9ts OR 7ja OR 7ts OR bal OR 9b8 OR 7b8 OR am5 OR ama OR amf)]: %NAME%{%TEAL%[基速: -10]}%CONTINUE%
 // 0~20
 ItemDisplay[(WP9 OR WP10) !(8rx OR 6rx OR rxb OR bkf OR 9bk OR 7bk OR hbw OR cbw OR 8hb OR 8cb OR 6hb OR 6cb OR lxb OR 8lx OR 6lx OR amb OR jav OR tsp OR 9ja OR 9ts OR 7ja OR 7ts OR bal OR 9b8 OR 7b8 OR am5 OR ama OR amf)]: %NAME%{%TEAL%[基速: %WPNSPD%]}%CONTINUE%
+
+//賭博 高亮顯示
+//ItemDisplay[NMAG !ID EQ7 OR aq2]: %NAME%%BGCOLOR(138)%
 
 //Basics	%BOLD%
 //Hide Gold Piles Smaller Than (<) X
@@ -245,7 +250,9 @@ ItemDisplay[mbr]: %NL%        %ORANGE%@@%YELLOW% Mephisto's Brain %ORANGE%@@    
 ItemDisplay[std]: %NAME%
 //ItemDisplay[SYNTH]: %SPACE%%NL%%RED%【融合 Synthesized】%GOLD%%NAME% %RED%⛤%ORANGE%⛤%YELLOW%⛤%GREEN%⛤%%⛤%PURPLE%⛤%NL%%NOTIFYSOUND(19,MEDIUM)%%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(10)% 
 //ItemDisplay[SYNTH]: %NL%%NAME% %RED%【融合 Synthesized】%RED%⛤%ORANGE%⛤%YELLOW%⛤%GREEN%⛤%BLUE%⛤%PURPLE%⛤%NL%%NOTIFYSOUND(19,MEDIUM)%%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(10)%
-ItemDisplay[SYNTH]: %NL%%NAME%%NL%%RED%★%ORANGE%★%YELLOW%★%GREEN%★%BLUE%★%PURPLE%★%ORANGE% Synthesized %RED%%ITEMNAME% %PURPLE%★%BLUE%★%GREEN%★%YELLOW%★%ORANGE%★%RED%★%GOLD%%NOTIFYSOUND(34,LARGE)%%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(90)% 
+ItemDisplay[SYNTH SOCK>0]: %NL%%NAME%%NL%%RED%★%ORANGE%★%YELLOW%★%GREEN%★%BLUE%★%PURPLE%★%ORANGE% Synthesized %RED%%ITEMNAME% %PURPLE%★%BLUE%★%GREEN%★%YELLOW%★%ORANGE%★%RED%★ %GREEN%[%SOCKETS%]%GOLD%%NOTIFYSOUND(34,LARGE)%%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(90)% 
+ItemDisplay[SYNTH SOCK=0]: %NL%%NAME%%NL%%RED%★%ORANGE%★%YELLOW%★%GREEN%★%BLUE%★%PURPLE%★%ORANGE% Synthesized %RED%%ITEMNAME% %PURPLE%★%BLUE%★%GREEN%★%YELLOW%★%ORANGE%★%RED%★ %GOLD%%NOTIFYSOUND(34,LARGE)%%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(90)% 
+
 //Utility
 //ItemDisplay[tsc]: %GREEN%!%WHITE%TP
 ItemDisplay[tsc CLVL<41]: %GREEN%!%WHITE%TP%BGCOLOR(15)%%BORDER(4,1)%
