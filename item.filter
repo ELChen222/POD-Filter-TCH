@@ -34,6 +34,17 @@
 //%BORDER(138,1)%%BGCOLOR(172)% 藍框+黑底
 //%NOTIFY(ITEM,MEDIUM)%
 
+//─────────────────────────────────────────────────────────────────────────────────────────────────
+SYMBOL：
+⎄⎅⎆⎇⎈⎉⎊⎋⎌⎍⎎⎏⎐⎑⎒⎗⎘⎙⎚
+⎾⎿⏀⏁⏂⏃⏄⏅⏆⏇⏈⏉⏊⏋⏌⏍
+①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳
+ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ
+◌☊☋☌☍☓☤☥☦☧☨☩☪☫☬☭☮☯☸☹☺☻☽☾☿♀♁♂♃♄♅♆♇♈♉♊♋♌♍♎♏♐♑♒♓♩♪♫♬♭♮♯♰♱♲♳♴♵♶♷♸♹♺♻♼♽♾⚐⚑
+⚒⚓⚔⚕⚖⚗⚘⚙⚚⚛⚜⚝⚢⚣⚤⚥⚦⚧⚨⚩⚭⚮⚯⚰⚱⚲⚳⚴⚵⚶⚷⚸⚹⚺⚻⚼⛎⛢⛣⛤⛥⛦⛧⛨⛩⛪⛫⛬⛭⛮⛯⛰⛱⛲⛳⛴⛵⛶⛷⛸⛹⛺⛻⛼⛽⛾⛿✝✞✟✠✡
+EX：⛾⛤⛥⛦⛧✡⚚⚛⚜⚝⛪⛯
+//─────────────────────────────────────────────────────────────────────────────────────────────────
+
 //Find Item/Skillcodes at: 	https://pathofdiablo.com/wiki/index.php?title=Talk:Loot_Filtration_Codes#Edit_Permissions
 //
 //New code to test
@@ -76,6 +87,39 @@ ItemStyle[UBERL]: MapIcon = 47, BorderColor = 132, BorderSize = 2, NotificationC
 ItemStyle[UBERI]: MapIcon = 47, BorderColor = 132, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 59, NotificationPriority = HIGH, NotificationSoundPriority = HIGH, NotificationSound = "@local\sfx\act4\izual\izualtaunt1"
 ItemStyle[KEYS]: MapIcon = 47, BorderColor = 132, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 59, NotificationPriority = HIGH, NotificationSoundPriority = HIGH, NotificationSound = "@local\sfx\common\barbarian\bar_impossible"
 ItemStyle[GG]: MapIcon = 26, BorderColor = 155, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 35, NotificationPriority = HIGH, NotificationSoundPriority = MEDIUM
+
+//基礎型態 輕中重
+ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME% [普通]%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME% [進階]%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME% [菁英]%CONTINUE%
+ItemDisplay[(qui OR lea OR hla OR stu OR brs OR xui OR ltp OR xea OR xla OR xtu OR xrs OR xtp OR uui OR uea OR ula OR utu OR urs OR utp OR buc OR sml OR kit OR bsh OR spk OR xuc OR xml OR xit OR xsh OR xpk OR uuc OR uml OR uit OR ush OR upk) OR CL3 OR CL4 ]: %NAME%[輕]%CONTINUE%
+ItemDisplay[(rng OR chn OR spl OR fld OR gth OR aar OR xng OR xhn OR xpl OR xld OR xth OR xar OR ung OR uhn OR upl OR uld OR uth OR uar OR lrg OR gts OR xrg OR xts OR urg OR uts)]: %NAME%[中]%CONTINUE%
+ItemDisplay[(scl OR plt OR ful OR xcl OR xlt OR xul OR ucl OR ult OR uul OR tow OR xow OR uow)]: %NAME%[重]%CONTINUE%
+
+//攻速、範圍提示
+//-30
+ItemDisplay[(9sm OR 7cr OR 9tw OR 7tw)]: %NAME%{%TEAL%[基速: -30, 範圍: %RANGE%]}%CONTINUE%
+//-20
+ItemDisplay[(scm OR 7sm OR dgr OR kri OR 9dg OR 9kr OR 7dg OR 7kr OR gwn OR bwn OR 9bw OR 7bw OR brn OR 9br OR 7br OR btl OR 9lw OR 7lw)]: %NAME%{%TEAL%[基速: -20, 範圍: %RANGE%]}%CONTINUE%
+//-15
+ItemDisplay[(7la OR 72h)]: %NAME%{%TEAL%[基速: -15, 範圍: %RANGE%]}%CONTINUE%
+//-10
+ItemDisplay[(sbr OR lsd OR flb OR 9sb OR 9ls OR 9fb OR 7sb OR 7ls OR 7b7 OR bld OR 9bl OR 7bl OR mpi OR lax OR gax OR 9mp OR 9la OR 9ga OR 7mp OR 7ga OR clb OR 9cl OR 7cl OR wsp OR 9ws OR 7ws OR sst OR 8ss OR 6ss OR scy OR wsc OR 9s8 OR 9wc OR 7s8 OR 7wc OR spr OR 9sr OR 7sr OR ktr OR clw OR skr OR 9wb OR 9cs OR 7wb OR 7cs OR ob1 OR ob2 OR ob6 OR ob7 OR obb OR obc OR fla OR 9fl OR 7fl)]: %NAME%{%TEAL%[基速: -10, 範圍: %RANGE%]}%CONTINUE%
+//-5
+ItemDisplay[7cm]: %NAME%{%TEAL%[基速: -5, 範圍: %RANGE%]}%CONTINUE%
+// 0~20
+ItemDisplay[WEAPON !WP9 !WP10 !(9sm OR 7cr OR 9tw OR 7tw OR scm OR 7sm OR dgr OR kri OR 9dg OR 9kr OR 7dg OR 7kr OR gwn OR bwn OR 9bw OR 7bw OR brn OR 9br OR 7br OR btl OR 9lw OR 7lw OR sbr OR lsd OR flb OR 9sb OR 9ls OR 9fb OR 7sb OR 7ls OR 7b7 OR bld OR 9bl OR 7bl OR mpi OR lax OR gax OR 9mp OR 9la OR 9ga OR 7mp OR 7ga OR clb OR 9cl OR 7cl OR wsp OR 9ws OR 7ws OR sst OR 8ss OR 6ss OR scy OR wsc OR 9s8 OR 9wc OR 7s8 OR 7wc OR spr OR 9sr OR 7sr OR ktr OR clw OR skr OR 9wb OR 9cs OR 7wb OR 7cs OR ob1 OR ob2 OR ob6 OR ob7 OR obb OR obc OR fla OR 9fl OR 7fl OR 7la OR 72h OR 7cm)]: %NAME%{%TEAL%[基速: %WPNSPD%, 範圍: %RANGE%]}%CONTINUE%
+//-60
+ItemDisplay[(8rx OR 6rx)]: %NAME%{%TEAL%[基速: -60]}%CONTINUE%
+//-40
+ItemDisplay[(rxb)]: %NAME%{%TEAL%[基速: -40]}%CONTINUE%
+//-20
+ItemDisplay[(bkf OR 9bk OR 7bk)]: %NAME%{%TEAL%[基速: -20]}%CONTINUE%
+//-10
+ItemDisplay[(hbw OR cbw OR 8hb OR 8cb OR 6hb OR 6cb OR lxb OR 8lx OR 6lx OR amb OR jav OR tsp OR 9ja OR 9ts OR 7ja OR 7ts OR bal OR 9b8 OR 7b8 OR am5 OR ama OR amf)]: %NAME%{%TEAL%[礎度: -10]}%CONTINUE%
+// 0~20
+ItemDisplay[(WP9 OR WP10) !(8rx OR 6rx OR rxb OR bkf OR 9bk OR 7bk OR hbw OR cbw OR 8hb OR 8cb OR 6hb OR 6cb OR lxb OR 8lx OR 6lx OR amb OR jav OR tsp OR 9ja OR 9ts OR 7ja OR 7ts OR bal OR 9b8 OR 7b8 OR am5 OR ama OR amf)]: %NAME%{%TEAL%[基速: %WPNSPD%]}%CONTINUE%
+
 //Basics	%BOLD%
 //Hide Gold Piles Smaller Than (<) X
 //ItemDisplay[GOLD<4000]:
@@ -140,7 +184,7 @@ ItemDisplay[cm2 UNI ID CLSK6>0]: %NAME% %RED%TORCH ASN{%YELLOW%硬直恢復(FHR)
 
 //PoD Items
 //ItemDisplay[cx5]: %NL%%ORANGE%ôô %PURPLE%Orb of Corruption %ORANGE%ôô%NL%%NOTIFY(ITEM)%%NOTIFYSOUND(3542,MEDIUM)%%BGCOLOR(59)%%BORDER(4,1)%%MAPICON(2)%
-ItemDisplay[cx5]: %NL%%RED%✠✠✠%ORANGE%✠%YELLOW%✠%GREEN%✠%BLUE%✠%GRAY%✠%PURPLE%✠ %NAME% Orb of Corruption %PURPLE%✠%GRAY%✠%BLUE%✠%GREEN%✠%YELLOW%✠%ORANGE%✠%RED%✠✠✠%NL%%NOTIFY(ITEM)%%NOTIFYSOUND(19,MEDIUM)%%BGCOLOR(59)%%BORDER(4,1)%%MAPICON(8)%
+ItemDisplay[cx5]: %NL%%RED%⚛%ORANGE%⚛%YELLOW%⚛%GREEN%⚛%BLUE%⚛%GRAY%⚛%PURPLE%⚛ %NAME% Orb of Corruption %PURPLE%⚛%GRAY%⚛%BLUE%⚛%GREEN%⚛%YELLOW%⚛%ORANGE%⚛%RED%⚛%NL%%NOTIFY(ITEM)%%NOTIFYSOUND(19,MEDIUM)%%BGCOLOR(172)%%BORDER(4,1)%%MAPICON(8)%
 ItemDisplay[cx6]: %PURPLE%##%ORANGE%%NAME%%PURPLE%##%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[cx7]: %PURPLE%##%ORANGE%%NAME%%PURPLE%##%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[cx8]: %PURPLE%Orb %ORANGE%of %PURPLE%Enchantment%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
@@ -242,7 +286,7 @@ ItemDisplay[cq2 UNI ILVL>60]: %NAME%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[cq2 SET ILVL>60]: %NAME%%BGCOLOR(15)%%BORDER(4,1)%
 //inferiour
 ItemDisplay[INF ILVL>14 !RW !leg]:
-//RUNES
+//RUNES 符文
 //1-14
 //ItemDisplay[r01]: %TAN% EL Rune [1]%NOTIFY(ITEM,LOW)%%NOTIFYSOUND(7,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
 //ItemDisplay[r02]: %TAN% ELD Rune [2]%NOTIFY(ITEM,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
