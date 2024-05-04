@@ -1117,7 +1117,7 @@ ItemDisplay[jew UNI ID STAT399>0]: %CORAL%+%STAT(399,0)%] %TEAL%PHYSIC%GOLD%%NL%
 ItemDisplay[jew UNI ID STAT399>0]: %CORAL%[-%STAT(400,0)%/%NAME%%CONTINUE%
 
 ItemDisplay[UNI !ID cm3]:  %NL%       %RED% %%% %GOLD%%NAME% %RED% %%%        %NL%%NOTIFY(GOLD)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
-ItemDisplay[MAG !ID jew]:   %NL% %ORANGE%%%% %BLUE%%NAME% %ORANGE%%%% %NL% %BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG !ID jew]:   %NL% %ORANGE%%%% %BLUE%%NAME% %ORANGE%%%% %NL% %BGCOLOR(15)%%BORDER(4,1)%%MAPICON(1)%
 //UNIQUE&SET Eth/Socket Catchall
 ItemDisplay[UNI ETH !ID]: %ORANGE%ETH %GOLD%%NAME%%NOTIFYSOUND(2946,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[UNI !ID]: %NAME%%BGCOLOR(15)%%BORDER(4,1)%
