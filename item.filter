@@ -1471,10 +1471,10 @@ ItemDisplay[MAG !ID cm3 ILVL<50]: %NL%%ORANGE%✡✡✡✡ %SAGE% %NAME% %ORANGE
 ItemDisplay[MAG !ID cm1 ILVL<48 ]: %NL%%ORANGE%✡✡✡✡ %CORAL% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡ (LOW)%NL%%NOTIFY(ITEM,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[MAG !ID cm3 ILVL>49 ILVL<91]: %NL%%ORANGE%✡✡✡✡✡✡ %SAGE% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡✡%NL%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(2)%
 ItemDisplay[MAG !ID cm1 ILVL>47]: %NL%%ORANGE%✡✡✡✡✡ %CORAL% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡%NL%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(3)%
-ItemDisplay[MAG !ID cm2 ILVL<80]: %GRAY% %NAME% %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG !ID cm2 ILVL<80]: %GRAY% %NAME% %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)% //中護身符
 //Grandcharms lv91+
-ItemDisplay[MAG cm3 !ID ILVL>90]: %NL%%RED%✡✡✡✡✡✡ %NAME% %ORANGE%[L%ILVL%] %RED%✡✡✡✡✡✡{%YELLOW%Rolls 45life Skiller%NL%%ORANGE%PGx3 Rolls}%NL%%NOTIFY(ITEM,MEDIUM)%%BORDER(4,1)%%BGCOLOR(172)%%MAPICON(3)% // 91LV Skiller+45life unid
-ItemDisplay[MAG cm3 ILVL>90]: %RED% %NAME% %ORANGE%[L%ILVL%] {%YELLOW%Rolls 45life Skiller%NL%%ORANGE%PGx3 Rolls}%BORDER(4,1)%%BGCOLOR(172)%// 91LV Skiller+45life
+ItemDisplay[MAG !ID cm3 ILVL>90]: %NL%%RED%✡✡✡✡✡✡ %NAME% %ORANGE%[L%ILVL%] %RED%✡✡✡✡✡✡{%YELLOW%Rolls 45life Skiller%NL%%ORANGE%PGx3 Rolls}%NL%%NOTIFY(ITEM,MEDIUM)%%BORDER(4,1)%%BGCOLOR(172)%%MAPICON(3)% // 91LV Skiller+45life unid
+ItemDisplay[MAG ID cm3 ILVL>90]: %RED% %NAME% %ORANGE%[L%ILVL%] {%YELLOW%Rolls 45life Skiller%NL%%ORANGE%PGx3 Rolls}%BORDER(4,1)%%BGCOLOR(172)%// 91LV Skiller+45life
 
 ItemDisplay[MAG (cm3 OR cm2 OR cm1) CLVL<55]: %NAME% %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[MAG cm3 ILVL<50]:
@@ -1501,6 +1501,7 @@ ItemDisplay[RW CL1 TABSK41=5]: %TAN%德魯伊頭盔%NL%%TAN%變化 Metamorphosis
 ItemDisplay[RW EQ2 SOCK=3 RES=10 STAT96=25]: %TAN%護甲%NL%%TAN%催促 Hustle %PURPLE%** %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)% //催促
 ItemDisplay[RW WP9 SOCK=5 RES=40 ALLSK=3]: %TAN%弓/十字弓%NL%%TAN%迷霧 Mist %PURPLE%** %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)% //迷霧
 //Best Rares (crystalsword, dimensional blade, phase blade, Circlets, Amulets, Rings, Gloves, Boots, Belts, Jewels) 稀有
+
 ItemDisplay[RARE !ETH 7cr !ID]: %NL%%RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%PURPLE%% %YELLOW%%NAME% %RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%PURPLE%%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(5)%
 ItemDisplay[RARE !ETH 9cr !ID]: %NL%%RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%PURPLE%% %YELLOW%%NAME% %RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%PURPLE%%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(5)%
 ItemDisplay[RARE !ETH crs !ID]: %NL%%RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%PURPLE%% %YELLOW%%NAME% %RED%%%ORANGE%%%YELLOW%%%GREEN%%%BLUE%%%PURPLE%%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(5)%
