@@ -1979,7 +1979,7 @@ ItemDisplay[NMAG !RW (WP11 OR WP12 OR WP13 OR CL1 OR CL2 OR CL4 OR CL5 OR CL6)]:
 //Weapons: Axe, Mace, Sword, Dagger, Throwing Weapon, Javelin, Spear, Polearm, Bow, Crossbow
 //AXE
 ItemDisplay[NMAG !RW ILVL>14 (hax OR 9ha OR 7ha OR axe OR 9ax OR 7ax OR 2ax OR 92a OR 72a OR mpi OR 9mp OR 7mp OR wax OR 9wa OR lax OR 9la OR 7la OR bax OR 9ba OR 7ba OR btx OR 9bt OR 7bt OR gax OR 9ga OR 7ga OR gix OR 9gi OR 7gi)]:
-ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2 OR SOCK=3 OR SOCK=4) 7wa]:
+ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2 OR SOCK=3) 7wa]:
 //MACE
 ItemDisplay[NMAG !RW ILVL>14 (clb OR 9sp OR 9cl OR 7cl OR spc OR 7sp OR mac OR 9ma OR 7ma OR mst OR 7mt OR 9mt OR 9fl OR 7fl OR whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm)]:
 ItemDisplay[NMAG !RW ILVL<26 SOCK=0 fla]:
