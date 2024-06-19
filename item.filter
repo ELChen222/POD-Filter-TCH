@@ -92,6 +92,7 @@ ItemStyle[GG]: MapIcon = 26, BorderColor = 155, BorderSize = 2, NotificationColo
 ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME% [普通]%CONTINUE%
 ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME% [進階]%CONTINUE%
 ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME% [菁英]%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) ED=15]: %NAME% %ORANGE%MAX-ED%CONTINUE%
 ItemDisplay[(qui OR lea OR hla OR stu OR brs OR xui OR ltp OR xea OR xla OR xtu OR xrs OR xtp OR uui OR uea OR ula OR utu OR urs OR utp OR buc OR sml OR kit OR bsh OR spk OR xuc OR xml OR xit OR xsh OR xpk OR uuc OR uml OR uit OR ush OR upk) OR CL3 OR CL4 ]: %NAME%[輕]%CONTINUE%
 ItemDisplay[(rng OR chn OR spl OR fld OR gth OR aar OR xng OR xhn OR xpl OR xld OR xth OR xar OR ung OR uhn OR upl OR uld OR uth OR uar OR lrg OR gts OR xrg OR xts OR urg OR uts)]: %NAME%[中]%CONTINUE%
 ItemDisplay[(scl OR plt OR ful OR xcl OR xlt OR xul OR ucl OR ult OR uul OR tow OR xow OR uow)]: %NAME%[重]%CONTINUE%
@@ -220,20 +221,20 @@ ItemDisplay[ma13 MAG ID]: %BLUE%腐化之地 遺物 %CORAL%T2 %YELLOW%⛪⛪⛪ 
 //悅心農場
 ItemDisplay[ma11]: %NAME% %GOLD%T0 ⛪⛪⛪⛪⛪ %DGREEN% [L%ILVL%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(41)%%BORDER(4,1)%%MAPICON(23)%
 
-ItemDisplay[maz]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ma1]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ma2]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ma3]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ma4]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ma5]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ma6]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ma7]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ma8]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ma9]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ma10]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[maz]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[ma1]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[ma2]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[ma3]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[ma4]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[ma5]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[ma6]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[ma7]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[ma8]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[ma9]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[ma10]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 //ItemDisplay[ma11]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ma12]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ma13]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[ma12]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[ma13]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 //ItemDisplay[MAP !ID (RARE OR MAG)]: %WHITE%## %TAN%%NAME% T1 %WHITE%## [%RED%Unid%WHITE%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(19)%%BORDER(4,1)%%MAPICON(2)%
 //ItemDisplay[MAP ID (RARE OR MAG)]: %WHITE%%NAME% %CORAL%T1 %WHITE%## %DGREEN% [L%ILVL%]%NOTIFY(ITEM)%%NOTIFYSOUND(3033,MEDIUM)%%BGCOLOR(19)%%BORDER(4,1)%%MAPICON(2)%
 //ItemDisplay[ma0]: %NAME% %PURPLE%###%LIGHT_GRAY% [L%ILVL%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
