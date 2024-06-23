@@ -92,12 +92,12 @@ ItemStyle[GG]: MapIcon = 26, BorderColor = 155, BorderSize = 2, NotificationColo
 ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME% [普通]%CONTINUE%
 ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME% [進階]%CONTINUE%
 ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME% [菁英]%CONTINUE%
-//ItemDisplay[(WEAPON OR ARMOR) ED=15]: %NAME% %ORANGE%MAX-ED%CONTINUE%
-ItemDisplay[NMAG WEAPON ED>0]: %NAME% %ORANGE%%EDAMAGE%ED %CONTINUE%
-ItemDisplay[NMAG ARMOR ED>0]: %NAME% %ORANGE%%EDEFENSE%ED %CONTINUE%
-ItemDisplay[(qui OR lea OR hla OR stu OR brs OR xui OR ltp OR xea OR xla OR xtu OR xrs OR xtp OR uui OR uea OR ula OR utu OR urs OR utp OR buc OR sml OR kit OR bsh OR spk OR xuc OR xml OR xit OR xsh OR xpk OR uuc OR uml OR uit OR ush OR upk) OR CL3 OR CL4 ]: %NAME% [輕]%CONTINUE%
-ItemDisplay[(rng OR chn OR spl OR fld OR gth OR aar OR xng OR xhn OR xpl OR xld OR xth OR xar OR ung OR uhn OR upl OR uld OR uth OR uar OR lrg OR gts OR xrg OR xts OR urg OR uts)]: %NAME% [中]%CONTINUE%
-ItemDisplay[(scl OR plt OR ful OR xcl OR xlt OR xul OR ucl OR ult OR uul OR tow OR xow OR uow)]: %NAME% [重]%CONTINUE%
+//ItemDisplay[(WEAPON OR ARMOR) ED=15]: %NAME% %CORAL%MAX-ED%CONTINUE%
+ItemDisplay[NMAG WEAPON ED>0]: %NAME% %CORAL%%EDAMAGE%ED %CONTINUE%
+ItemDisplay[NMAG ARMOR ED>0]: %NAME% %CORAL%%EDEFENSE%ED %CONTINUE%
+ItemDisplay[(qui OR lea OR hla OR stu OR brs OR xui OR ltp OR xea OR xla OR xtu OR xrs OR xtp OR uui OR uea OR ula OR utu OR urs OR utp OR buc OR sml OR kit OR bsh OR spk OR xuc OR xml OR xit OR xsh OR xpk OR uuc OR uml OR uit OR ush OR upk) OR CL3 OR CL4 ]: %NAME% %TAN%[輕]%CONTINUE%
+ItemDisplay[(rng OR chn OR spl OR fld OR gth OR aar OR xng OR xhn OR xpl OR xld OR xth OR xar OR ung OR uhn OR upl OR uld OR uth OR uar OR lrg OR gts OR xrg OR xts OR urg OR uts)]: %NAME% %TAN%[中]%CONTINUE%
+ItemDisplay[(scl OR plt OR ful OR xcl OR xlt OR xul OR ucl OR ult OR uul OR tow OR xow OR uow)]: %NAME% %TAN%[重]%CONTINUE%
 
 ItemDisplay[!RW !NMAG !INF !RW !SET !UNI SOCK>0]: %NAME%%GREEN%[%SOCKETS%S]%CONTINUE%
 
@@ -176,7 +176,7 @@ ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
 //ItemDisplay[leg]: %WHITE%※%NAME%%WHITE%※{%RED%維特之腳＋傳送之書＝秘密乳牛關卡(打贏對應難度巴爾後於蘿格營地內合成)} //維特之腳
 //ItemDisplay[cx5]: %WHITE%※%PURPLE%%NAME% (ooc)%WHITE%※%NOTIFY(ITEM)%{傳送之書、鑑定之書有腐化說明%NL%與裝備放入赫拉迪克方塊合成可腐化裝備} //腐化寶珠
 ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //暗黑破壞神的靈魂石
-ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※%NOTIFY(ITEM)%{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //混沌之鑰
+ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※%MAPICON(6)%{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //混沌之鑰
 //ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 ItemDisplay[UNI cm3]: %NAME% %RED%GHEEDS %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
@@ -1017,7 +1017,7 @@ ItemDisplay[UNI !ETH ID rxb]: %NAME% {%PURPLE%升級: %WHITE%Ral %SAGE%+ %LIGHT_
 ItemDisplay[UNI !ETH !ID dgr]: %NAME% %ORANGE%Gull %RED%MF%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[UNI ETH dgr]: %ORANGE%ETH %CORAL%SCplebs %GOLD%Gull %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
 //Alibaba
-ItemDisplay[UNI !ETH !ID 9fc]: %NAME% %ORANGE%Alibaba %RED%MF%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[UNI !ETH !ID 9fc]: %NAME% %ORANGE%Alibaba %RED%MF%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Death Cleaver
 ItemDisplay[UNI !ETH !ID 7wa]: %NL%       %NAME% %ORANGE%Death Cleaver %PURPLE%%%%%       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Demon Limb
@@ -1078,10 +1078,10 @@ ItemDisplay[UNI !ETH ID 7mp]: %WHITE%(%BLUE%%STAT(80,0)% MF%WHITE%)%NL%%GOLD%%NA
 //Wizard Spike
 ItemDisplay[UNI !ETH !ID 7dg]: %NAME% %ORANGE%Wiz Spike%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[UNI ETH !ID 7dg]: %ORANGE%ETH %GOLD%%NAME% %ORANGE%Wiz Spike%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
-ItemDisplay[UNI !ETH ID 7dg SOCK=0]: %NAME%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
-ItemDisplay[UNI !ETH ID 7dg]: %NAME% %GREEN%[%SOCKETS%S]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
-ItemDisplay[UNI ETH ID 7dg SOCK=0]: %ORANGE%ETH %GOLD%%NAME%  %NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
-ItemDisplay[UNI ETH ID 7dg]: %ORANGE%ETH %GOLD%%NAME% %GREEN%[%SOCKETS%S]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
+//ItemDisplay[UNI !ETH ID 7dg SOCK=0]: %NAME%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+//ItemDisplay[UNI !ETH ID 7dg]: %NAME% %GREEN%[%SOCKETS%S]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+//ItemDisplay[UNI ETH ID 7dg SOCK=0]: %ORANGE%ETH %GOLD%%NAME%  %NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
+//ItemDisplay[UNI ETH ID 7dg]: %ORANGE%ETH %GOLD%%NAME% %GREEN%[%SOCKETS%S]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
 //Suicide Branch
 ItemDisplay[UNI !ETH !ID 9wn]: %NAME% %ORANGE%Suicide Branch%NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[UNI ETH !ID 9wn]: %ORANGE%ETH %ORANGE%Suicide Branch%NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
@@ -1488,8 +1488,10 @@ ItemDisplay[MAG ID jew STAT138>2]: %BLUE%  %NAME% %WHITE%(%PURPLE%%STAT(138,0)% 
 //Random/unid Charms 未辨識護身符
 ItemDisplay[MAG !ID cm3 ILVL<50]: %NL%%ORANGE%✡✡✡✡ %SAGE% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡ (LOW)%NL%%NOTIFY(ITEM,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[MAG !ID cm1 ILVL<48 ]: %NL%%ORANGE%✡✡✡✡ %CORAL% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡ (LOW)%NL%%NOTIFY(ITEM,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG !ID cm3 ILVL>49 ILVL<91]: %NL%%ORANGE%✡✡✡✡✡✡ %SAGE% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡✡%NL%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(2)%
-ItemDisplay[MAG !ID cm1 ILVL>47]: %NL%%ORANGE%✡✡✡✡✡ %CORAL% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡%NL%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(3)%
+//ItemDisplay[MAG !ID cm3 ILVL>49 ILVL<91]: %NL%%ORANGE%✡✡✡✡✡✡ %SAGE% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡✡%NL%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(2)%
+ItemDisplay[MAG !ID cm3 ILVL>49 ILVL<91]: %NL%%ORANGE%✡✡✡✡✡✡ %SAGE% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡✡%NL%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(2)%
+//ItemDisplay[MAG !ID cm1 ILVL>47]: %NL%%ORANGE%✡✡✡✡✡ %CORAL% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡%NL%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(3)%
+ItemDisplay[MAG !ID cm1 ILVL>47]: %NL%%ORANGE%✡✡✡✡✡ %CORAL% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡%NL%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(3)%
 ItemDisplay[MAG !ID cm2 ILVL<80]: %GRAY% %NAME% %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)% //中護身符
 //Grandcharms lv91+
 ItemDisplay[MAG !ID cm3 ILVL>90]: %NL%%ORANGE%✡✡✡✡✡✡ %RED% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡✡{%YELLOW%Rolls 45life Skiller%NL%%ORANGE%PGx3 Rolls}%NL%%NOTIFY(ITEM,MEDIUM)%%BORDER(4,1)%%BGCOLOR(172)%%MAPICON(3)% // 91LV Skiller+45life unid
