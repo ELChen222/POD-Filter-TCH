@@ -1576,10 +1576,10 @@ ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult 
 ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp) NMAG SOCK=1]:
 ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp) NMAG !SOCK=1]:
 //0 soc 2soc 3soc Mage Plate/Light Plate
-ItemDisplay[xtp NMAG !ETH ED=15 SOCK=3]: %DGREEN%%NAME% %YELLOW%[%SOCKETS%S] {%PURPLE%Enigma: %WHITE%Jah %SAGE%+ %LIGHT_GRAY%Ith %SAGE%+ %WHITE%Ber%NL%%PURPLE%Dragon: %WHITE%Sur %SAGE%+ %LIGHT_GRAY%Lo %SAGE%+ %WHITE%Sol}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[xtp NMAG !ETH ED<15 SOCK=3]: %DGREEN%%NAME% %YELLOW%[%SOCKETS%S] {%PURPLE%Enigma: %WHITE%Jah %SAGE%+ %LIGHT_GRAY%Ith %SAGE%+ %WHITE%Ber%NL%%PURPLE%Dragon: %WHITE%Sur %SAGE%+ %LIGHT_GRAY%Lo %SAGE%+ %WHITE%Sol}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[xtp NMAG !ETH ED=15 SOCK=0]: %DGREEN%%NAME%   {%ORANGE%Larzuk 3os}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[NMAG !ETH !SUP SOCK=0 xtp]: %DGREEN% %NAME%  {%ORANGE%Larzuk 3os%NL%%PURPLE%Roll: %WHITE%Tal %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %YELLOW%完美黃寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[xtp NMAG !ETH ED=15 SOCK=3]: %DGREEN%%NAME% %YELLOW%[%SOCKETS%S]%GREEN%[%STAT(31,0)% def] {%PURPLE%Enigma: %WHITE%Jah %SAGE%+ %LIGHT_GRAY%Ith %SAGE%+ %WHITE%Ber%NL%%PURPLE%Dragon: %WHITE%Sur %SAGE%+ %LIGHT_GRAY%Lo %SAGE%+ %WHITE%Sol}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[xtp NMAG !ETH ED<15 SOCK=3]: %DGREEN%%NAME% %YELLOW%[%SOCKETS%S]%GREEN%[%STAT(31,0)% def] {%PURPLE%Enigma: %WHITE%Jah %SAGE%+ %LIGHT_GRAY%Ith %SAGE%+ %WHITE%Ber%NL%%PURPLE%Dragon: %WHITE%Sur %SAGE%+ %LIGHT_GRAY%Lo %SAGE%+ %WHITE%Sol}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[xtp NMAG !ETH ED=15 SOCK=0]: %DGREEN%%NAME% %GREEN%[%STAT(31,0)% def]  {%ORANGE%Larzuk 3os}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[NMAG !ETH !SUP SOCK=0 xtp]: %DGREEN% %NAME% %GREEN%[%STAT(31,0)% def]{%ORANGE%Larzuk 3os%NL%%PURPLE%Roll: %WHITE%Tal %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %YELLOW%完美黃寶}%BGCOLOR(15)%%BORDER(4,1)%
 //ItemDisplay[NMAG !ETH !SOCK=1 (xtp OR ltp)]: %DGREEN%%NAME% %GRAY%[%SOCKETS%S]%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[NMAG (SOCK=1 OR SOCK=2 OR ETH) (xtp OR ltp)]:
 //Shields 
