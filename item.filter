@@ -976,9 +976,9 @@ ItemDisplay[!ETH SET !ID ci3]: %NL%       %NAME% %ORANGE% Mavinas diadem       %
 ItemDisplay[!ETH SET !ID uhm]: %NAME% %ORANGE% Ondal Almighty %BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Naj's Set
 ItemDisplay[SET !ETH !ID ult]: %NL%       %NAME% %ORANGE% Najs Armor       %NL%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
-ItemDisplay[SET !ETH ID ult SOCK=0]: %GREEN%Hellforge Plate%NL%%GREEN%Naj Armor  %BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
-ItemDisplay[SET !ETH ID ult]: %GREEN%Hellforge Plate%NL%%GREEN%Naj Armor %PURPLE%[%SOCKETS%S]%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
-ItemDisplay[SET !ETH !ID 6cs]: %NAME% %ORANGE% Najs Weap %WHITE%(%GREEN%Telecharges%WHITE%)%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[SET !ETH ID ult SOCK=0]: %NAME%  %BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[SET !ETH ID ult]: %NAME% %PURPLE%[%SOCKETS%S]%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+//ItemDisplay[SET !ETH !ID 6cs]: %NAME% %ORANGE% Najs Weap %WHITE%(%GREEN%Telecharges%WHITE%)%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //
 //Unique Weapons
 //Ondals
