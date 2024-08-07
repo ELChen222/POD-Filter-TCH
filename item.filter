@@ -91,8 +91,15 @@ ItemStyle[GG]: MapIcon = 26, BorderColor = 155, BorderSize = 2, NotificationColo
 
 //基礎型態 輕中重
 ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME% [普通]%CONTINUE%
-ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME% [進階]%CONTINUE%
-ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME% [菁英]%CONTINUE%
+ItemDisplay[WEAPON EXC]: %NAME% [進階]%CONTINUE%
+ItemDisplay[ARMOR !SET EXC]: %NAME% [進階]%CONTINUE%
+ItemDisplay[ARMOR SET ID EXC]: %NAME% [進階]%CONTINUE%
+ItemDisplay[ARMOR SET !ID EXC]: %NAME% [進階] %YELLOW%[%STAT(31,0)% def]%GREEN%%CONTINUE%
+ItemDisplay[WEAPON ELT]: %NAME% [菁英]%CONTINUE%
+ItemDisplay[ARMOR !SET ELT]: %NAME% [菁英]%CONTINUE%
+ItemDisplay[ARMOR SET ID ELT]: %NAME% [菁英]%CONTINUE%
+ItemDisplay[ARMOR SET !ID ELT]: %NAME% [菁英] %YELLOW%[%STAT(31,0)% def]%GREEN%%CONTINUE%
+
 //ItemDisplay[(WEAPON OR ARMOR) ED=15]: %NAME% %CORAL%MAX-ED%CONTINUE%
 ItemDisplay[NMAG WEAPON ED>0]: %NAME% %CORAL%%EDAMAGE%ED %CONTINUE%
 ItemDisplay[NMAG ARMOR ED>0]: %NAME% %CORAL%%EDEFENSE%ED %CONTINUE%
@@ -982,7 +989,7 @@ ItemDisplay[!ETH SET ID uth SOCK=0]: %NAME% %BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5
 ItemDisplay[!ETH SET !ID oba]: %NAME% %ORANGE% Tal Rasha Weap%NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH SET !ID zmb]: %NAME% %ORANGE% Tal Rasha Belt%NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH SET xsk SOCK>0]: %NAME% %PURPLE%[%SOCKETS%S]%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
-ItemDisplay[!ETH SET xsk SOCK=0]: %NAME% %BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[!ETH SET xsk !ID]: %NAME% %ORANGE% Tal Rasha Helm%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Immortal King
 ItemDisplay[!ETH SET !ID uar]: %NL%       %NAME% %ORANGE%IK Armor       %NL%%NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH SET !ID xhb]: %NAME% %ORANGE% IK Boots%NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
