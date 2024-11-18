@@ -1,6 +1,4 @@
-// 2024/S12/POD
-// 版本: MACKFilter 3.53
-// Created by mackanmusic
+// 2024/S13/POD
 // Modified by EL
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
 // 過濾器代碼 https://pathofdiablo.com/wiki/index.php?title=Loot_Filtration_Codes
@@ -147,33 +145,33 @@ ItemDisplay[(CLVL>24 AND CLVL<45) GOLD>499]: %PURPLE%###%NAME% //25~44级只顯�
 ItemDisplay[CLVL<25 GOLD>100]: %PURPLE%###%NAME% //1~24级只顯示100元以上
 ItemDisplay[GOLD>0]:
 //Health & Mana Potions
-ItemDisplay[rvl]: %NL%%PURPLE% R %WHITE%70% %SAGE%%NL%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[hp4 CLVL<70]: %RED%!%WHITE%H%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[rvl]: %NL%%PURPLE% ⛾R %WHITE%70% %SAGE%%NL%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[hp4 CLVL<70]: %RED%⛾ %WHITE%H%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[hp4]: 
 ItemDisplay[hp5 FILTERLVL=2]:
-ItemDisplay[hp5]: %RED% !%WHITE%H+ %CORAL%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[mp4 CLVL<70]: %BLUE%!%WHITE%M%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[hp5]: %RED% ⛾ %WHITE%H+ %CORAL%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[mp4 CLVL<70]: %BLUE%⛾ %WHITE%M%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[mp4]: 
 ItemDisplay[mp5 FILTERLVL=2]:
-ItemDisplay[mp5]: %BLUE% !%WHITE%M+ %LIGHT_GRAY% %BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[rvs]: %PURPLE% r %WHITE%35% %PURPLE%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[hp1 CLVL<15]: %RED%!%WHITE%Minor Heal%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[hp2 CLVL<18]: %RED%!%WHITE%Light Heal%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[hp3 CLVL<24]: %RED%!%WHITE%Healing%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[mp5]: %BLUE% ⛾ %WHITE%M+ %LIGHT_GRAY% %BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[rvs]: %PURPLE% ⛾r %WHITE%35% %PURPLE%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[hp1 CLVL<15]: %RED%⛾ %WHITE%Minor Heal%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[hp2 CLVL<18]: %RED%⛾ %WHITE%Light Heal%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[hp3 CLVL<24]: %RED%⛾ %WHITE%Healing%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[hp1 CLVL>14]:
 ItemDisplay[hp2 CLVL>17]:
 ItemDisplay[hp3 CLVL>24]:
-ItemDisplay[mp1 CLVL<15]: %BLUE%!%WHITE%Minor Mana%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[mp2 CLVL<20]: %BLUE%!%WHITE%Light Mana%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[mp3 CLVL<26]: %BLUE%!%WHITE%Mana%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[mp1 CLVL<15]: %BLUE%⛾ %WHITE%Minor Mana%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[mp2 CLVL<20]: %BLUE%⛾ %WHITE%Light Mana%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[mp3 CLVL<26]: %BLUE%⛾ %WHITE%Mana%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[mp1 CLVL>14]:
 ItemDisplay[mp2 CLVL>19]:
 ItemDisplay[mp3 CLVL>25]:
 //Essences (Respec Token) 
-ItemDisplay[tes]: %NAME% %BLUE%[A1]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ceh]: %NAME% %YELLOW%[A3]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[bet]: %NAME% %RED%[A4]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[fed]: %NAME% %GREEN%[A5]%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[tes]: %NAME% %BLUE%[A1]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[ceh]: %NAME% %YELLOW%[A3]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[bet]: %NAME% %RED%[A4]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[fed]: %NAME% %GREEN%[A5]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[toa]: %NAME% %PURPLE%###%NOTIFY(ITEM)%%BGCOLOR(19)%%BORDER(4,1)%
 
 // 特殊物品
@@ -362,7 +360,7 @@ ItemDisplay[INF ILVL>14 !RW !leg]:
 //ItemDisplay[r05]: %TAN% ETH Rune [5]%NOTIFY(ITEM,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
 //ItemDisplay[r06]: %TAN% ITH Rune [6]%NOTIFY(ITEM,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
 //ItemDisplay[r07]: %TAN% TAL Rune [7]%NOTIFY(ITEM,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
-//ItemDisplay[r08]: %TAN% RAL Rune [8] %GREEN%**%NOTIFY(ITEM,MEDIUM)%%NOTIFYSOUND(3746,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[r08]: %TAN% RAL Rune [8] %GREEN%**%NOTIFY(ITEM)%%NOTIFYSOUND(3746,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
 //ItemDisplay[r09]: %TAN% ORT Rune [9]%NOTIFY(ITEM,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
 //ItemDisplay[r10]: %TAN% THUL Rune [10]%NOTIFY(ITEM,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
 //ItemDisplay[r11]: %TAN% AMN Rune [11]%NOTIFY(ITEM,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
@@ -904,7 +902,7 @@ ItemDisplay[!ETH UNI !ID upl]: %NL%       %NAME% %ORANGE%Arkaine's Valor       %
 ItemDisplay[!ETH UNI ID upl SOCK=0]:  %PURPLE%[+%STAT(127,0)% Skills]%NL%%GOLD%%NAME%  %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH UNI ID upl]:  %PURPLE%[+%STAT(127,0)% Skills]%NL%%GOLD%%NAME% %PURPLE%[%SOCKETS%S]%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Leviathan
-ItemDisplay[!ETH UNI !ID uld]: %NAME% %ORANGE%Leviathan %NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[!ETH UNI !ID uld]: %NAME% %ORANGE%Leviathan %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Gbane
 ItemDisplay[!ETH UNI !ID utu]: %NL%       %NAME% %ORANGE%G Bane       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //
@@ -935,7 +933,7 @@ ItemDisplay[ID EQ4 RES=9]: %NAME% {%ORANGE%[9 AllRes]} %CONTINUE%
 ItemDisplay[ID EQ4 RES=10]: %NAME% {%ORANGE%[10 AllRes]} %CONTINUE%
 
 //Soul Drainers
-ItemDisplay[!ETH UNI !ID umg]: %NAME% %ORANGE%Soul Drainers %NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[!ETH UNI !ID umg]: %NAME% %ORANGE%Soul Drainers %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Ghoulhide
 //ItemDisplay[!ETH UNI !ID xmg]: %NAME% %ORANGE%Ghoulhide %BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 
@@ -980,7 +978,7 @@ ItemDisplay[ETH UNI !ID xtb]: %ORANGE%ETH %GOLD%%NAME% %PURPLE%¤%BGCOLOR(15)%%B
 ItemDisplay[UNI !ETH !ID uvb]: %NAME% %ORANGE%Sand Treks %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%
 ItemDisplay[UNI ETH !ID uvb]: %ORANGE%ETH %GOLD%%NAME% %ORANGE%Sand Treks %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 //Marrowwalk
-ItemDisplay[UNI !ETH !ID umb]: %NAME% %ORANGE%Marrowwalks %NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[UNI !ETH !ID umb]: %NAME% %ORANGE%Marrowwalks %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Infernostrides
 ItemDisplay[UNI !ETH !ID xlb]: %NAME% %ORANGE%Infernostrides %BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Waterwalk
@@ -990,7 +988,7 @@ ItemDisplay[UNI !ETH !ID xmb]: %NL%       %NAME% %ORANGE%Silkweaves       %NL%%N
 //Gore Rider
 ItemDisplay[UNI !ETH !ID xhb]: %NL%       %NAME%  %ORANGE%Gore Riders       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Shadow Dancer
-ItemDisplay[UNI !ETH !ID uhb]: %NAME% %ORANGE%Shadow Dancers %NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[UNI !ETH !ID uhb]: %NAME% %ORANGE%Shadow Dancers %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Tearhaunch
 ItemDisplay[UNI !ETH !ID hbt]: %NAME% %ORANGE%Tearhaunchs %BGCOLOR(35)%%BORDER(1,1)%
 //Aldur's
@@ -1000,7 +998,7 @@ ItemDisplay[!ETH SET !ID dr8]: %NAME% %ORANGE% Aldurs Helm %NOTIFY(ITEM,LOW)%%BG
 //Natalya's
 ItemDisplay[!ETH SET !ID xh9]: %NAME% %ORANGE% Nats Helm {%PURPLE%升級: %ORANGE%Hel %SAGE%+ %ORANGE%Io %SAGE%+ %YELLOW%完美黃寶}%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH SET ID xh9 SOCK=0]: %WHITE%(%CORAL%升級後腐化%WHITE%)%NL%%GREEN%%NAME% {%PURPLE%升級: %ORANGE%Hel %SAGE%+ %ORANGE%Io %SAGE%+ %YELLOW%完美黃寶}%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
-ItemDisplay[!ETH SET !ID 7qr]: %NL%       %NAME% %ORANGE% Nats Weapon       %NL%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[!ETH SET !ID 7qr]: %NL%       %NAME% %ORANGE% Nats Weapon       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH SET !ID xmb]: %NAME% %ORANGE% Nats Boots %BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH SET !ID ucl]: %NAME% %ORANGE% Nats Armor %BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Tal Rasha 
@@ -1020,7 +1018,7 @@ ItemDisplay[!ETH SET !ID zhb]: %NAME% %ORANGE% IK Belt%NOTIFY(ITEM,LOW)%%BGCOLOR
 ItemDisplay[!ETH SET !ID ba5]: %NAME% %ORANGE% IK Helm%NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Trang-Oul's
 ItemDisplay[!ETH SET !ID xul]: %NAME% %ORANGE% Trang Armor%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
-ItemDisplay[!ETH SET !ID xmg]: %NL%       %NAME% %ORANGE% Trang Gloves       %NL%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[!ETH SET !ID xmg]: %NL%       %NAME% %ORANGE% Trang Gloves       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH SET !ID ne9]: %NL%       %NAME% %ORANGE% Trang Shield       %NL%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH SET !ID utc]: %NL%       %NAME% %ORANGE% Trang Belt       %NL%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH SET !ID uh9]: %NL%       %NAME% %ORANGE% Trang Helm       %NL%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
@@ -1031,7 +1029,7 @@ ItemDisplay[!ETH SET !ID ci3]: %NL%       %NAME% %ORANGE% Mavinas diadem       %
 //Ondals Almighty
 ItemDisplay[!ETH SET !ID uhm]: %NAME% %ORANGE% Ondal Almighty %BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Naj's Set
-ItemDisplay[SET !ETH !ID ult]: %NL%       %NAME% %ORANGE% Najs Armor       %NL%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[SET !ETH !ID ult]: %NL%       %NAME% %ORANGE% Najs Armor       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[SET !ETH ID ult SOCK=0]: %NAME%  %BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[SET !ETH ID ult]: %NAME% %PURPLE%[%SOCKETS%S]%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //ItemDisplay[SET !ETH !ID 6cs]: %NAME% %ORANGE% Najs Weap %WHITE%(%GREEN%Telecharges%WHITE%)%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
@@ -1081,7 +1079,7 @@ ItemDisplay[ETH UNI !ID 7b8]: %ORANGE%ETH %GOLD%%NAME% %ORANGE%Lacerator%NOTIFY(
 //Azurewrath\Lightsabre
 ItemDisplay[!ETH UNI !ID 7cr]: %NL%       %NAME% %ORANGE% Azure\Lightsabre %PURPLE%⛧⛧⛧⛧       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Tombreaver
-ItemDisplay[!ETH UNI !ID 7pa]: %NAME% %ORANGE% Tombreaver %NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[!ETH UNI !ID 7pa]: %NAME% %ORANGE% Tombreaver %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[ETH UNI !ID 7pa]: %ORANGE%ETH %GOLD%%NAME% %ORANGE% Tombreaver       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
 //Titan's Revenge
 ItemDisplay[!ETH UNI !ID ama]: %NL%       %NAME% %ORANGE% Titans Revenge %PURPLE%%%%       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
@@ -1114,7 +1112,7 @@ ItemDisplay[UNI !ETH ID mau]: %NAME% %PURPLE%[%SOCKETS%S] {%PURPLE%升級: %WHIT
 ItemDisplay[UNI !ETH ID 9m9 SOCK=0]: %NAME%   {%PURPLE%升級: %ORANGE%Lum %SAGE%+ %RED%Pul %SAGE%+ %GREEN%完美綠寶}%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[UNI !ETH ID 9m9]: %NAME% %PURPLE%[%SOCKETS%S] {%PURPLE%升級: %ORANGE%Lum %SAGE%+ %RED%Pul %SAGE%+ %GREEN%完美綠寶}%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Bloodtree Stump
-ItemDisplay[UNI !ETH !ID 9m9 CLVL<85]: %NAME% %ORANGE%Bloodtree Stump %NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+//ItemDisplay[UNI !ETH !ID 9m9 CLVL<85]: %NAME% %ORANGE%Bloodtree Stump %NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Hexfire
 //ItemDisplay[!ETH UNI !ID 9sb]: %RED% Extra Hydra%NL%%GOLD%%NAME% %ORANGE%Yahtzees Hexfire %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //ItemDisplay[ETH UNI !ID 9sb]: %RED% Extra Hydra%NL%%ORANGE%ETH %GOLD%%NAME% %ORANGE%Yahtzees Hexfire %ORANGE%*%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
@@ -1126,7 +1124,7 @@ ItemDisplay[UNI !ETH !ID 9m9 CLVL<85]: %NAME% %ORANGE%Bloodtree Stump %NOTIFY(IT
 ItemDisplay[UNI !ETH !ID 7bk]: %NL%       %NAME% %ORANGE%Warshrikes       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[ETH UNI !ID 7bk]: %ORANGE%ETH %GOLD%%NAME% %ORANGE%Warshrikes       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
 //Fleshripper
-ItemDisplay[UNI !ETH !ID 7kr]: %NAME% %ORANGE%Fleshripper %NOTIFY(ITEM,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[UNI !ETH !ID 7kr]: %NAME% %ORANGE%Fleshripper %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Plague bearer
 //ItemDisplay[UNI !ETH !ID 9ls]: %NAME% %ORANGE%Plague Bearer%NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Blackhand Key
@@ -1231,7 +1229,7 @@ ItemDisplay[ETH UNI !ID xts]: %ORANGE%ETH %GOLD%%NAME% %ORANGE% Rada%NOTIFYSOUND
 ItemDisplay[UNI !ID (aq2 OR cq2)]:
 // ITG ignore target defence magic early game
 ItemDisplay[MAG ID (WP13 OR WP12 OR WP11) STAT115>0 CLVL<50]: %NAME% %PURPLE%* %ORANGE%ITD %PURPLE%* %BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[NMAG !RW WP13 CLVL<60 SOCK=4]: %NAME%  %PURPLE%[%SOCKETS%S] %RED%HolyThunder base{%WHITE%Eth %SAGE%+ %LIGHT_GRAY%Ral %SAGE%+ %WHITE%Ort %SAGE%+ %LIGHT_GRAY%Tal}%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[NMAG !RW WP13 CLVL<60 SOCK=4]: %NAME%  %PURPLE%[%SOCKETS%S] %RED%HolyThunder base{%WHITE%Eth %SAGE%+ %LIGHT_GRAY%Ral %SAGE%+ %WHITE%Ort %SAGE%+ %LIGHT_GRAY%Tal}%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[NMAG !RW  WP13 SOCK=4]: %NAME%  %PURPLE%[%SOCKETS%S] {%RED%Holythunder: %WHITE%Eth %SAGE%+ %LIGHT_GRAY%Ral %SAGE%+ %WHITE%Ort %SAGE%+ %LIGHT_GRAY%Tal}%BGCOLOR(15)%%BORDER(4,1)%
 //
 //Rings Amulets Jewels Charms 獨特/套裝
@@ -1573,13 +1571,13 @@ ItemDisplay[MAG ID jew STAT138>2]: %BLUE%  %NAME% %WHITE%(%PURPLE%%STAT(138,0)% 
 //Random/unid Charms 未辨識護身符
 ItemDisplay[MAG !ID cm3 ILVL<50]: %NL%%ORANGE%✡✡✡✡ %SAGE% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡ (LOW)%NL%%NOTIFY(ITEM,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[MAG !ID cm1 ILVL<48 ]: %NL%%ORANGE%✡✡✡✡ %CORAL% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡ (LOW)%NL%%NOTIFY(ITEM,LOW)%%BGCOLOR(15)%%BORDER(4,1)%
-//ItemDisplay[MAG !ID cm3 ILVL>49 ILVL<91]: %NL%%ORANGE%✡✡✡✡✡✡ %SAGE% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡✡%NL%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(2)%
+//ItemDisplay[MAG !ID cm3 ILVL>49 ILVL<91]: %NL%%ORANGE%✡✡✡✡✡✡ %SAGE% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡✡%NL%%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(2)%
 ItemDisplay[MAG !ID cm3 ILVL>49 ILVL<91]: %NL%%ORANGE%✡✡✡✡✡✡ %SAGE% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡✡%NL%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(2)%
-//ItemDisplay[MAG !ID cm1 ILVL>47]: %NL%%ORANGE%✡✡✡✡✡ %CORAL% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡%NL%%NOTIFY(ITEM,MEDIUM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(3)%
+//ItemDisplay[MAG !ID cm1 ILVL>47]: %NL%%ORANGE%✡✡✡✡✡ %CORAL% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡%NL%%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(3)%
 ItemDisplay[MAG !ID cm1 ILVL>47]: %NL%%ORANGE%✡✡✡✡✡ %CORAL% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡%NL%%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(3)%
 ItemDisplay[MAG !ID cm2 ILVL<80]: %GRAY% %NAME% %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)% //中護身符
 //Grandcharms lv91+
-ItemDisplay[MAG !ID cm3 ILVL>90]: %NL%%ORANGE%✡✡✡✡✡✡ %RED% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡✡{%YELLOW%Rolls 45life Skiller%NL%%ORANGE%PGx3 Rolls}%NL%%NOTIFY(ITEM,MEDIUM)%%BORDER(4,1)%%BGCOLOR(172)%%MAPICON(3)% // 91LV Skiller+45life unid
+ItemDisplay[MAG !ID cm3 ILVL>90]: %NL%%ORANGE%✡✡✡✡✡✡ %RED% %NAME% %ORANGE%[L%ILVL%] ✡✡✡✡✡✡{%YELLOW%Rolls 45life Skiller%NL%%ORANGE%PGx3 Rolls}%NL%%NOTIFY(ITEM)%%BORDER(4,1)%%BGCOLOR(172)%%MAPICON(3)% // 91LV Skiller+45life unid
 ItemDisplay[MAG ID cm3 ILVL>90]: %RED% %NAME% %ORANGE%[L%ILVL%] {%YELLOW%Rolls 45life Skiller%NL%%ORANGE%PGx3 Rolls}%BORDER(4,1)%%BGCOLOR(172)%// 91LV Skiller+45life
 
 ItemDisplay[MAG (cm3 OR cm2 OR cm1) CLVL<55]: %NAME% %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
