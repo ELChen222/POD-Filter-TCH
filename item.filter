@@ -192,11 +192,13 @@ ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※{%WHITE%於�
 ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※%MAPICON(6)%{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //混沌之鑰
 //ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
-ItemDisplay[UNI cm3]: %NAME% %RED%GHEEDS %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[UNI cm1]: %TEAL%[屬性%STAT(0,0)% / 抗性%RES% / 經驗%STAT(85,0)%]%NL%%GOLD%%NAME% %RED%ANNI%CONTINUE%%NOTIFYSOUND(7,MEDIUM)%%MAPICON(6)%%BGCOLOR(138)%%BORDER(4,1)%
+//基德 Gheed
+ItemDisplay[UNI !ID cm3]: %NAME% %RED%GHEEDS %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[UNI ID cm3]: %TEAL%[%STAT(80,0)%MF]%NL%%GOLD%%NAME% %RED%GHEEDS%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 //毀符 Anni
-ItemDisplay[UNI cm2]: %TEAL%[屬性%STAT(0,0)% / 抗性%RES%]%NL%%GOLD%%NAME%%CONTINUE%%NOTIFYSOUND(7,MEDIUM)%%MAPICON(7)%%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[UNI cm1]: %TEAL%[屬性%STAT(0,0)% / 抗性%RES% / 經驗%STAT(85,0)%]%NL%%GOLD%%NAME% %RED%ANNI%CONTINUE%%NOTIFYSOUND(7,MEDIUM)%%MAPICON(6)%%BGCOLOR(138)%%BORDER(4,1)%
 //火炬 Torch
+ItemDisplay[UNI cm2]: %TEAL%[屬性%STAT(0,0)% / 抗性%RES%]%NL%%GOLD%%NAME%%CONTINUE%%NOTIFYSOUND(7,MEDIUM)%%MAPICON(7)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[cm2 UNI ID CLSK0>0]: %NAME% %RED%Amazon{%YELLOW%硬直恢復(FHR)：(11F)0／6／13／20／32／52／86／174／600(3F)%NL%施法速度(FCR)：(19F)0／7／14／22／32／48／68／99／152(13F)}
 ItemDisplay[cm2 UNI ID CLSK1>0]: %NAME% %RED%Sorceress{%YELLOW%硬直恢復(FHR)：(15F)0／5／9／14／20／30／42／60／86／142／280(5F)%NL%施法速度<閃電>(FCR)：(19F)0／7／15／23／35／52／78／117／194(11F)%NL%施法速度(FCR)：(13F)0／9／20／37／63／105／200(7F)}
 ItemDisplay[cm2 UNI ID CLSK2>0]: %NAME% %RED%Necromancer{%YELLOW%硬直恢復(FHR)：(13F)0／5／10／16／26／39／56／86／152／377(4F)%NL%施法速度(FCR)：(15F)0／9／18／30／48／75／125(9F)}
@@ -617,7 +619,7 @@ ItemDisplay[SET CLVL<40 !ETH tow]:  %GREEN%Sigon shield %ORANGE%(+1skill) %RED%(
 //Sigon gloves
 ItemDisplay[SET CLVL<40 !ETH hgl]:  %GREEN%Sigon gloves %ORANGE%(20AR, 10STR) %RED%(2piece 30IAS) %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Vidala
-ItemDisplay[SET !ETH tbt]:  %NAME% %ORANGE% 穿刺鞋 %NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[SET !ETH tbt CLVL<81]:  %NAME% %ORANGE% 穿刺鞋 %NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //SHOPING
 //charges items
 ItemDisplay[(MAG OR RARE) !ETH WP11 CHSK53>0]: %NAME% %WHITE%(%PURPLE%T%YELLOW%E%GREEN%L%RED%E %ORANGE%Charges%WHITE%) %WHITE%[%YELLOW%%PRICE% %GOLD%$%WHITE%]%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
@@ -1330,237 +1332,239 @@ ItemDisplay[MAG amu ILVL=99]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 82+] {%NL%%
 ItemDisplay[MAG amu ILVL<85]: %ORANGE%♉ %BLUE%%NAME%%WHITE% [L%ILVL%] %BGCOLOR(15)%%BORDER(4,1)%
 //Rings
 ItemDisplay[MAG rin]: %ORANGE%⛣ %BLUE%%NAME%%WHITE% [L%ILVL%] {%NL%%RED%Blood%SAGE%: %RED%Sol%SAGE%+%RED%Jewel%SAGE%+%RED%完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Amn%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-//CHARMS Skillers good sc gcs
+
+//CHARMS Skillers good sc gcs 
+//技能板
 //[SOR]火板
-ItemDisplay[MAG ID cm3 TABSK8>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[SOR]火板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK8>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[SOR]火板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK8>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[SOR]火板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK8>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[SOR]火板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK8>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[SOR]火板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK8>0 ]:%PURPLE%✡✡✡ %GREEN%[SOR]火板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK8>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[SOR]火板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK8>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[SOR]火板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK8>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[SOR]火板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK8>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[SOR]火板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK8>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[SOR]火板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK8>0 ]:%PURPLE%✡✡✡ %GREEN%[SOR]火板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[SOR]冰板
-ItemDisplay[MAG ID cm3 TABSK10>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[SOR]冰板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK10>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[SOR]冰板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK10>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[SOR]冰板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK10>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[SOR]冰板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK10>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[SOR]冰板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK10>0 ]:%PURPLE%✡✡✡ %GREEN%[SOR]冰板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK10>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[SOR]冰板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK10>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[SOR]冰板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK10>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[SOR]冰板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK10>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[SOR]冰板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK10>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[SOR]冰板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK10>0 ]:%PURPLE%✡✡✡ %GREEN%[SOR]冰板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[SOR]電板
-ItemDisplay[MAG ID cm3 TABSK9>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[SOR]電板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK9>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[SOR]電板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK9>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[SOR]電板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK9>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[SOR]電板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK9>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[SOR]電板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK9>0]:%PURPLE%✡✡✡ %GREEN%[SOR]電板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK9>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[SOR]電板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK9>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[SOR]電板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK9>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[SOR]電板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK9>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[SOR]電板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK9>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[SOR]電板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK9>0]:%PURPLE%✡✡✡ %GREEN%[SOR]電板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[NEC]骨毒板
-ItemDisplay[MAG ID cm3 TABSK17>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[NEC]骨毒板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK17>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[NEC]骨毒板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK17>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[NEC]骨毒板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK17>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[NEC]骨毒板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK17>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[NEC]骨毒板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK17>0]:%PURPLE%✡✡✡ %GREEN%[NEC]骨毒板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK17>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[NEC]骨毒板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK17>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[NEC]骨毒板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK17>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[NEC]骨毒板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK17>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[NEC]骨毒板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK17>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[NEC]骨毒板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK17>0]:%PURPLE%✡✡✡ %GREEN%[NEC]骨毒板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[NEC]召喚板
-ItemDisplay[MAG ID cm3 TABSK18>0 LIFE>0]:%YELLOW%✡✡✡ %GREEN%[NEC]召喚板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK18>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[NEC]召喚板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK18>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[NEC]召喚板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK18>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[NEC]召喚板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK18>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[NEC]召喚板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK18>0 ]:%YELLOW%✡✡✡ %GREEN%[NEC]召喚板%ORANGE%[%ILVL%]
+ItemDisplay[MAG ID cm3 TABSK18>0 LIFE>0]:%YELLOW%✡✡✡ %GREEN%[NEC]召喚板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK18>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[NEC]召喚板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK18>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[NEC]召喚板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK18>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[NEC]召喚板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK18>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[NEC]召喚板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK18>0 ]:%YELLOW%✡✡✡ %GREEN%[NEC]召喚板 %ORANGE%[L%ILVL%]
 //[NEC]詛咒板
-ItemDisplay[MAG ID cm3 TABSK16>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[NEC]詛咒板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK16>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[NEC]詛咒板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK16>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[NEC]詛咒板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK16>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[NEC]詛咒板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK16>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[NEC]詛咒板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK16>0 ]:%YELLOW%✡✡✡ %GREEN%[NEC]詛咒板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK16>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[NEC]詛咒板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK16>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[NEC]詛咒板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK16>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[NEC]詛咒板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK16>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[NEC]詛咒板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK16>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[NEC]詛咒板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK16>0 ]:%YELLOW%✡✡✡ %GREEN%[NEC]詛咒板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[PAL]戰技板
-ItemDisplay[MAG ID cm3 TABSK24>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[PAL]戰技板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK24>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[PAL]戰技板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK24>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[PAL]戰技板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK24>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[PAL]戰技板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK24>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[PAL]戰技板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK24>0 ]:%PURPLE%✡✡✡ %GREEN%[PAL]戰技板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK24>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[PAL]戰技板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK24>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[PAL]戰技板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK24>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[PAL]戰技板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK24>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[PAL]戰技板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK24>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[PAL]戰技板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK24>0 ]:%PURPLE%✡✡✡ %GREEN%[PAL]戰技板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[PAL]攻靈板
-ItemDisplay[MAG ID cm3 TABSK25>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[PAL]攻靈板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK25>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[PAL]攻靈板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK25>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[PAL]攻靈板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK25>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[PAL]攻靈板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK25>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[PAL]攻靈板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK25>0 ]:%YELLOW%✡✡✡ %GREEN%[PAL]攻靈板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK25>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[PAL]攻靈板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK25>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[PAL]攻靈板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK25>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[PAL]攻靈板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK25>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[PAL]攻靈板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK25>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[PAL]攻靈板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK25>0 ]:%YELLOW%✡✡✡ %GREEN%[PAL]攻靈板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[PAL]防靈板
-ItemDisplay[MAG ID cm3 TABSK26>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[PAL]防靈板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK26>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[PAL]防靈板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK26>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[PAL]防靈板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK26>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[PAL]防靈板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK26>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[PAL]防靈板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK26>0 ]:%YELLOW%✡✡✡ %GREEN%[PAL]防靈板%ORANGE%[%ILVL%]
+ItemDisplay[MAG ID cm3 TABSK26>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[PAL]防靈板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK26>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[PAL]防靈板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK26>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[PAL]防靈板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK26>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[PAL]防靈板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK26>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[PAL]防靈板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK26>0 ]:%YELLOW%✡✡✡ %GREEN%[PAL]防靈板 %ORANGE%[L%ILVL%]
 //[ASN]陷阱板
-ItemDisplay[MAG ID cm3 TABSK48>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[ASN]陷阱板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK48>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[ASN]陷阱板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK48>0 STAT96>0]:%PURPLE%✡✡✡# %GREEN%[ASN]陷阱板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK48>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[ASN]陷阱板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK48>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[ASN]陷阱板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK48>0 ]:%PURPLE%✡✡✡ %GREEN%[ASN]陷阱板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK48>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[ASN]陷阱板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK48>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[ASN]陷阱板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK48>0 STAT96>0]:%PURPLE%✡✡✡# %GREEN%[ASN]陷阱板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK48>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[ASN]陷阱板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK48>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[ASN]陷阱板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK48>0 ]:%PURPLE%✡✡✡ %GREEN%[ASN]陷阱板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[DRU]元素板
-ItemDisplay[MAG ID cm3 TABSK42>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[DRU]元素板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK42>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[DRU]元素板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK42>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[DRU]元素板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK42>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[DRU]元素板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK42>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[DRU]元素板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK42>0 ]:%PURPLE%✡✡✡ %GREEN%[DRU]元素板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK42>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[DRU]元素板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK42>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[DRU]元素板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK42>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[DRU]元素板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK42>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[DRU]元素板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK42>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[DRU]元素板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK42>0 ]:%PURPLE%✡✡✡ %GREEN%[DRU]元素板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[DRU]變形板
-ItemDisplay[MAG ID cm3 TABSK41>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[DRU]變形板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK41>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[DRU]變形板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK41>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[DRU]變形板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK41>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[DRU]變形板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK41>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[DRU]變形板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK41>0]:%PURPLE%✡✡✡ %GREEN%[DRU]變形板%ORANGE%[%ILVL%]
+ItemDisplay[MAG ID cm3 TABSK41>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[DRU]變形板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK41>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[DRU]變形板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK41>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[DRU]變形板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK41>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[DRU]變形板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK41>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[DRU]變形板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK41>0]:%PURPLE%✡✡✡ %GREEN%[DRU]變形板 %ORANGE%[L%ILVL%]
 //[DRU]召喚板
-ItemDisplay[MAG ID cm3 TABSK40>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[DRU]召喚板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK40>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[DRU]召喚板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK40>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[DRU]召喚板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK40>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[DRU]召喚板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK40>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[DRU]召喚板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK40>0 ]:%PURPLE%✡✡✡ %GREEN%[DRU]召喚板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK40>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[DRU]召喚板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK40>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[DRU]召喚板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK40>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[DRU]召喚板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK40>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[DRU]召喚板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK40>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[DRU]召喚板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK40>0 ]:%PURPLE%✡✡✡ %GREEN%[DRU]召喚板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[BAR]戰技板
-ItemDisplay[MAG ID cm3 TABSK32>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[BAR]戰技板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK32>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[BAR]戰技板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK32>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[BAR]戰技板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK32>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[BAR]戰技板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK32>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[BAR]戰技板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK32>0 ]:%YELLOW%✡✡✡ %GREEN%[BAR]戰技板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK32>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[BAR]戰技板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK32>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[BAR]戰技板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK32>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[BAR]戰技板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK32>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[BAR]戰技板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK32>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[BAR]戰技板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK32>0 ]:%YELLOW%✡✡✡ %GREEN%[BAR]戰技板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[BAR]支配板
-ItemDisplay[MAG ID cm3 TABSK33>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[BAR]支配板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK33>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[BAR]支配板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK33>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[BAR]支配板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK33>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[BAR]支配板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK33>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[BAR]支配板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK33>0 ]:%YELLOW%✡✡✡ %GREEN%[BAR]支配板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK33>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[BAR]支配板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK33>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[BAR]支配板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK33>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[BAR]支配板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK33>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[BAR]支配板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK33>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[BAR]支配板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK33>0 ]:%YELLOW%✡✡✡ %GREEN%[BAR]支配板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[BAR]戰吼板
-ItemDisplay[MAG ID cm3 TABSK34>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[BAR]戰吼板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK34>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[BAR]戰吼板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK34>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[BAR]戰吼板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK34>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[BAR]戰吼板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK34>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[BAR]戰吼板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK34>0 ]:%PURPLE%✡✡✡ %GREEN%[BAR]戰吼板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK34>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[BAR]戰吼板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK34>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[BAR]戰吼板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK34>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[BAR]戰吼板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK34>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[BAR]戰吼板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK34>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[BAR]戰吼板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK34>0 ]:%PURPLE%✡✡✡ %GREEN%[BAR]戰吼板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[AMA]標槍板
-ItemDisplay[MAG ID cm3 TABSK2>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[AMA]標槍板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK2>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[AMA]標槍板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK2>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[AMA]標槍板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK2>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[AMA]標槍板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK2>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[AMA]標槍板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK2>0 ]:%PURPLE%✡✡✡ %GREEN%[AMA]標槍板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK2>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[AMA]標槍板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK2>0 STAT99>0]:%PURPLE%✡✡✡ %GREEN%[AMA]標槍板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK2>0 STAT96>0]:%PURPLE%✡✡✡ %GREEN%[AMA]標槍板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK2>0 STAT0>0]:%PURPLE%✡✡✡ %GREEN%[AMA]標槍板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK2>0 STAT2>0]:%PURPLE%✡✡✡ %GREEN%[AMA]標槍板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK2>0 ]:%PURPLE%✡✡✡ %GREEN%[AMA]標槍板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[AMA]弓技板
-ItemDisplay[MAG ID cm3 TABSK0>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[AMA]弓技板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK0>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[AMA]弓技板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK0>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[AMA]弓技板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK0>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[AMA]弓技板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK0>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[AMA]弓技板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK0>0]:%YELLOW%✡✡✡ %GREEN%[AMA]弓技板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK0>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[AMA]弓技板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK0>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[AMA]弓技板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK0>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[AMA]弓技板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK0>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[AMA]弓技板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK0>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[AMA]弓技板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK0>0]:%YELLOW%✡✡✡ %GREEN%[AMA]弓技板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[ASN]武學板
-ItemDisplay[MAG ID cm3 TABSK50>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[ASN]武學板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK50>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[ASN]武學板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK50>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[ASN]武學板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK50>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[ASN]武學板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK50>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[ASN]武學板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK50>0]:%YELLOW%✡✡✡ %GREEN%[ASN]武學板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK50>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[ASN]武學板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK50>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[ASN]武學板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK50>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[ASN]武學板 %ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK50>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[ASN]武學板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK50>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[ASN]武學板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK50>0]:%YELLOW%✡✡✡ %GREEN%[ASN]武學板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //[ASN]影子板
-ItemDisplay[MAG ID cm3 TABSK49>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[ASN]影子板%ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK49>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[ASN]影子板%ORANGE%[%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK49>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[ASN]影子板%ORANGE%[%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK49>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[ASN]影子板%ORANGE%[%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK49>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[ASN]影子板%ORANGE%[%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 TABSK49>0]:%YELLOW%✡✡✡ %GREEN%[ASN]影子板%ORANGE%[%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK49>0 LIFE>0]:%PURPLE%✡✡✡ %GREEN%[ASN]影子板 %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK49>0 STAT99>0]:%YELLOW%✡✡✡ %GREEN%[ASN]影子板 %ORANGE%[L%ILVL%]  %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK49>0 STAT96>0]:%YELLOW%✡✡✡ %GREEN%[ASN]影子板%ORANGE%[L%ILVL%]  %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK49>0 STAT0>0]:%YELLOW%✡✡✡ %GREEN%[ASN]影子板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(0,0)%力量%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK49>0 STAT2>0]:%YELLOW%✡✡✡ %GREEN%[ASN]影子板 %ORANGE%[L%ILVL%]  %WHITE%%STAT(2,0)%敏捷%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 TABSK49>0]:%YELLOW%✡✡✡ %GREEN%[ASN]影子板 %ORANGE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 //Small Charms 全抗
-ItemDisplay[MAG ID cm1 RES>2 LIFE=20]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%20Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 LIFE=19]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%19Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 LIFE=18]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%18Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 LIFE=17]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%17Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 LIFE=16]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%16Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 LIFE=15]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%15Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 LIFE=14]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%14Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 LIFE=13]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%13Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 LIFE=12]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%12Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 LIFE=11]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%11Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 LIFE=10]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%10Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 STAT99>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 STAT96>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 STAT80=7]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %LIGHT_GRAY%7 MF%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 STAT80=6]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %LIGHT_GRAY%6 MF%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2 STAT80=5]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %LIGHT_GRAY%5 MF%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 RES>2]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 LIFE=20]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%20Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 LIFE=19]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%19Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 LIFE=18]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%18Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 LIFE=17]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%17Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 LIFE=16]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%16Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 LIFE=15]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%15Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 LIFE=14]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%14Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 LIFE=13]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%13Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 LIFE=12]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%12Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 LIFE=11]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%11Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 LIFE=10]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %RED%10Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 STAT99>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 STAT96>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 STAT80=7]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %LIGHT_GRAY%7 MF%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 STAT80=6]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %LIGHT_GRAY%6 MF%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2 STAT80=5]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗, %LIGHT_GRAY%5 MF%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 RES>2]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %GOLD%%STAT(39,0)%%GOLD%全抗%BGCOLOR(15)%%BORDER(4,1)%
 //Small Charm 電抗
-ItemDisplay[MAG ID cm1 STAT41>2 LIFE=20]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗, %RED%20生命%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT41>2 LIFE>14 LIFE<20]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗, %RED%15+生命%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT41>2 STAT99>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗, %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT41>2 STAT96>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗, %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT41>2 STAT80=7]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗, %LIGHT_GRAY%7MF%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT41>2]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT41>19]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT41>2 LIFE=20]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗, %RED%20生命%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT41>2 LIFE>14 LIFE<20]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗, %RED%15+生命%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT41>2 STAT99>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗, %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT41>2 STAT96>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗, %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT41>2 STAT80=7]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗, %LIGHT_GRAY%7MF%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT41>2]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT41>19]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(41,0)%%YELLOW%電抗%BGCOLOR(15)%%BORDER(4,1)%
 //Small Charm Fireres
-ItemDisplay[MAG ID cm1 STAT39>2 LIFE=20]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗, %RED%20生命%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT39>2 LIFE>14 LIFE<20]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗, %RED%15+生命%BGCOLOR(15)%%BORDER(4,1)%
-//ItemDisplay[MAG ID cm1 STAT39>2 LIFE>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗, %TAN%%STAT(7,0)% Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT39>2 STAT99>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗, %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT39>2 STAT96>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗, %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT39>2 STAT80=7]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗, %LIGHT_GRAY%7MF%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT39>2]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT39>19]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT39>2 LIFE=20]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗, %RED%20生命%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT39>2 LIFE>14 LIFE<20]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗, %RED%15+生命%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[MAG ID cm1 STAT39>2 LIFE>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗, %TAN%%STAT(7,0)% Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT39>2 STAT99>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗, %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT39>2 STAT96>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗, %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT39>2 STAT80=7]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗, %LIGHT_GRAY%7MF%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT39>2]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT39>19]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(39,0)%%RED%火抗%BGCOLOR(15)%%BORDER(4,1)%
 //Small Charm Coldres
-ItemDisplay[MAG ID cm1 STAT43>2 LIFE=20]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗, %RED%20生命%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT43>2 LIFE>14 LIFE<20]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗, %RED%15+生命%BGCOLOR(15)%%BORDER(4,1)%
-//ItemDisplay[MAG ID cm1 STAT43>2 LIFE>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗, %TAN%%STAT(7,0)% Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT43>2 STAT99>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗, %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT43>2 STAT96>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗, %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT43>2 STAT80=7]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗, %LIGHT_GRAY%7MF%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT43>2]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT43>19]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT43>2 LIFE=20]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗, %RED%20生命%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT43>2 LIFE>14 LIFE<20]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗, %RED%15+生命%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[MAG ID cm1 STAT43>2 LIFE>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗, %TAN%%STAT(7,0)% Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT43>2 STAT99>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗, %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT43>2 STAT96>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗, %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT43>2 STAT80=7]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗, %LIGHT_GRAY%7MF%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT43>2]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT43>19]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(43,0)%%BLUE%冰抗%BGCOLOR(15)%%BORDER(4,1)%
 //Small Charm Psnres
-ItemDisplay[MAG ID cm1 STAT45>2 LIFE=20]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗, %RED%20生命%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT45>2 LIFE>14 LIFE<20]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗, %RED%15+生命%BGCOLOR(15)%%BORDER(4,1)%
-//ItemDisplay[MAG ID cm1 STAT45>2 LIFE>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗, %TAN%%STAT(7,0)% Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT45>2 STAT99>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗, %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT45>2 STAT96>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗, %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT45>2 STAT80=7]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗, %LIGHT_GRAY%7MF%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT45>2]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT45>19]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT45>2 LIFE=20]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗, %RED%20生命%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT45>2 LIFE>14 LIFE<20]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗, %RED%15+生命%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[MAG ID cm1 STAT45>2 LIFE>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗, %TAN%%STAT(7,0)% Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT45>2 STAT99>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗, %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT45>2 STAT96>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗, %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT45>2 STAT80=7]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗, %LIGHT_GRAY%7MF%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT45>2]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT45>19]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(45,0)%%GREEN%毒抗%BGCOLOR(15)%%BORDER(4,1)%
 //Small Charm Life/mana/max
-ItemDisplay[MAG ID cm1 MANA>0 LIFE>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %TAN%%STAT(9,0)%生命, %BLUE%%STAT(7,0)%法力%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 MANA>13 STAT99>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %BLUE%%STAT(9,0)%法力, %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 MANA>13 STAT96>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %BLUE%%STAT(9,0)%法力, %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 MANA>13]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %BLUE%%STAT(9,0)%法力%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT22>2 LIFE>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%3 max, %GRAY%%STAT(19,0)% AR, %TAN%%STAT(7,0)% Life%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT22>2 STAT99>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%3 max, %GRAY%%STAT(19,0)% AR, %DGREEN%FHR%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT22>2 STAT96>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%3 max, %GRAY%%STAT(19,0)% AR, %PURPLE%FRW%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT22>3]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%4 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT22>2]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %WHITE%3 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 LIFE>0]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm1 STAT80>5]: %CORAL% %NAME% %ORANGE%[%ILVL%]  %LIGHT_GRAY%%STAT(80,0)% MF%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 MANA>0 LIFE>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %TAN%%STAT(9,0)%生命, %BLUE%%STAT(7,0)%法力%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 MANA>13 STAT99>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %BLUE%%STAT(9,0)%法力, %DGREEN%快攻%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 MANA>13 STAT96>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %BLUE%%STAT(9,0)%法力, %PURPLE%高跑%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 MANA>13]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %BLUE%%STAT(9,0)%法力%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT22>2 LIFE>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%3 max, %GRAY%%STAT(19,0)% AR, %TAN%%STAT(7,0)% Life%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT22>2 STAT99>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%3 max, %GRAY%%STAT(19,0)% AR, %DGREEN%FHR%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT22>2 STAT96>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%3 max, %GRAY%%STAT(19,0)% AR, %PURPLE%FRW%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT22>3]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%4 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT22>2]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %WHITE%3 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 LIFE>0]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %TAN%%STAT(7,0)%生命%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm1 STAT80>5]: %CORAL% %NAME% %ORANGE%[L%ILVL%]  %LIGHT_GRAY%%STAT(80,0)% MF%BGCOLOR(15)%%BORDER(4,1)%
 //Grandcharms max ar life/全抗
-ItemDisplay[MAG ID cm3 STAT22>13]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%14 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>12]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%13 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>11]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%12 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>10]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%11 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>9 LIFE>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%10 max, %GRAY%%STAT(19,0)% AR, %TAN%%STAT(7,0)% Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>9 STAT99>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%10 max, %GRAY%%STAT(19,0)% AR, %DGREEN%FHR%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>9 STAT96>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%10 max, %GRAY%%STAT(19,0)% AR, %PURPLE%FRW%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>8 LIFE>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%9 max, %GRAY%%STAT(19,0)% AR, %TAN%%STAT(7,0)%Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22=8 LIFE>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%8 max, %GRAY%%STAT(19,0)% AR, %TAN%%STAT(7,0)%Life%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>8 STAT99>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%9 max, %GRAY%%STAT(19,0)% AR, %DGREEN%FHR%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22=8 STAT99>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%8 max, %GRAY%%STAT(19,0)% AR, %DGREEN%FHR%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>8 STAT96>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%9 max, %GRAY%%STAT(19,0)% AR, %PURPLE%FRW%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22=8 STAT96>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%8 max, %GRAY%%STAT(19,0)% AR, %PURPLE%FRW%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>9 STAT0>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%10 max, %GRAY%%STAT(19,0)% AR, %WHITE%%STAT(0,0)% STR%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>8 STAT0>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%9 max, %GRAY%%STAT(19,0)% AR, %WHITE%%STAT(0,0)% STR%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>9 STAT2>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%10 max, %GRAY%%STAT(19,0)% AR, %WHITE%%STAT(2,0)% DEX%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>8 STAT2>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%9 max, %GRAY%%STAT(19,0)% AR, %WHITE%%STAT(2,0)% DEX%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>9]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%10 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 STAT22>8]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%9 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 RES>9 LIFE>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%GOLD%全抗, %TAN%%STAT(7,0)% Life %BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 RES>9 STAT99>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%GOLD%全抗 %DGREEN%FHR%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 RES>9 STAT96>0]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%GOLD%全抗 %PURPLE%FRW%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG ID cm3 RES>9]: %SAGE% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%GOLD%全抗%BGCOLOR(15)%%BORDER(4,1)%
-//ItemDisplay[MAG ID cm2 RES>5]: %WHITE% %NAME% %ORANGE%[%ILVL%]  %WHITE%%STAT(39,0)%%GOLD%全抗BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>13]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%14 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>12]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%13 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>11]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%12 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>10]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%11 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>9 LIFE>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%10 max, %GRAY%%STAT(19,0)% AR, %TAN%%STAT(7,0)% Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>9 STAT99>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%10 max, %GRAY%%STAT(19,0)% AR, %DGREEN%FHR%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>9 STAT96>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%10 max, %GRAY%%STAT(19,0)% AR, %PURPLE%FRW%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>8 LIFE>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%9 max, %GRAY%%STAT(19,0)% AR, %TAN%%STAT(7,0)%Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22=8 LIFE>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%8 max, %GRAY%%STAT(19,0)% AR, %TAN%%STAT(7,0)%Life%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>8 STAT99>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%9 max, %GRAY%%STAT(19,0)% AR, %DGREEN%FHR%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22=8 STAT99>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%8 max, %GRAY%%STAT(19,0)% AR, %DGREEN%FHR%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>8 STAT96>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%9 max, %GRAY%%STAT(19,0)% AR, %PURPLE%FRW%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22=8 STAT96>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%8 max, %GRAY%%STAT(19,0)% AR, %PURPLE%FRW%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>9 STAT0>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%10 max, %GRAY%%STAT(19,0)% AR, %WHITE%%STAT(0,0)% STR%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>8 STAT0>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%9 max, %GRAY%%STAT(19,0)% AR, %WHITE%%STAT(0,0)% STR%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>9 STAT2>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%10 max, %GRAY%%STAT(19,0)% AR, %WHITE%%STAT(2,0)% DEX%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>8 STAT2>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%9 max, %GRAY%%STAT(19,0)% AR, %WHITE%%STAT(2,0)% DEX%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>9]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%10 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 STAT22>8]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%9 max, %GRAY%%STAT(19,0)% AR%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 RES>9 LIFE>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(39,0)%%GOLD%全抗, %TAN%%STAT(7,0)% Life %BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 RES>9 STAT99>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(39,0)%%GOLD%全抗 %DGREEN%FHR%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 RES>9 STAT96>0]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(39,0)%%GOLD%全抗 %PURPLE%FRW%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG ID cm3 RES>9]: %SAGE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(39,0)%%GOLD%全抗%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[MAG ID cm2 RES>5]: %WHITE% %NAME% %ORANGE%[L%ILVL%]  %WHITE%%STAT(39,0)%%GOLD%全抗BGCOLOR(15)%%BORDER(4,1)%
 
 
 //JEWELS
@@ -1604,19 +1608,19 @@ ItemDisplay[MAG cm2 ILVL>79]:
 //TORCH ANNI GHEEDS
 //ItemDisplay[UNI cm1]: %NL%       %NAME% %BOLD% ANNI        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 //ItemDisplay[UNI cm2]: %NL%       %NAME% %BOLD% TORCH        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
-//ItemDisplay[UNI cm3]: %NL%       %NAME% %BOLD% GHEEDS        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+//ItemDisplay[UNI cm3]: %NL%       %NAME% %BOLD% GHEEDS [%STAT(80,0)%MF]        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 //Runewords 符文組
-ItemDisplay[RW SOCK=3 STAT39>47 STAT114>0]: %TAN%Ancestor's Pride %PURPLE%**%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[RW uit FCR>34]: %TAN%%NAME% %PURPLE%** %WHITE%(%ORANGE%%STAT(105,0)% FCR%WHITE%){%ORANGE%35 FCR%WHITE%}%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[RW uit FCR>24]: %TAN%%NAME% %PURPLE%** %WHITE%(%DGREEN%%STAT(105,0)% FCR%WHITE%){%DGREEN%%STAT(105,0)% FCR%WHITE%}%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-//ItemDisplay[RW CL3 FCR>34]: %TAN%%NAME% %PURPLE%** %WHITE%(%ORANGE%%STAT(105,0)% FCR %WHITE%, %RED%%STAT(39,0)% %YELLOW%a%RED%l%BLUE%l%YELLOW%r%RED%e%BLUE%s%WHITE%){%ORANGE%%STAT(105,0)% FCR%WHITE%}%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[RW CL3 FCR>34]: %TAN%%NAME% %PURPLE%** %WHITE%(%ORANGE%%STAT(105,0)% FCR%WHITE%)%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[RW CL3 FCR>24]: %TAN%%NAME% %PURPLE%** %WHITE%(%ORANGE%%STAT(105,0)% FCR%WHITE%)%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[RW ETH]: %ORANGE%ETH %TAN%%NAME% %PURPLE%**%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[RW !(CL1) !(EQ2 SOCK=3 RES=10 STAT96=25) !(WP9 SOCK=5 RES=40 ALLSK=3)]: %TAN%%NAME% %PURPLE%**%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[RW CL1 TABSK41=5]: %TAN%德魯伊頭盔%NL%%TAN%變化 Metamorphosis %PURPLE%** %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)% //變化
-ItemDisplay[RW EQ2 SOCK=3 RES=10 STAT96=25]: %TAN%護甲%NL%%TAN%催促 Hustle %PURPLE%** %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)% //催促
-ItemDisplay[RW WP9 SOCK=5 RES=40 ALLSK=3]: %TAN%弓/十字弓%NL%%TAN%迷霧 Mist %PURPLE%** %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)% //迷霧
+ItemDisplay[RW SOCK=3 STAT39>47 STAT114>0]: %TAN%Ancestor's Pride %PURPLE%✠✠✠%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[RW uit FCR>34]: %TAN%%NAME% %PURPLE%✠✠✠ %WHITE%(%ORANGE%%STAT(105,0)% FCR%WHITE%){%ORANGE%35 FCR%WHITE%}%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[RW uit FCR>24]: %TAN%%NAME% %PURPLE%✠✠✠ %WHITE%(%DGREEN%%STAT(105,0)% FCR%WHITE%){%DGREEN%%STAT(105,0)% FCR%WHITE%}%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[RW CL3 FCR>34]: %TAN%%NAME% %PURPLE%✠✠✠ %WHITE%(%ORANGE%%STAT(105,0)% FCR %WHITE%, %RED%%STAT(39,0)% %YELLOW%a%RED%l%BLUE%l%YELLOW%r%RED%e%BLUE%s%WHITE%){%ORANGE%%STAT(105,0)% FCR%WHITE%}%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[RW CL3 FCR>34]: %TAN%%NAME% %PURPLE%✠✠✠ %WHITE%(%ORANGE%%STAT(105,0)% FCR%WHITE%)%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[RW CL3 FCR>24]: %TAN%%NAME% %PURPLE%✠✠✠ %WHITE%(%ORANGE%%STAT(105,0)% FCR%WHITE%)%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[RW ETH]: %ORANGE%ETH %TAN%%NAME% %PURPLE%✠✠✠%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[RW !(CL1 TABSK41=5) !(EQ2 SOCK=3 RES=10 STAT96=25) !(WP9 SOCK=5 RES=40 ALLSK=3)]: %TAN%%NAME% %PURPLE%✠✠✠%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[RW CL1 TABSK41=5]: %TAN%德魯伊頭盔%NL%%TAN%變化 Metamorphosis %PURPLE%✠✠✠ %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)% //變化
+ItemDisplay[RW EQ2 SOCK=3 RES=10 STAT96=25]: %TAN%護甲%NL%%TAN%催促 Hustle %PURPLE%✠✠✠ %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)% //催促
+ItemDisplay[RW WP9 SOCK=5 RES=40 ALLSK=3]: %TAN%弓/十字弓%NL%%TAN%迷霧 Mist %PURPLE%✠✠✠ %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)% //迷霧
 
 //Best Rares (crystalsword, dimensional blade, phase blade, Circlets, Amulets, Rings, Gloves, Boots, Belts, Jewels) 稀有
 ItemDisplay[RARE ETH EQ5 !ID]: %ORANGE%ETH %YELLOW%%NAME%%CONTINUE%
