@@ -604,9 +604,9 @@ ItemDisplay[SET CLVL<40 !ETH sml]:  %GREEN%Cleglaws shield %RED%Lv4 %ORANGE%(75p
 //Cleglaws pincers chaingloves
 ItemDisplay[SET CLVL<40 !ETH mgl]:  %GREEN%Cleglaws gloves %RED%Lv4 %ORANGE%(25slow) %RED%(2piece flatAR/lvl) %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Deaths Guard sash
-ItemDisplay[SET !ID !ETH lbl]:  %GREEN%Deaths belt %ORANGE%(CNBF) %RED%(2piece 15@res) {%PURPLE%升級: %ORANGE%Eld %SAGE%+ %RED%Ith %SAGE%+ %WHITE%完美黃寶}%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[SET !ID !ETH lbl]:  %GREEN%Deaths belt %ORANGE%(CNBF) %RED%(2piece 15@res) {%PURPLE%升級: %ORANGE%Eld %SAGE%+ %RED%Ith %SAGE%+ %WHITE%完美黃寶}%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Deaths hand gloves 
-ItemDisplay[SET !ID !ETH lgl]:  %GREEN%Deaths gloves %ORANGE%(50PR) %RED%(2piece 30IAS) %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[SET !ID !ETH lgl]:  %GREEN%Deaths gloves %ORANGE%(50PR) %RED%(2piece 30IAS) %BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Hsarus Iron Heel chain boots
 ItemDisplay[SET CLVL<40 !ETH mbt]:  %GREEN%Hsarus boots %RED%Lv3 %ORANGE%(20FRW 25FR) %RED%(2piece flatAR/lvl) %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Hsarus Iron Stay belt
@@ -961,6 +961,9 @@ ItemDisplay[ID EQ6 IAS=20]: %NAME% {%ORANGE%[20 IAS]} %CONTINUE%
 ItemDisplay[ID EQ6 FCR=10]: %NAME% {%ORANGE%[10 FCR]} %CONTINUE%
 //30fcr
 ItemDisplay[ID EQ6 FCR=30]: %NAME% {%ORANGE%[30 FCR]} %CONTINUE%
+//8PA
+ItemDisplay[ID EQ6 STAT156=8]: %NAME% {%ORANGE%[8 PIE]} %CONTINUE%
+ItemDisplay[ID EQ6 STAT156=41]: %NAME% {%ORANGE%[41 PIE]} %CONTINUE%
 //Arachnid Mesh
 ItemDisplay[!ETH UNI !ID ulc]: %NL%       %NAME%%ORANGE%Arachs %PURPLE%☯☯☯☯☯       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[ETH UNI !ID ulc]: %ORANGE%ETH %GOLD%%NAME% %PURPLE%¤
@@ -1038,7 +1041,7 @@ ItemDisplay[!ETH SET !ID ne9]: %NL%       %NAME% %ORANGE% Trang Shield       %NL
 ItemDisplay[!ETH SET !ID utc]: %NL%       %NAME% %ORANGE% Trang Belt       %NL%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH SET !ID uh9]: %NL%       %NAME% %ORANGE% Trang Helm       %NL%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //M'avinas
-ItemDisplay[!ETH SET !ID zvb]: %NL%       %NAME% %ORANGE% Mavinas belt       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[!ETH SET !ID zvb]: %NL%       %NAME% %ORANGE% Mavinas belt       %NL%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH SET !ID ci3]: %NL%       %NAME% %ORANGE% Mavinas diadem       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 
 //Ondals Almighty
