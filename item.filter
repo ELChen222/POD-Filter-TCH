@@ -1864,11 +1864,15 @@ ItemDisplay[fla !ETH NMAG SOCK=4]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%S] %ORANGE% 
 ItemDisplay[fla ETH NMAG SOCK=4]: %ORANGE%ETH %DGREEN%%NAME% %PURPLE%[%SOCKETS%S] %ORANGE% (HOTO Base){%PURPLE%HOTO: %WHITE%Ko %SAGE%+ %LIGHT_GRAY%Vex %SAGE%+ %WHITE%Pul %SAGE%+ %LIGHT_GRAY%Thul}%BGCOLOR(15)%%BORDER(4,1)%
 Itemdisplay[fla NMAG SOCK=0 ILVL<41)]: %DGREEN%%NAME% %WHITE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
 Itemdisplay[fla NMAG SOCK=0 ILVL>25]: %DGREEN%%NAME% %WHITE%[L%ILVL%]%BGCOLOR(15)%%BORDER(4,1)%
-//5os Phase Blade, Zerker Axe = Grief // 6os silence // 4os hand of justice
+//5os Phase Blade, Zerker Axe = 5os Grief // 6os silence // 4os hand of justice
 ItemDisplay[7cr NMAG SOCK=6]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%S]{%PURPLE%Silence: %WHITE%Dol %SAGE%+ %LIGHT_GRAY%Eld %SAGE%+ %WHITE%Hel %SAGE%+ %LIGHT_GRAY%Ist %SAGE%+ %WHITE%Tir %SAGE%+ %LIGHT_GRAY%Vex%NL%%PURPLE%Last Wish: %WHITE%Jah %SAGE%+ %LIGHT_GRAY%Mal %SAGE%+ %WHITE%Jah %SAGE%+ %LIGHT_GRAY%Sur %SAGE%+ %WHITE%Jah %SAGE%+ %LIGHT_GRAY%Ber}%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[(7cr OR (!ETH 7wa)) NMAG SOCK=5]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%S]{%PURPLE%Grief: %WHITE%Eth %SAGE%+ %LIGHT_GRAY%Tir %SAGE%+ %WHITE%Lo %SAGE%+ %LIGHT_GRAY%Mal %SAGE%+ %WHITE%Ral}%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[7wa !ETH NMAG SOCK>4]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%S]%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[7cr NMAG SOCK=4]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%S]{%PURPLE%Hand of Jusitice: %WHITE%Sur %SAGE%+ %LIGHT_GRAY%Cham %SAGE%+ %WHITE%Amn %SAGE%+ %LIGHT_GRAY%Lo%NL%%PURPLE%Spirit: %WHITE%Tal %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %WHITE%Ort %SAGE%+ %LIGHT_GRAY%Amn}%BGCOLOR(15)%%BORDER(4,1)%
+//4os Conquest Sword = hand of justice // phoenix
+ItemDisplay[7bs !ETH NMAG SOCK=4]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%S]{%PURPLE%Hand of Jusitice: %WHITE%Sur %SAGE%+ %LIGHT_GRAY%Cham %SAGE%+ %WHITE%Amn %SAGE%+ %LIGHT_GRAY%Lo%NL%%PURPLE%Phoenix: %WHITE%Vex %SAGE%+ %LIGHT_GRAY%Vex %SAGE%+ %WHITE%Lo %SAGE%+ %LIGHT_GRAY%Jah}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[7bs ETH NMAG SOCK=4]: %ORANGE%ETH %DGREEN%%NAME% %PURPLE%[%SOCKETS%S]{%PURPLE%Hand of Jusitice: %WHITE%Sur %SAGE%+ %LIGHT_GRAY%Cham %SAGE%+ %WHITE%Amn %SAGE%+ %LIGHT_GRAY%Lo%NL%%PURPLE%Phoenix: %WHITE%Vex %SAGE%+ %LIGHT_GRAY%Vex %SAGE%+ %WHITE%Lo %SAGE%+ %LIGHT_GRAY%Jah%NL%%PURPLE%Oath: %WHITE%Shael %SAGE%+ %LIGHT_GRAY%Pul %SAGE%+ %WHITE%Mal %SAGE%+ %LIGHT_GRAY%Lum}%BGCOLOR(15)%%BORDER(4,1)%
+
 //Breath of the Dying = BotD Vex Hel El Eld Zod Eth
 ItemDisplay[(7gm OR 7p7) ETH ED>0 NMAG SOCK=6]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%S] {%PURPLE%Botd: %WHITE%Vex %SAGE%+ %LIGHT_GRAY%Hel %SAGE%+ %WHITE%El %SAGE%+ %LIGHT_GRAY%Eld %SAGE%+ %WHITE%Zod %SAGE%+ %LIGHT_GRAY%Eth}%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[(7gm OR 7p7) ETH ED>0 NMAG SOCK=0]: %DGREEN%%NAME%   {%ORANGE%Larzuk 6os}%BGCOLOR(15)%%BORDER(4,1)%
@@ -2153,7 +2157,8 @@ ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2 OR SOCK=3 OR SOCK=5 OR SOCK=6) bs
 ItemDisplay[NMAG !RW ILVL<26 SOCK=0 crs]:
 ItemDisplay[NMAG !RW ILVL>40 SOCK=0 crs]:
 ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2 OR SOCK=3 OR SOCK=6) crs]:
-ItemDisplay[NMAG !RW ILVL>14 (ssd OR 9ss OR 7ss OR scm OR 9sm OR 7sm OR sbr OR 9sb OR 7sb OR flc OR 9fc OR 7fc OR 9cr OR 9bs OR 7bs OR 9ls OR 7ls OR wsd OR 9wd OR 7wd OR 2hs OR 92h OR clm OR 9cm OR 7cm OR gis OR 9gs OR 7gs OR bsw OR 9b9 OR 7b7 OR flb OR 9fb OR 7fb OR gsd OR 9gd)]:
+ItemDisplay[NMAG !RW ILVL>14 (ssd OR 9ss OR 7ss OR scm OR 9sm OR 7sm OR sbr OR 9sb OR 7sb OR flc OR 9fc OR 7fc OR 9cr OR 9bs OR 9ls OR 7ls OR wsd OR 9wd OR 7wd OR 2hs OR 92h OR clm OR 9cm OR 7cm OR gis OR 9gs OR 7gs OR bsw OR 9b9 OR 7b7 OR flb OR 9fb OR 7fb OR gsd OR 9gd)]:
+ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2) 7bs]: 
 ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2 OR SOCK=0) 7cr]:
 ItemDisplay[NMAG !ETH !RW ILVL>85 SOCK=3 72h]:
 ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2 OR SOCK=0 OR SOCK=4) 72h]:
