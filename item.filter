@@ -2159,6 +2159,7 @@ ItemDisplay[NMAG !RW ILVL>40 SOCK=0 crs]:
 ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2 OR SOCK=3 OR SOCK=6) crs]:
 ItemDisplay[NMAG !RW ILVL>14 (ssd OR 9ss OR 7ss OR scm OR 9sm OR 7sm OR sbr OR 9sb OR 7sb OR flc OR 9fc OR 7fc OR 9cr OR 9bs OR 9ls OR 7ls OR wsd OR 9wd OR 7wd OR 2hs OR 92h OR clm OR 9cm OR 7cm OR gis OR 9gs OR 7gs OR bsw OR 9b9 OR 7b7 OR flb OR 9fb OR 7fb OR gsd OR 9gd)]:
 ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2) 7bs]: 
+ItemDisplay[NMAG !RW ILVL>14 !ETH SOCK=3 7bs]: 
 ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2 OR SOCK=0) 7cr]:
 ItemDisplay[NMAG !ETH !RW ILVL>85 SOCK=3 72h]:
 ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2 OR SOCK=0 OR SOCK=4) 72h]:
