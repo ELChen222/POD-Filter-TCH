@@ -790,12 +790,12 @@ ItemDisplay[7cr NMAG SOCK=0]: %NAME% %BGCOLOR(15)%%BORDER(4,1)%
 //Uniques 獨特
 //Helms
 //Griffon's Eye
-ItemDisplay[!ETH UNI !ID ci3]: %NL%       %NAME% %ORANGE% Griffons %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯       %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(8,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[!ETH UNI !ID ci3]: %NL%       %NAME% %ORANGE% Griffons %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯%GRAY%☯%PURPLE%☯        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(8,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH UNI ID ci3 SOCK=0]: %ORANGE%[-%YELLOW%%STAT(334,0)%LR%WHITE% , %ORANGE%+%YELLOW%%STAT(330,0)%LSD%ORANGE%]%NL%%GOLD%%NAME% %NOTIFY(ITEM)%%NOTIFYSOUND(8,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH UNI ID ci3]: %ORANGE%[-%YELLOW%%STAT(334,0)%LR%WHITE% , %ORANGE%+%YELLOW%%STAT(330,0)%LSD%ORANGE%]%NL%%GOLD%%NAME% %PURPLE%[%SOCKETS%S]%NOTIFY(ITEM)%%NOTIFYSOUND(8,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[ETH UNI !ID ci3]: %ORANGE%ETH %GOLD%%NAME% %PURPLE%¤%BGCOLOR(15)%%BORDER(4,1)%
 //Shako
-ItemDisplay[!ETH UNI !ID uap]: %NL%       %NAME% %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯       %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(4549,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[!ETH UNI !ID uap]: %NL%       %NAME% %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯%GRAY%☯%PURPLE%☯        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(4549,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH UNI ID uap SOCK=0]:  %NAME% %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //ItemDisplay[!ETH UNI ID uap]: %NAME% %NL%%PURPLE%[%SOCKETS%S]%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //ItemDisplay[!ETH UNI ID uap]: %NAME% %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
@@ -979,7 +979,7 @@ ItemDisplay[ID EQ6 FCR=30]: %NAME% {%ORANGE%[30 FCR]} %CONTINUE%
 ItemDisplay[ID EQ6 STAT156=8]: %NAME% {%ORANGE%[8 PIE]} %CONTINUE%
 ItemDisplay[ID EQ6 STAT156=41]: %NAME% {%ORANGE%[41 PIE]} %CONTINUE%
 //Arachnid Mesh
-ItemDisplay[!ETH UNI !ID ulc]: %NL%       %NAME%%ORANGE%Arachs %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[!ETH UNI !ID ulc]: %NL%       %NAME%%ORANGE%Arachs %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯%GRAY%☯%PURPLE%☯        %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[ETH UNI !ID ulc]: %ORANGE%ETH %GOLD%%NAME% %PURPLE%☯
 //Verdungo's Hearty Cord
 ItemDisplay[!ETH UNI !ID umc]: %NL%       %NAME% %ORANGE%Verdungo       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
@@ -1003,7 +1003,7 @@ ItemDisplay[ID EQ5 RES=8]: %NAME% {%ORANGE%[8 AllRES]} %CONTINUE%
 ItemDisplay[ID EQ5 RES=9]: %NAME% {%ORANGE%[9 AllRES]} %CONTINUE%
 ItemDisplay[ID EQ5 !(UNI hbt) RES=10]: %NAME% {%ORANGE%[10 AllRES]} %CONTINUE%
 //War Traveler
-ItemDisplay[!ETH UNI !ID xtb]: %NL%       %NAME% %ORANGE%War Travs %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯       %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(4614,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[!ETH UNI !ID xtb]: %NL%       %NAME% %ORANGE%War Travs %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯%GRAY%☯%PURPLE%☯        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(4614,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH UNI ID xtb]: %PURPLE%[%STAT(80,0)% MF]%NL%%GOLD%%NAME%%NL% %NOTIFY(ITEM)%%NOTIFYSOUND(4614,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[ETH UNI !ID xtb]: %ORANGE%ETH %GOLD%%NAME% %PURPLE%¤%BGCOLOR(15)%%BORDER(4,1)%
 //ETH Sandstorm Trek
@@ -1099,7 +1099,7 @@ ItemDisplay[ETH UNI ID obc]: %WHITE%[%ORANGE%+%RED%%STAT(329,0)%Fire%WHITE% , %O
 ItemDisplay[!ETH UNI !ID oba]: %NL%       %NAME% %ORANGE% Occy %PURPLE%☯☯☯☯☯       %NL%%NOTIFYSOUND(4136,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[ETH UNI !ID oba]: %ORANGE%ETH %GOLD%%NAME% %ORANGE%Occy %BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
 //Windforce
-ItemDisplay[UNI !ID 6lw]: %NL%       %NAME% %ORANGE% WindForce %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯       %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(4634,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[UNI !ID 6lw]: %NL%       %NAME% %ORANGE% WindForce %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯%GRAY%☯%PURPLE%☯        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(4634,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[UNI ID 6lw SOCK=0]: %GOLD%%NAME%   %NOTIFY(ITEM)%%NOTIFYSOUND(4634,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[UNI ID 6lw]: %GOLD%%NAME% %PURPLE%[%SOCKETS%S] %NOTIFY(ITEM)%%NOTIFYSOUND(4634,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Reaper's Toll
@@ -1201,7 +1201,7 @@ ItemDisplay[UNI ETH !ID 7dg]: %ORANGE%ETH %GOLD%%NAME% %ORANGE%Wiz Spike%BGCOLOR
 //ItemDisplay[UNI !ETH !ID 9wn]: %NAME% %ORANGE%Suicide Branch%NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //ItemDisplay[UNI ETH !ID 9wn]: %ORANGE%ETH %ORANGE%Suicide Branch%NOTIFY(ITEM,LOW)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
 //Grandfather
-ItemDisplay[UNI !ETH !ID 7gd]: %NL%       %NAME% %ORANGE%Grandfather %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯      %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[UNI !ETH !ID 7gd]: %NL%       %NAME% %ORANGE%Grandfather %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯%GRAY%☯%PURPLE%☯       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //BK set
 ItemDisplay[SET !ETH !ID 7gd]: %NAME%  %ORANGE% BK CB SWORD  %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[SET !ETH !ID 7wd]: %NAME%  %ORANGE% BK MYTH SWORD  %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
@@ -1237,12 +1237,12 @@ ItemDisplay[UNI !ETH ID 8ls]: %NAME% %PURPLE%[%SOCKETS%S] %ORANGE%*{%PURPLE%升�
 ItemDisplay[SET !ID paf]: %NAME% %ORANGE% Gris shield %NOTIFY(ITEM,LOW)%%NOTIFYSOUND(3312,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[SET ID paf]: %NAME% %ORANGE% Gris shield %PURPLE%[%SOCKETS%S] %NOTIFYSOUND(3312,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Stormshield 
-ItemDisplay[UNI !ID uit]: %NL%       %NAME% %ORANGE% Stormshield %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯       %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(15,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[UNI !ID uit]: %NL%       %NAME% %ORANGE% Stormshield %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯%GRAY%☯%PURPLE%☯        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(15,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Homunculus
-ItemDisplay[!ETH UNI !ID nea]: %NL%       %NAME% %ORANGE% Homunculus %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯      %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[!ETH UNI !ID nea]: %NL%       %NAME% %ORANGE% Homu %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯%GRAY%☯%PURPLE%☯       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[ETH UNI !ID nea]: %ORANGE%ETH %GOLD%%NAME% %ORANGE% Homunculus%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(4,1)%%MAPICON(5)%
 //Herald of Zakarum
-ItemDisplay[!ETH UNI !ID pa9]: %NL%       %NAME% %ORANGE% HoZ Herald of Zakarum %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯      %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
+ItemDisplay[!ETH UNI !ID pa9]: %NL%       %NAME% %ORANGE% HoZ %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯%GRAY%☯%PURPLE%☯       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[ETH UNI !ID pa9]: %ORANGE%ETH %GOLD%%NAME% %ORANGE% HoZ
 //Darkforce Spawn
 ItemDisplay[!ETH UNI !ID nef]: %NL%       %NAME% %ORANGE% Darkforce Spawn       %NL%%NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
@@ -1648,7 +1648,7 @@ ItemDisplay[RW !(CL1 TABSK41=5) !(EQ2 SOCK=3 RES=10 STAT96=25) !(WP9 SOCK=5 RES=
 ItemDisplay[RW CL1 TABSK41=5]: %TAN%德魯伊頭盔%NL%%TAN%變化 Metamorphosis %PURPLE%✠✠✠ %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)% //變化
 ItemDisplay[RW EQ2 SOCK=3 RES=10 STAT96=25]: %TAN%護甲%NL%%TAN%催促 Hustle %PURPLE%✠✠✠ %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)% //催促
 ItemDisplay[RW WP9 SOCK=5 RES=40 ALLSK=3]: %TAN%弓/十字弓%NL%%TAN%迷霧 Mist %PURPLE%✠✠✠ %NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)% //迷霧
-ItemDisplay[NMAG ELT EQ3 !CL3 !RW SOCK=3]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%S]{%PURPLE%Dream: %WHITE%Io %SAGE%+ %LIGHT_GRAY%Jah %SAGE%+ %WHITE%Pul%NL%%PURPLE%Dragon: %WHITE%Sur %SAGE%+ %LIGHT_GRAY%Lo %SAGE%+ %WHITE%Sol}
+ItemDisplay[NMAG !ETH ELT EQ3 !CL3 !RW SOCK=3]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%S]{%PURPLE%Dream: %WHITE%Io %SAGE%+ %LIGHT_GRAY%Jah %SAGE%+ %WHITE%Pul%NL%%PURPLE%Dragon: %WHITE%Sur %SAGE%+ %LIGHT_GRAY%Lo %SAGE%+ %WHITE%Sol}
 
 //Best Rares (crystalsword, dimensional blade, phase blade, Circlets, Amulets, Rings, Gloves, Boots, Belts, Jewels) 稀有
 ItemDisplay[RARE ETH EQ5 !ID]: %ORANGE%ETH %YELLOW%%NAME%%CONTINUE%
