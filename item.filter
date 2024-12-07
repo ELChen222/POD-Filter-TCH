@@ -2161,7 +2161,7 @@ ItemDisplay[NMAG !RW ILVL>14 (ssd OR 9ss OR 7ss OR scm OR 9sm OR 7sm OR sbr OR 9
 ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2) 7bs]: 
 ItemDisplay[NMAG !RW ILVL>14 !ETH SOCK=3 7bs]: 
 ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2 OR SOCK=0) 7cr]:
-ItemDisplay[NMAG !ETH !RW ILVL>85 SOCK=3 72h]:
+ItemDisplay[NMAG !ETH !RW CLVL>90 SOCK=3 72h]:
 ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2 OR SOCK=0 OR SOCK=4) 72h]:
 ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2 OR SOCK=0 OR SOCK=3) 7fb]:
 ItemDisplay[NMAG !RW ILVL>14 (SOCK=1 OR SOCK=2 OR SOCK=3) 7gd]:
