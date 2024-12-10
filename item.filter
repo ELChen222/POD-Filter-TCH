@@ -2082,7 +2082,7 @@ ItemDisplay[ILVL<66 ELT RARE (ARMOR OR WEAPON)]: %NAME%%BGCOLOR(15)%%BORDER(4,1)
 ItemDisplay[RARE EQ6 !ID]:
 ItemDisplay[RARE EQ5 !ID]: %YELLOW%%NAME%%BGCOLOR(15)%%BORDER(4,1)%
 //Class Specific Rares (Druid Pelts, Barb Helms, Paladin Shields, Necro Heads, Assassin Claws, Sorc Orbs, Amazon Bow/Jav
-ItemDisplay[RARE (CL1 OR CL2) !ID]: %YELLOW%%NAME%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[RARE (CL1 OR CL2) !ID !ETH]: %YELLOW%%NAME%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[RARE (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) !ID CLVL<80]: %YELLOW%%NAME%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[RARE (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) !ID]:
 //Maybe (Staff, Wand, Scepter)
