@@ -118,7 +118,7 @@ ItemDisplay[(qui OR lea OR hla OR stu OR brs OR xui OR ltp OR xea OR xla OR xtu 
 ItemDisplay[(rng OR chn OR spl OR fld OR gth OR aar OR xng OR xhn OR xpl OR xld OR xth OR xar OR ung OR uhn OR upl OR uld OR uth OR uar OR lrg OR gts OR xrg OR xts OR urg OR uts)]: %NAME% %TAN%[中]%CONTINUE%
 ItemDisplay[(scl OR plt OR ful OR xcl OR xlt OR xul OR ucl OR ult OR uul OR tow OR xow OR uow)]: %NAME% %TAN%[重]%CONTINUE%
 
-ItemDisplay[!RW !NMAG !INF !RW !SET !UNI SOCK>0]: %NAME%%PURPLE%[%SOCKETS%S]%CONTINUE%
+ItemDisplay[!RW !NMAG !INF !RW !SET !UNI SOCK>0]: %NAME% %PURPLE%[%SOCKETS%S]%CONTINUE%
 
 //攻速、範圍提示
 //-30
@@ -1275,7 +1275,7 @@ ItemDisplay[!(UNI OR SET OR RARE OR MAG) ID rin]:%ORANGE%⛣ %NAME%%CONTINUE%
 ItemDisplay[UNI ID amu]:%GOLD%♉ %GOLD%%NAME%%CONTINUE%
 ItemDisplay[SET ID amu]:%ORANGE%♉ %GREEN%%NAME%%CONTINUE%
 ItemDisplay[RARE ID amu]:%ORANGE%♉ %YELLOW%%NAME%%CONTINUE%
-ItemDisplay[!UNI !MAG !RARE !SET ID amu FCR>10]: %ORANGE%%NAME% %PURPLE%[%STAT(105,0)% FCR]%CONTINUE%
+ItemDisplay[!UNI !MAG !RARE !SET ID amu FCR>10]: %ORANGE%%NAME% %NL%%GREEN%[%STAT(105,0)% FCR]%CONTINUE%
 ItemDisplay[!UNI !SET ID amu ALLSK=1]: %NAME% {%ORANGE%[1 ALLSKILL]}%BGCOLOR(35)%%BORDER(1,1)%%CONTINUE%
 ItemDisplay[!(UNI OR SET OR RARE OR MAG) ID amu]:%ORANGE%♉ %NAME%%CONTINUE%
 ItemDisplay[(UNI OR SET) ID rin FCR>0]:  %NAME% {%ORANGE%[10FCR]%WHITE%}%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
