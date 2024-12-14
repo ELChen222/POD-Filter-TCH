@@ -100,6 +100,13 @@ ItemStyle[UBERI]: MapIcon = 47, BorderColor = 132, BorderSize = 2, NotificationC
 ItemStyle[KEYS]: MapIcon = 47, BorderColor = 132, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 59, NotificationPriority = HIGH, NotificationSoundPriority = HIGH, NotificationSound = "@local\sfx\common\barbarian\bar_impossible"
 ItemStyle[GG]: MapIcon = 26, BorderColor = 155, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 35, NotificationPriority = HIGH, NotificationSoundPriority = MEDIUM
 
+//獨特 套裝 稀有 手工 提示
+ItemDisplay[UNI]: %NAME% [獨特]%CONTINUE%
+ItemDisplay[RARE]: %NAME% [稀有]%CONTINUE%
+ItemDisplay[SET]: %NAME% [套裝]%CONTINUE%
+//ItemDisplay[MAG  !cm1 !cm2 !cm3 !jew]: %NAME% [魔法]%CONTINUE%
+ItemDisplay[!UNI !RARE !SET !NMAG !MAG]: %NAME% [手工]%CONTINUE%
+
 //基礎型態 輕中重
 ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME% [普通]%CONTINUE%
 ItemDisplay[WEAPON EXC]: %NAME% [進階]%CONTINUE%
@@ -966,12 +973,12 @@ ItemDisplay[SET !ID ulg]: %NL%       %NAME% %ORANGE%LoH       %NL%%NOTIFY(ITEM)%
 //30IAS gloves
 ItemDisplay[ID EQ4 IAS=30]: %NAME% {%ORANGE%[30 IAS]} %CONTINUE%
 //all res gloves
-ItemDisplay[ID EQ4 RES=5]: %NAME% {%ORANGE%[5 AllRES]} %CONTINUE%
-ItemDisplay[ID EQ4 RES=6]: %NAME% {%ORANGE%[6 AllRES]} %CONTINUE%
-ItemDisplay[ID EQ4 RES=7]: %NAME% {%ORANGE%[7 AllRES]} %CONTINUE%
-ItemDisplay[ID EQ4 RES=8]: %NAME% {%ORANGE%[8 AllRES]} %CONTINUE%
-ItemDisplay[ID EQ4 RES=9]: %NAME% {%ORANGE%[9 AllRES]} %CONTINUE%
-ItemDisplay[ID EQ4 RES=10]: %NAME% {%ORANGE%[10 AllRES]} %CONTINUE%
+ItemDisplay[ID EQ4 RES=5]: %NAME% {%ORANGE%[5 ALLRES]} %CONTINUE%
+ItemDisplay[ID EQ4 RES=6]: %NAME% {%ORANGE%[6 ALLRES]} %CONTINUE%
+ItemDisplay[ID EQ4 RES=7]: %NAME% {%ORANGE%[7 ALLRES]} %CONTINUE%
+ItemDisplay[ID EQ4 RES=8]: %NAME% {%ORANGE%[8 ALLRES]} %CONTINUE%
+ItemDisplay[ID EQ4 RES=9]: %NAME% {%ORANGE%[9 ALLRES]} %CONTINUE%
+ItemDisplay[ID EQ4 RES=10]: %NAME% {%ORANGE%[10 ALLRES]} %CONTINUE%
 
 //Soul Drainers
 ItemDisplay[!ETH UNI !ID umg]: %NAME% %ORANGE%Soul Drainers %NOTIFY(ITEM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
@@ -1008,12 +1015,12 @@ ItemDisplay[!ETH UNI !ID tbl]: %NAME% %ORANGE%Goldwrap %RED%MF{%PURPLE%升級: %
 ItemDisplay[!ETH UNI ID tbl]: %NAME% {%PURPLE%升級: %WHITE%Tal %SAGE%+ %LIGHT_GRAY%Shael %SAGE%+ %WHITE%完美鑽石}%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 //Boots
 //All res boots
-ItemDisplay[ID EQ5 RES=5]: %NAME% {%ORANGE%[5 AllRES]} %CONTINUE%
-ItemDisplay[ID EQ5 RES=6]: %NAME% {%ORANGE%[6 AllRES]} %CONTINUE%
-ItemDisplay[ID EQ5 RES=7]: %NAME% {%ORANGE%[7 AllRES]} %CONTINUE%
-ItemDisplay[ID EQ5 RES=8]: %NAME% {%ORANGE%[8 AllRES]} %CONTINUE%
-ItemDisplay[ID EQ5 RES=9]: %NAME% {%ORANGE%[9 AllRES]} %CONTINUE%
-ItemDisplay[ID EQ5 !(UNI hbt) RES=10]: %NAME% {%ORANGE%[10 AllRES]} %CONTINUE%
+ItemDisplay[ID EQ5 RES=5]: %NAME% {%ORANGE%[5 ALLRES]} %CONTINUE%
+ItemDisplay[ID EQ5 RES=6]: %NAME% {%ORANGE%[6 ALLRES]} %CONTINUE%
+ItemDisplay[ID EQ5 RES=7]: %NAME% {%ORANGE%[7 ALLRES]} %CONTINUE%
+ItemDisplay[ID EQ5 RES=8]: %NAME% {%ORANGE%[8 ALLRES]} %CONTINUE%
+ItemDisplay[ID EQ5 RES=9]: %NAME% {%ORANGE%[9 ALLRES]} %CONTINUE%
+ItemDisplay[ID EQ5 !(UNI hbt) RES=10]: %NAME% {%ORANGE%[10 ALLRES]} %CONTINUE%
 //War Traveler
 ItemDisplay[!ETH UNI !ID xtb]: %NL%       %NAME% %ORANGE%War Travs %RED%☯%ORANGE%☯%YELLOW%☯%GREEN%☯%BLUE%☯%GRAY%☯%PURPLE%☯        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(4614,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
 ItemDisplay[!ETH UNI ID xtb]: %PURPLE%[%STAT(80,0)% MF]%NL%%GOLD%%NAME%%NL% %NOTIFY(ITEM)%%NOTIFYSOUND(4614,MEDIUM)%%BGCOLOR(35)%%BORDER(1,1)%%MAPICON(5)%
@@ -1643,7 +1650,7 @@ ItemDisplay[MAG ID jew STAT45>0 IAS>0]: %BLUE%  %NAME% %WHITE%(%WHITE%%STAT(45,0
 //IAS
 ItemDisplay[MAG ID jew IAS>0]: %BLUE%  %NAME% {%TEAL%[15 IAS]}%CONTINUE%
 //ALLRES
-ItemDisplay[(MAG OR RARE) ID jew RES>0]: %BLUE%  %NAME% {%TEAL%[%STAT(39,0)% AllRES]}%CONTINUE%
+ItemDisplay[(MAG OR RARE) ID jew RES>0]: %BLUE%  %NAME% {%TEAL%[%STAT(39,0)% ALLRES]}%CONTINUE%
 //ED -REQ, ED FHR, ED STR/DEX, ED, MPK
 ItemDisplay[MAG ID jew STAT91<0 STAT17>37]: %BLUE%  %NAME% %WHITE%(%PURPLE%%STAT(17,0)% ED, %SAGE%-REQ%WHITE%) %YELLOW%*%RED%*%BLUE%*%GREEN%*%PURPLE%*%SAGE%*%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[MAG ID jew STAT99>1 STAT17>37]: %BLUE%  %NAME% %WHITE%(%PURPLE%%STAT(17,0)% ED, %DGREEN%FHR%WHITE%) %YELLOW%*%RED%*%BLUE%*%GREEN%*%PURPLE%*%SAGE%*%BGCOLOR(138)%%BORDER(4,1)%
