@@ -101,9 +101,9 @@ ItemStyle[KEYS]: MapIcon = 47, BorderColor = 132, BorderSize = 2, NotificationCo
 ItemStyle[GG]: MapIcon = 26, BorderColor = 155, BorderSize = 2, NotificationColor = ITEM, BackgroundColor = 35, NotificationPriority = HIGH, NotificationSoundPriority = MEDIUM
 
 //獨特 套裝 稀有 手工 提示
-ItemDisplay[UNI]: %NAME% [獨特]%CONTINUE%
-ItemDisplay[RARE]: %NAME% [稀有]%CONTINUE%
-ItemDisplay[SET]: %NAME% [套裝]%CONTINUE%
+ItemDisplay[UNI !rin !amu !cm1 !cm2 !cm3 !jew]: %NAME% [獨特]%CONTINUE%
+ItemDisplay[RARE !rin !amu !jew]: %NAME% [稀有]%CONTINUE%
+ItemDisplay[SET !rin !amu]: %NAME% [套裝]%CONTINUE%
 //ItemDisplay[MAG  !cm1 !cm2 !cm3 !jew]: %NAME% [魔法]%CONTINUE%
 ItemDisplay[!UNI !RARE !SET !NMAG !MAG]: %NAME% [手工]%CONTINUE%
 
