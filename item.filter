@@ -219,8 +219,8 @@ ItemDisplay[toa]: %NL% %WHITE%※※※※※ %ORANGE%%NAME% %WHITE%※※※※
 //ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
 //ItemDisplay[leg]: %WHITE%※%NAME%%WHITE%※{%RED%維特之腳＋傳送之書＝秘密乳牛關卡(打贏對應難度巴爾後於蘿格營地內合成)} //維特之腳
 //ItemDisplay[cx5]: %WHITE%※%PURPLE%%NAME% (ooc)%WHITE%※%NOTIFY(ITEM)%{傳送之書、鑑定之書有腐化說明%NL%與裝備放入赫拉迪克方塊合成可腐化裝備} //腐化寶珠
-//ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //暗黑破壞神的靈魂石
-//ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※%MAPICON(6)%{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //混沌之鑰
+ItemDisplay[cx6]: %PURPLE%ôôô %GREEN%%NAME% (三王) %PURPLE%ôôô{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //暗黑破壞神的靈魂石
+ItemDisplay[cx7]: %PURPLE%ôôô %ORANGE%%NAME% (遺物) %PURPLE%ôôô%MAPICON(6)%{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //混沌之鑰
 //ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 //基德 Gheed
@@ -241,8 +241,8 @@ ItemDisplay[cm2 UNI ID CLSK6>0]: %NAME% %RED%ASN{%YELLOW%硬直恢復(FHR)：(9F
 //PoD Items
 //ItemDisplay[cx5]: %NL%%ORANGE%ôô %PURPLE%Orb of Corruption %ORANGE%ôô%NL%%NOTIFY(ITEM)%%NOTIFYSOUND(3542,MEDIUM)%%BGCOLOR(59)%%BORDER(4,1)%%MAPICON(2)%
 ItemDisplay[cx5]: %NL%%RED%⚛%ORANGE%⚛%YELLOW%⚛%GREEN%⚛%BLUE%⚛%GRAY%⚛%PURPLE%⚛ %NAME% %ORANGE%Orb of Corruption %PURPLE%⚛%GRAY%⚛%BLUE%⚛%GREEN%⚛%YELLOW%⚛%ORANGE%⚛%RED%⚛%NL%%BLACK% %NOTIFY(ITEM)%%NOTIFYSOUND(19,LARGE)%%BGCOLOR(172)%%BORDER(4,1)%%MAPICON(8)% //腐化寶珠
-ItemDisplay[cx6]: %PURPLE%ôô %ORANGE%%NAME% %PURPLE%ôô%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[cx7]: %PURPLE%ôô %ORANGE%%NAME% %PURPLE%ôô%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+//ItemDisplay[cx6]: %PURPLE%ôô %ORANGE%%NAME% %PURPLE%ôô%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+//ItemDisplay[cx7]: %PURPLE%ôô %ORANGE%%NAME% %PURPLE%ôô%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[cx8]: %PURPLE%Orb %ORANGE%of %PURPLE%Enchantment%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[cx9]: %NL%%RED%⚛%ORANGE%⚛%YELLOW%⚛%GREEN%⚛%BLUE%⚛%GRAY%⚛%PURPLE%⚛ %RED%變化寶珠 %ORANGE%Orb of Alteration %PURPLE%⚛%GRAY%⚛%BLUE%⚛%GREEN%⚛%YELLOW%⚛%ORANGE%⚛%RED%⚛%NL%%BLACK% %NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%%MAPICON(8)% //變化寶珠
 
@@ -383,8 +383,8 @@ ItemDisplay[yps]: %GREEN%!%WHITE%A%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[key FILTERLVL=2]:
 //ItemDisplay[key]: %BLACK%key%BGCOLOR(15)%%BORDER(4,1)%
 //Tomes
-ItemDisplay[tbk]: %WHITE%Tome of Town Portal%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[ibk]: %WHITE%Tome of Identify%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[tbk]: %WHITE%%NAME%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[ibk]: %WHITE%%NAME%%BGCOLOR(15)%%BORDER(4,1)%
 //Choking, Exploding, Fulminating, Oil, Rancid, Strangling, Stamina 
 ItemDisplay[gpm CLVL>25]: 
 ItemDisplay[gpl CLVL>25]: 
@@ -1428,22 +1428,22 @@ ItemDisplay[RARE ID (am5 OR ama OR amf) TABSK2>4 IAS>39]: %NAME% %GREEN%5\40%BGC
 ItemDisplay[RARE ID (am5 OR ama OR amf) TABSK2>2 CLSK0>1 IAS>29]: %NAME% %GREEN%5\30%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[RARE ID (am5 OR ama OR amf) TABSK2>4 IAS>29]: %NAME% %GREEN%5\30%BGCOLOR(15)%%BORDER(4,1)%
 //Amulets
-ItemDisplay[MAG (amu OR rin) FILTERLVL=2]:
-ItemDisplay[MAG amu ILVL=85]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 96+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=86]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 94+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=87]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 94+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=88]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 92+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=89]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 92+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=90]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 90+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=91]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 90+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=92]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 88+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=93]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 88+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=94]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 86+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=95]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 86+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=96]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 84+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=97]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 84+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=98]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 82+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG amu ILVL=99]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 82+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[MAG (amu OR rin) FILTERLVL=2]:
+ItemDisplay[MAG amu ILVL=85]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 96+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=86]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 94+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=87]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 94+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=88]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 92+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=89]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 92+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=90]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 90+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=91]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 90+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=92]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 88+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=93]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 88+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=94]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 86+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=95]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 86+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=96]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 84+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=97]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 84+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=98]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 82+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG amu ILVL=99]: %ORANGE%♉ %BLUE%%NAME%%ORANGE% [CLVL 82+] {%NL%%RED%Blood%SAGE%: %RED%Amn%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ral%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Thul%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[MAG amu ILVL<85]: %ORANGE%♉ %BLUE%%NAME%%WHITE% [L%ILVL%] %BGCOLOR(15)%%BORDER(4,1)%
 //Rings
 ItemDisplay[MAG rin]: %ORANGE%⛣ %BLUE%%NAME%%WHITE% [L%ILVL%] {%NL%%RED%Blood%SAGE%: %RED%Sol%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Amn%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%
@@ -2191,7 +2191,9 @@ ItemDisplay[ILVL<66 ELT RARE (ARMOR OR WEAPON)]: %NAME%%BGCOLOR(15)%%BORDER(4,1)
 //RARES
 //Best Rares (crystalsword, dimensional blade, phase blade, Circlets, Amulets, Rings, Gloves, Boots, Belts, Jewels)
 ItemDisplay[RARE EQ6 !ID]:
-ItemDisplay[RARE EQ5 !ID]: %YELLOW%%NAME%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[RARE EQ5 !ID !ETH]: %YELLOW%%NAME%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[RARE EQ5 !ID ETH]: %ORANGE%ETH %YELLOW%%NAME%%BGCOLOR(15)%%BORDER(4,1)%
+
 //Class Specific Rares (Druid Pelts, Barb Helms, Paladin Shields, Necro Heads, Assassin Claws, Sorc Orbs, Amazon Bow/Jav
 ItemDisplay[RARE (CL1 OR CL2) !ID !ETH]: %YELLOW%%NAME%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[RARE (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) !ID CLVL<80]: %YELLOW%%NAME%%BGCOLOR(15)%%BORDER(4,1)%
@@ -2212,6 +2214,7 @@ ItemDisplay[RARE (EQ1 OR EQ2 OR EQ3) !ID ILVL>65]:
 //MAGIC
 //Magic Circlets
 ItemDisplay[MAG !ETH (ci0 OR ci1 OR ci2 OR ci3) !ID]: %BLUE%%NAME% %ORANGE%*%GREEN%*%GOLD%*%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[MAG !ETH (ci2 OR ci3) ID]: %BLUE%%NAME% {%NL%%RED%Blood%SAGE%: %RED%Ral%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Nef%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶}%BGCOLOR(15)%%BORDER(4,1)%%CONTINUE%
 ItemDisplay[MAG ETH (ci0 OR ci1 OR ci2 OR ci3) !ID]:
 //magic necro shields
 ItemDisplay[MAG CL4 !ID]:
@@ -2245,10 +2248,10 @@ ItemDisplay[!ELT MAG EQ2 !ID ILVL>65]:
 //Shields - Hidden !monarch !troll nest
 ItemDisplay[MAG EQ3 !ID !uit ILVL>65]:
 //Elite Boots - Shown
-ItemDisplay[MAG !ETH ulb]:
-ItemDisplay[MAG EQ5 !ID ILVL>65]:
+//ItemDisplay[MAG !ETH ulb]:
+//ItemDisplay[MAG EQ5 !ID ILVL>65]:
 //Non Elite Boots - Hidden
-ItemDisplay[MAG !ID lbt xlb vbt xvb uvb mbt xmb umb tbt xtb utb hbt xhb uhb ILVL>65]:
+//ItemDisplay[MAG !ID lbt xlb vbt xvb uvb mbt xmb umb tbt xtb utb hbt xhb uhb ILVL>65]:
 //Elite Belts - Shown
 ItemDisplay[ELT MAG EQ6 !ID ILVL>65]:
 //Non Elite Belts - Hidden
@@ -2344,10 +2347,14 @@ ItemDisplay[NMAG (EQ4 OR EQ5 OR EQ6 OR ci0 OR ci1) !RW ILVL>14]:
 //Gloves
 ItemDisplay[RARE EQ4 !ETH ILVL>59]: %NAME%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[RARE EQ4 ETH ILVL>59]: %ORANGE%ETH %YELLOW%%NAME%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[MAG EQ4 !ETH ILVL>59]: %NAME%%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[MAG EQ4 !ETH ILVL>59]: %NAME% {%NL%%RED%Blood%SAGE%: %RED%Nef%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ort%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Ort%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶%NL%%GREEN%Safety%SAGE%: %GREEN%Ral%SAGE%+%GREEN%Jewel%SAGE%+%GREEN%⎊完美綠寶}%BGCOLOR(15)%%BORDER(4,1)%%CONTINUE%
+ItemDisplay[MAG EQ4 !ETH ILVL>59]: %NAME% {%NL%%RED%Blood%SAGE%: %RED%Nef%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Ort%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Ort%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%%CONTINUE%
 ItemDisplay[MAG EQ4 ETH ILVL>59]:
+//Boots
+//ItemDisplay[MAG ID EQ5 !ETH ILVL>59]: %NAME% {%NL%%RED%Blood%SAGE%: %RED%Eth%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Caster%SAGE%: %PURPLE%Thul%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Ral%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶%NL%%GREEN%Safety%SAGE%: %GREEN%Ort%SAGE%+%GREEN%Jewel%SAGE%+%GREEN%⎊完美綠寶}%BGCOLOR(15)%%BORDER(4,1)%%CONTINUE%
+ItemDisplay[MAG ID EQ5 !ETH ILVL>59]: %NAME% {%NL%%RED%Blood%SAGE%: %RED%Eth%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%BLUE%Hitpower%SAGE%: %BLUE%Ral%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶}%BGCOLOR(15)%%BORDER(4,1)%%CONTINUE%
 //Tiara Diadem Imbue Charsi
-ItemDisplay[NMAG !ETH (ci2 OR ci3) !RW ILVL>14 SOCK=0]: %NAME%%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[NMAG !ETH (ci2 OR ci3) !RW ILVL>14 SOCK=0]: %NAME% %BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[NMAG ETH (ci2 OR ci3) !RW ILVL>14 SOCK=0]:
 ItemDisplay[NMAG (ci2 OR ci3) !RW ILVL>14 SOCK>0]:
 //Class Items (Paladin Shields, Assassin Claws, Amazon Weapons, Necromancer Heads
