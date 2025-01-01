@@ -219,8 +219,8 @@ ItemDisplay[toa]: %NL% %WHITE%※※※※※ %ORANGE%%NAME% %WHITE%※※※※
 //ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
 //ItemDisplay[leg]: %WHITE%※%NAME%%WHITE%※{%RED%維特之腳＋傳送之書＝秘密乳牛關卡(打贏對應難度巴爾後於蘿格營地內合成)} //維特之腳
 //ItemDisplay[cx5]: %WHITE%※%PURPLE%%NAME% (ooc)%WHITE%※%NOTIFY(ITEM)%{傳送之書、鑑定之書有腐化說明%NL%與裝備放入赫拉迪克方塊合成可腐化裝備} //腐化寶珠
-ItemDisplay[cx6]: %PURPLE%ôôô %GREEN%%NAME% (三王) %PURPLE%ôôô{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //暗黑破壞神的靈魂石
-ItemDisplay[cx7]: %PURPLE%ôôô %ORANGE%%NAME% (遺物) %PURPLE%ôôô%MAPICON(6)%{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //混沌之鑰
+ItemDisplay[cx6]: %PURPLE%ôôô %GREEN%%NAME% [ANNI] %PURPLE%ôôô{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //暗黑破壞神的靈魂石
+ItemDisplay[cx7]: %PURPLE%ôôô %ORANGE%%NAME% [ANNI] %PURPLE%ôôô%MAPICON(6)%{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //混沌之鑰
 //ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 //基德 Gheed
@@ -338,12 +338,12 @@ ItemDisplay[leg ILVL>60]: %ORANGE% %NAME% %WHITE%(%RED%HELL%WHITE%)%BGCOLOR(15)%
 ItemDisplay[leg ILVL<30]: %ORANGE% %NAME% %WHITE%(%DGREEN%NORM%WHITE%)%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[leg ILVL<60]: %ORANGE% %NAME% %WHITE%(%BLUE%NM%WHITE%)%BGCOLOR(15)%%BORDER(4,1)%
 //Uber Keys
-ItemDisplay[pk1]: %NL%        %ORANGE%@@%YELLOW% Terror %WHITE%[Countess] %ORANGE%@@        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[pk2]: %NL%        %ORANGE%@@%YELLOW% Hate %WHITE%[Summoner] %ORANGE%@@        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[pk3]: %NL%        %ORANGE%@@%YELLOW% Destruction %WHITE%[Nihlathak] %ORANGE%@@        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[dhn]: %NL%        %ORANGE%@@%YELLOW% Diablo's Horn %ORANGE%@@        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(2992)%%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[bey]: %NL%        %ORANGE%@@%YELLOW% Baal's Eye %ORANGE%@@        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(2991)%%BGCOLOR(138)%%BORDER(4,1)%
-ItemDisplay[mbr]: %NL%        %ORANGE%@@%YELLOW% Mephisto's Brain %ORANGE%@@        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(2990)%%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[pk1]: %NL%        %PURPLE%ôôô%YELLOW% %NAME% %GOLD%[Countess] %PURPLE%ôôô        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[pk2]: %NL%        %PURPLE%ôôô%RED% %NAME% %GOLD%[Summoner] %PURPLE%ôôô        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[pk3]: %NL%        %PURPLE%ôôô%GREEN% %NAME% %GOLD%[Nihlathak] %PURPLE%ôôô        %NL%%NOTIFY(ITEM)%%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[dhn]: %NL%        %ORANGE%ôôô%YELLOW% %NAME% %GOLD%Diablo's Horn %ORANGE%ôôô        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(2992)%%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[bey]: %NL%        %ORANGE%ôôô%YELLOW% %NAME% %GOLD%Baal's Eye %ORANGE%ôôô        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(2991)%%BGCOLOR(138)%%BORDER(4,1)%
+ItemDisplay[mbr]: %NL%        %ORANGE%ôôô%YELLOW% %NAME% %GOLD%Mephisto's Brain %ORANGE%ôôô        %NL%%NOTIFY(ITEM)%%NOTIFYSOUND(2990)%%BGCOLOR(138)%%BORDER(4,1)%
 ItemDisplay[std]: %NAME%
 
 //SYNTH 
