@@ -396,13 +396,13 @@ ItemDisplay[gps]:
 ItemDisplay[gpl CLVL<30]: %GREEN%!%WHITE%Strangling Gas %WHITE%(%GREEN%6%WHITE%)%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[vps CLVL<55]: %GREEN%!%WHITE%Stamina%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[vps CLVL>54]:
-//Hide MAGIC Quivers & Bolts above level 60 (箭袋arrows, bolts)
-ItemDisplay[aq2 MAG ILVL>20]:
+//Quivers & Bolts
+ItemDisplay[(aq2 OR cq2) MAG ID]: %NAME%{%NL%%RED%Fire Arrow%SAGE%: %RED%Eld%SAGE%+%RED%Jewel%SAGE%+%RED%⎊完美紅寶%NL%%PURPLE%Ice Arrow%SAGE%: %PURPLE%Eld%SAGE%+%PURPLE%Jewel%SAGE%+%PURPLE%⎊完美紫寶%NL%%BLUE%Cold Arrow%SAGE%: %BLUE%El%SAGE%+%BLUE%Jewel%SAGE%+%BLUE%⎊完美藍寶%NL%%GREEN%Magic Arrow%SAGE%: %GREEN%El%SAGE%+%GREEN%Jewel%SAGE%+%GREEN%⎊完美綠寶}%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[(aq2 OR cq2) RARE !ID ILVL>60]: %NL%%GREEN%⚜⚜⚜  %YELLOW%%NAME%  %GREEN%⚜⚜⚜%BGCOLOR(15)%%BORDER(4,1)%%MAPICON(79)%
 ItemDisplay[(aq2 OR cq2) RARE ID ILVL>60]: %NL%%NAME%  %GREEN%⚜⚜⚜%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[aq2 UNI ILVL>60]: %NAME%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[aq2 SET ILVL>60]: %NAME%%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[cq2 MAG ILVL>60]:
+//ItemDisplay[cq2 MAG ILVL>60]:
 //ItemDisplay[cq2 RARE !ID ILVL>60]: %GREEN%⚜ %YELLOW%%NAME% %GREEN%⚜%BGCOLOR(15)%%BORDER(4,1)%
 //ItemDisplay[cq2 RARE ID ILVL>60]: %NAME%  %GREEN%⚜%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[cq2 UNI ILVL>60]: %NAME%%BGCOLOR(15)%%BORDER(4,1)%
