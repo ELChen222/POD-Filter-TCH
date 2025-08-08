@@ -1813,10 +1813,15 @@ ItemDisplay[zvb MAG !ID]:
 
 //Armor
 //ETH Merc Base
-ItemDisplay[NMAG ETH !RW DEF>900 (uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp OR xar OR xul OR xth) SOCK=0]: %ORANGE%ETH%DGREEN% %NAME%   %GREEN%[%STAT(31,0)% def]%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[NMAG ETH !RW DEF>700 (uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp OR xar OR xul OR xth) SOCK=0]: %ORANGE%ETH%DGREEN% %NAME%   %GREEN%[%STAT(31,0)% def]%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[NMAG ETH !RW SOCK>2 DEF>900 (uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp OR xar OR xul OR xth)]: %ORANGE%ETH%DGREEN% %NAME% %PURPLE%[%SOCKETS%S] %GREEN%[%STAT(31,0)% def]%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[NMAG ETH !RW SOCK>2 DEF>700 (uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp OR xar OR xul OR xth)]: %ORANGE%ETH%DGREEN% %NAME% %PURPLE%[%SOCKETS%S] %GREEN%[%STAT(31,0)% def]%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[NMAG ETH !RW DEF>900 (uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp OR xar OR xul OR xth) SOCK=0 !SUP]: %ORANGE%ETH%DGREEN% %NAME%   %GREEN%[%STAT(31,0)% def]{%ORANGE%Larzuk 4os%PURPLE%%NL%Roll: %WHITE%Tal %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %YELLOW%⎊PG⎊}%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[NMAG ETH !RW DEF>900 (uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp OR xar OR xul OR xth) SOCK=0 SUP]: %ORANGE%ETH%DGREEN% %NAME%   %GREEN%[%STAT(31,0)% def]{%ORANGE%Larzuk 4os%PURPLE%}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[NMAG ETH !RW DEF>700 (uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp OR xar OR xul OR xth) SOCK=0 !SUP]: %ORANGE%ETH%DGREEN% %NAME%   %GREEN%[%STAT(31,0)% def]{%ORANGE%Larzuk 4os%PURPLE%%NL%Roll: %WHITE%Tal %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %YELLOW%⎊PG⎊}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[NMAG ETH !RW DEF>700 (uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp OR xar OR xul OR xth) SOCK=0 SUP]: %ORANGE%ETH%DGREEN% %NAME%   %GREEN%[%STAT(31,0)% def]{%ORANGE%Larzuk 4os}%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[NMAG ETH !RW SOCK=3 DEF>900 (uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp OR xar OR xul OR xth)]: %ORANGE%ETH%DGREEN% %NAME% %PURPLE%[%SOCKETS%S] %GREEN%[%STAT(31,0)% def]{%PURPLE%Treachery: %WHITE%Shael %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %WHITE%Lem}%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[NMAG ETH !RW SOCK=4 DEF>900 (uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp OR xar OR xul OR xth)]: %ORANGE%ETH%DGREEN% %NAME% %PURPLE%[%SOCKETS%S] %GREEN%[%STAT(31,0)% def]{%PURPLE%Fortitude: %WHITE%El %SAGE%+ %LIGHT_GRAY%Sol %SAGE%+ %WHITE%Dol %SAGE%+ %LIGHT_GRAY%Lo}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[NMAG ETH !RW SOCK=3 DEF>700 (uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp OR xar OR xul OR xth)]: %ORANGE%ETH%DGREEN% %NAME% %PURPLE%[%SOCKETS%S] %GREEN%[%STAT(31,0)% def]{%PURPLE%Treachery: %WHITE%Shael %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %WHITE%Lem}%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[NMAG ETH !RW SOCK=4 DEF>700 (uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp OR xar OR xul OR xth)]: %ORANGE%ETH%DGREEN% %NAME% %PURPLE%[%SOCKETS%S] %GREEN%[%STAT(31,0)% def]{%PURPLE%Fortitude: %WHITE%El %SAGE%+ %LIGHT_GRAY%Sol %SAGE%+ %WHITE%Dol %SAGE%+ %LIGHT_GRAY%Lo}%BGCOLOR(15)%%BORDER(4,1)%
+
 
 //Top Tier Dusk Shroud, Wyrmhide, Archon Plate, Wire fleece
 ItemDisplay[(uui OR uea OR utp OR utu) !SUP !ETH NMAG SOCK=0 DEF>500]: %DGREEN%%NAME%   %GREEN%[%STAT(31,0)% def]{%ORANGE%Larzuk 4os%PURPLE%%NL%Roll: %WHITE%Tal %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %YELLOW%⎊PG⎊}%BGCOLOR(15)%%BORDER(4,1)%
@@ -1827,13 +1832,15 @@ ItemDisplay[(uui OR uea) !ETH NMAG SOCK=4 DEF>450]: %DGREEN%%NAME% %PURPLE%[%SOC
 //Standard Dusk Shroud, Wyrmhide, Archon Plate, Wire fleece
 ItemDisplay[(utp OR utu OR uui OR uea) !ETH NMAG SOCK=0]: %DGREEN%%NAME%   %GRAY%[%STAT(31,0)% def]%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[(utp OR utu OR uui OR uea) !ETH NMAG]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%S] %GRAY%[%STAT(31,0)% def]%BGCOLOR(15)%%BORDER(4,1)%
+
 //Any Elite Armor ETH
 ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp) !SUP ETH NMAG SOCK=0]: %WHITE%ETH%DGREEN% %NAME%   %LIGHT_GRAY%[%STAT(31,0)% def]{%PURPLE%Roll: %WHITE%Tal %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %YELLOW%⎊PG⎊}%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp) ETH NMAG SOCK=3]: %WHITE%ETH%DGREEN% %NAME% %PURPLE%[%SOCKETS%S] %LIGHT_GRAY%[%STAT(31,0)% def]{%PURPLE%Treachery: %WHITE%Shael %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %WHITE%Lem}%BGCOLOR(15)%%BORDER(4,1)%
-//ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp) ETH NMAG SOCK=3 ED>0]:: %NAME% %WHITE%(%ORANGE%%EDAMAGE% ED%WHITE%) %CONTINUE%
+//ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utpr) ETH NMAG SOCK=3 ED>0]:: %NAME% %WHITE%(%ORANGE%%EDAMAGE% ED%WHITE%) %CONTINUE%
 ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp) ETH NMAG SOCK=4]: %WHITE%ETH%DGREEN% %NAME% %PURPLE%[%SOCKETS%S] %LIGHT_GRAY%[%STAT(31,0)% def]{%PURPLE%Fortitude: %WHITE%El %SAGE%+ %LIGHT_GRAY%Sol %SAGE%+ %WHITE%Dol %SAGE%+ %LIGHT_GRAY%Lo}%BGCOLOR(15)%%BORDER(4,1)%
+//ItemDisplay[ELT ARMOR ETH NMAG SOCK=4 DEF>700]: %WHITE%ETH%DGREEN% %NAME% %PURPLE%[%SOCKETS%S] %LIGHT_GRAY%[%STAT(31,0)% def]{%PURPLE%Fortitude: %WHITE%El %SAGE%+ %LIGHT_GRAY%Sol %SAGE%+ %WHITE%Dol %SAGE%+ %LIGHT_GRAY%Lo}%CONTINUE%%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp) ETH NMAG SOCK=0]: %WHITE%ETH%DGREEN% %NAME%   %LIGHT_GRAY%[%STAT(31,0)% def]%BGCOLOR(15)%%BORDER(4,1)%
-ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp) ETH NMAG !SOCK=1]: %WHITE%ETH%DGREEN% %NAME% %PURPLE%[%SOCKETS%S] %LIGHT_GRAY%[%STAT(31,0)% def]%BGCOLOR(15)%%BORDER(4,1)%
+ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp) ETH NMAG SOCK=2]: %WHITE%ETH%DGREEN% %NAME% %PURPLE%[%SOCKETS%S] %LIGHT_GRAY%[%STAT(31,0)% def]%BGCOLOR(15)%%BORDER(4,1)%
 
 //Elite Armor Non Eth
 ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR uul OR uar OR utp) NMAG SOCK=1]:
@@ -1845,6 +1852,7 @@ ItemDisplay[xtp NMAG !ETH ED=15 SOCK=0]: %DGREEN%%NAME% %GREEN%[%STAT(31,0)% def
 ItemDisplay[NMAG !ETH !SUP SOCK=0 xtp]: %DGREEN% %NAME% %GREEN%[%STAT(31,0)% def]{%ORANGE%Larzuk 3os%NL%%PURPLE%Roll: %WHITE%Tal %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %YELLOW%⎊PG⎊}%BGCOLOR(15)%%BORDER(4,1)%
 //ItemDisplay[NMAG !ETH !SOCK=1 (xtp OR ltp)]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%S]%BGCOLOR(15)%%BORDER(4,1)%
 ItemDisplay[NMAG (SOCK=1 OR SOCK=2 OR ETH) (xtp OR ltp)]:
+
 //Shields 
 //4os Monarch, 15ed Monarch 4os, Monarch -REQ
 ItemDisplay[uit SUP !ETH NMAG STAT91<0 SOCK=4]: %DGREEN% %NAME% %PURPLE%[%SOCKETS%S] {%PURPLE%Spirit: %WHITE%Tal %SAGE%+ %LIGHT_GRAY%Thul %SAGE%+ %WHITE%Ort %SAGE%+ %LIGHT_GRAY%Amn%NL%%PURPLE%Phoenix: %WHITE%Vex %SAGE%+ %LIGHT_GRAY%Vex %SAGE%+ %WHITE%Lo %SAGE%+ %LIGHT_GRAY%Jah}%NOTIFY(ITEM)%%BGCOLOR(15)%%BORDER(4,1)%
