@@ -166,6 +166,30 @@ ItemDisplay[(hbw OR cbw OR 8hb OR 8cb OR 6hb OR 6cb OR lxb OR 8lx OR 6lx OR amb 
 // 0~20
 ItemDisplay[(WP9 OR WP10) !(8rx OR 6rx OR rxb OR bkf OR 9bk OR 7bk OR hbw OR cbw OR 8hb OR 8cb OR 6hb OR 6cb OR lxb OR 8lx OR 6lx OR amb OR jav OR tsp OR 9ja OR 9ts OR 7ja OR 7ts OR bal OR 9b8 OR 7b8 OR am5 OR ama OR amf)]: %NAME%{%TEAL%[SPD: %WPNSPD%]}%CONTINUE%
 
+//升級註記
+// ARMOR'S UPGRADING RECIPE
+ItemDisplay[UNI ID NORM ARMOR !(EQ4 OR EQ5 OR EQ6)]: %NAME%{%NAME%%NL%%GOLD%Upgrade:%TAN% [#7]+[#13]+%WHITE%⎊PG⎊}%CONTINUE%
+ItemDisplay[UNI ID EXC ARMOR !(EQ4 OR EQ5 OR EQ6)]: %NAME%{%NAME%%NL%%GOLD%Upgrade:%TAN% [#18]+[#20]+%WHITE%⎊PG⎊}%CONTINUE%
+ItemDisplay[UNI ID NORM ARMOR (EQ4 OR EQ5 OR EQ6)]: %NAME%{%GOLD%Upgrade:%TAN% [#7]+[#13]+%WHITE%⎊PG⎊}%CONTINUE%
+ItemDisplay[UNI ID EXC ARMOR (EQ4 OR EQ5 OR EQ6)]: %NAME%{%GOLD%Upgrade:%TAN% [#18]+[#20]+%WHITE%⎊PG⎊}%CONTINUE%
+ItemDisplay[RARE ID NORM ARMOR !(EQ4 OR EQ5 OR EQ6)]: %NAME%{%NAME%%NL%%GOLD%Upgrade:%TAN% [#8]+[#10]+%PURPLE%⎊PG⎊}%CONTINUE%
+ItemDisplay[RARE ID EXC ARMOR !(EQ4 OR EQ5 OR EQ6)]: %NAME%{%NAME%%NL%%GOLD%Upgrade:%TAN% [#18]+[#21]+%PURPLE%⎊PG⎊}%CONTINUE%
+ItemDisplay[RARE ID NORM ARMOR (EQ4 OR EQ5 OR EQ6)]: %NAME%{%GOLD%Upgrade:%TAN% [#8]+[#10]+%PURPLE%⎊PG⎊}%CONTINUE%
+ItemDisplay[RARE ID EXC ARMOR (EQ4 OR EQ5 OR EQ6)]: %NAME%{%GOLD%Upgrade:%TAN% [#18]+[#21]+%PURPLE%⎊PG⎊}%CONTINUE%
+ItemDisplay[SET ID NORM ARMOR !(EQ4 OR EQ5 OR EQ6)]: %NAME%{%NAME%%NL%%GOLD%Upgrade:%TAN% [#2]+[#6]+%YELLOW%⎊PG⎊}%CONTINUE%
+ItemDisplay[SET ID EXC ARMOR !(EQ4 OR EQ5 OR EQ6)]: %NAME%{%NAME%%NL%%GOLD%Upgrade:%TAN% [#15]+[#16]+%YELLOW%⎊PG⎊}%CONTINUE%
+ItemDisplay[SET ID NORM ARMOR (EQ4 OR EQ5 OR EQ6)]: %NAME%{%GOLD%Upgrade:%TAN% [#2]+[#6]+%YELLOW%⎊PG⎊}%CONTINUE%
+ItemDisplay[SET ID EXC ARMOR (EQ4 OR EQ5 OR EQ6)]: %NAME%{%GOLD%Upgrade:%TAN% [#15]+[#16]+%YELLOW%⎊PG⎊}%CONTINUE%
+// WEAPON'S UPGRADING RECIPE
+ItemDisplay[UNI ID NORM WEAPON]: %NAME%{%NAME%%NL%%GOLD%Upgrade:%TAN% [#8]+[#12]+%GREEN%⎊PG⎊}%CONTINUE%
+//ItemDisplay[SYNTH NORM WEAPON]: %NAME%{%NAME%%NL%%GOLD%Upgrade:%TAN% [#8]+[#12]+%GREEN%⎊PG⎊}%CONTINUE%
+ItemDisplay[UNI ID EXC WEAPON]: %NAME%{%NAME%%NL%%GOLD%Upgrade:%TAN% [#17]+[#21]+%GREEN%⎊PG⎊}%CONTINUE%
+//ItemDisplay[SYNTH EXC WEAPON]: %NAME%{%NAME%%NL%%GOLD%Upgrade:%TAN% [#17]+[#21]+%GREEN%⎊PG⎊}%CONTINUE%
+ItemDisplay[RARE ID NORM WEAPON]: %NAME%{%NAME%%NL%%GOLD%Upgrade:%TAN% [#9]+[#11]+%BLUE%⎊PG⎊}%CONTINUE%
+ItemDisplay[RARE ID EXC WEAPON]: %NAME%{%NAME%%NL%%GOLD%Upgrade%GOLD%Upgrade:%TAN% [#19]+[#22]+%BLUE%⎊PG⎊}%CONTINUE%
+ItemDisplay[SET ID NORM WEAPON]: %NAME%{%NAME%%NL%%GOLD%Upgrade:%TAN% [#1]+[#5]+%RED%⎊PG⎊}%CONTINUE%
+ItemDisplay[SET ID EXC WEAPON]: %NAME%{%NAME%%NL%%GOLD%Upgrade:%TAN% [#14]+[#23]+%RED%⎊PG⎊}%CONTINUE%
+
 //賭博 指定物品高亮顯示
 ItemDisplay[NMAG !ID !(EQ7 OR aq2 OR amu OR rin OR cq2)]:    //頭環+箭袋
 
