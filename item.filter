@@ -174,7 +174,7 @@ ItemDisplay[UNI ID NORM ARMOR (EQ4 OR EQ5 OR EQ6)]: %NAME%{%PURPLE%Upgrade: %TAN
 ItemDisplay[UNI ID EXC ARMOR (EQ4 OR EQ5 OR EQ6)]: %NAME%{%PURPLE%Upgrade: %TAN% Ko + Lem + %WHITE%[⎊]PG[⎊]}%CONTINUE%
 ItemDisplay[RARE ID NORM ARMOR !(EQ4 OR EQ5 OR EQ6)]: %NAME%{%NAME%%NL%%PURPLE%Upgrade: %TAN% Ral + Thul + %PURPLE%[⎊]PG[⎊]}%CONTINUE%
 ItemDisplay[RARE ID EXC ARMOR !(EQ4 OR EQ5 OR EQ6)]: %NAME%{%NAME%%NL%%PURPLE%Upgrade: %TAN% Ko + Pul + %PURPLE%[⎊]PG[⎊]}%CONTINUE%
-ItemDisplay[RARE ID NORM ARMOR (EQ4 OR EQ5 OR EQ6)]: %NAME%{%PURPLE%Upgrade: %TAN% Tal + Thul + %PURPLE%[⎊]PG[⎊]}%CONTINUE%
+ItemDisplay[RARE ID NORM ARMOR (EQ4 OR EQ5 OR EQ6)]: %NAME%{%PURPLE%Upgrade: %TAN% Ral + Thul + %PURPLE%[⎊]PG[⎊]}%CONTINUE%
 ItemDisplay[RARE ID EXC ARMOR (EQ4 OR EQ5 OR EQ6)]: %NAME%{%PURPLE%Upgrade: %TAN% Ko + Pul + %PURPLE%[⎊]PG[⎊]}%CONTINUE%
 ItemDisplay[SET ID NORM ARMOR !(EQ4 OR EQ5 OR EQ6)]: %NAME%{%NAME%%NL%%PURPLE%Upgrade: %TAN% Eld + Ith + %YELLOW%[⎊]PG[⎊]}%CONTINUE%
 ItemDisplay[SET ID EXC ARMOR !(EQ4 OR EQ5 OR EQ6)]: %NAME%{%NAME%%NL%%PURPLE%Upgrade: %TAN% Hel + Io + %YELLOW%[⎊]PG[⎊]}%CONTINUE%
